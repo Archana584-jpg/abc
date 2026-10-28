@@ -1,0 +1,18 @@
+{
+   "request_id": "ad73d9e5-f74f-44d8-829b-17a47a98e53a",
+   "transaction_id": "12112115-4f00-4d0d-8a0b-766f6b62d10d",
+   "status": 200,
+   "data": {
+      "code": "1017",
+      "message": "Found 1 records.",
+      "gstin_data": [
+         {
+            "document_type": "GSTIN",
+            "document_id": "2XXXXXXXXXXV",
+            "status": "Active"
+         }
+      ]
+   },
+   "timestamp": 1730797088990,
+   "path": "/gstin-api/fetch-by-mobile"
+}

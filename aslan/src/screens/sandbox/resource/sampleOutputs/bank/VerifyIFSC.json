@@ -1,0 +1,31 @@
+{
+   "request_id": "4e751abf-32e5-421a-a4fc-c39c55aae87e",
+   "transaction_id": "b4c32946-7fd2-454a-be01-5f2a3bc8a588",
+   "status": 200,
+   "data": {
+      "code": "1041",
+      "message": "Bank IFSC details verified successfully.",
+      "bank_ifsc_data": {
+         "status": "VALID",
+         "ifsc_code": "SBIN0008752",
+         "bank_name": "STATE BANK OF INDIA",
+         "branch_name": "KATRAJ",
+         "address": "PUNE,SATARA RD., NR. BHARATI VIDYAPITH, PIN - 411046",
+         "city": "PUNE",
+         "state": "MAHARASHTRA",
+         "payment_channels": {
+            "neft": "Live",
+            "imps": "Live",
+            "rtgs": "Live",
+            "upi": "Live",
+            "fund_transfer": "Not Live",
+            "card": "Not Live"
+         },
+         "micr_code": "411002018",
+         "nbin_code": "0",
+         "ifsc_subcode": "SBIN0"
+      }
+   },
+   "timestamp": 1752660029668,
+   "path": "/bank-api/verify-ifsc"
+}

@@ -1,0 +1,16 @@
+{
+   "request_id": "d9d95e16-0d49-4c4a-aedc-019134ff0526",
+   "transaction_id": "910b01fc-41df-4421-b488-40e23f912ebf",
+   "status": 200,
+   "data": {
+      "code": "1020",
+      "message": "Contact details fetched.",
+      "pan_data": {
+         "document_type": "PAN",
+         "email": "shibsaxxxx@gmail.com",
+         "phone": "9832XXXXXX"
+      }
+   },
+   "timestamp": 1758108855363,
+   "path": "/pan-api/fetch-contact-details"
+}

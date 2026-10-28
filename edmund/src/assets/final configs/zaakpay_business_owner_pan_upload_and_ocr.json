@@ -1,0 +1,233 @@
+{
+   "id": "zaakpay_business_owner_pan_upload_and_ocr",
+   "name": "Business Owner PAN Upload And OCR",
+   "header": {
+      "title": { "text": "Verify Business Owner PAN", "className": "text-md font-semibold text-title" },
+      "subtitle": {
+         "text": "Upload a business owner's PAN card to verify their details.",
+         "className": "text-xs font-normal text-subtitle"
+      },
+      "image": {
+         "src": "https://onboarding-resources-dev.s3.ap-south-1.amazonaws.com/assets/pan.svg"
+      }
+   },
+   "layout": [
+      {
+         "type": "STEPPER",
+         "wrapper": {
+            "className": "mx-auto",
+            "style": {
+               "className": "block",
+               "col": {
+                  "xs": 24,
+                  "md": 16
+               }
+            }
+         },
+         "content": {
+            "steps": [
+               {
+                  "label": "A",
+                  "id": "zaakpay_business_owner_pan_upload_and_ocr",
+                  "name": "Business Owner PAN Upload And OCR",
+                  "title": {
+                     "text": "Upload PAN",
+                     "className": "text-base font-normal text-title"
+                  }
+               },
+               {
+                  "label": "B",
+                  "id": "zaakpay_business_owner_pan_data_review_and_verify",
+                  "name": "Business Owner PAN Data Review and Verify",
+                  "title": {
+                     "text": "Review and Proceed",
+                     "className": "text-base font-normal text-title"
+                  }
+               }
+            ]
+         }
+      },
+      {
+         "type": "FORM",
+         "formId": "init_business_owner_pan_verification_form",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } }
+         },
+         "props": {
+            "layout": "vertical",
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "requiredMark": true
+         },
+         "dataSource": {
+            "onValidCondition": "data.generic_data"
+         },
+         "content": {
+            "fields": [
+               {
+                  "type": "UPLOAD",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 16 } },
+                     "className": "mt-8"
+                  },
+                  "props": {
+                     "name": "individual_pan_document_file",
+                     "fileKey": "individual_pan_document_file",
+                     "value": "individual_pan_document_file_urls",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "maxAllowedSize": {
+                           "size": 5,
+                           "message": "Please check the file size"
+                        },
+                        "allowedTypes": {
+                           "types": ["image/jpeg", "image/jpg", "image/png"],
+                           "message": "Please check the file type"
+                        }
+                     },
+                     "mode": "DRAG_AND_DROP"
+                  },
+                  "content": {
+                     "label": {
+                        "text": "Upload the front side of your PAN",
+                        "className": "text-subtitle",
+                        "infoText": "Individual PANs have 4th letter as 'P'."
+                     },
+                     "title": {
+                        "text": "Drag and drop or click 'Choose File' to upload",
+                        "className": "text-subtitle text-sm font-normal"
+                     },
+                     "subtitle": {
+                        "text": "Supported format: jpeg, jpg, png • Max size: 5MB",
+                        "className": "text-subtitle !text-[10px] font-light"
+                     }
+                  }
+               },
+               {
+                  "type": "BUTTON",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } },
+                     "className": "flex justify-center mt-8"
+                  },
+                  "content": {
+                     "label": { "text": "Save and Proceed", "className": "text-white" }
+                  },
+                  "props": {
+                     "className": "px-6 py-0",
+                     "type": "primary"
+                  },
+                  "action": {
+                     "onClick": {
+                        "setState": [
+                           {
+                              "key": "loader_modal",
+                              "value": true,
+                              "stateChangeType": "MODAL_VISIBILITY"
+                           }
+                        ],
+                        "api": {
+                           "type": "EXECUTE_ACTION",
+                           "formId": "init_business_owner_pan_verification_form",
+                           "executeActionType": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "individual_pan_document_file",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 }
+                              ],
+                              "onValidCondition": "INDIVIDUAL_PAN_OCR_ACTION",
+                              "onInvalidCondition": "MOVE_TO_NEXT_NODE_ACTION"
+                           },
+                           "requestType": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "individual_pan_document_file",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 }
+                              ],
+                              "onValidCondition": "DOCUMENT_UPLOAD_AND_EXECUTE_ACTION",
+                              "onInvalidCondition": "EXECUTE_ACTION"
+                           },
+                           "fileKey": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "individual_pan_document_file",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 }
+                              ],
+                              "onValidCondition": "individual_pan_document_file",
+                              "onInvalidCondition": ""
+                           },
+                           "onSuccess": {
+                              "setState": [
+                                 {
+                                    "key": "loader_modal",
+                                    "value": false,
+                                    "stateChangeType": "MODAL_VISIBILITY"
+                                 }
+                              ]
+                           },
+                           "onError": {
+                              "setState": [
+                                 {
+                                    "key": "loader_modal",
+                                    "value": false,
+                                    "stateChangeType": "MODAL_VISIBILITY"
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               }
+            ]
+         }
+      },
+      {
+         "type": "MODAL",
+         "props": {
+            "closable": false,
+            "maskClosable": false,
+            "visibilityDependsOn": "loader_modal"
+         },
+         "content": {
+            "body": [
+               {
+                  "type": "IMAGE",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } },
+                     "className": "flex justify-center items-center"
+                  },
+                  "props": {
+                     "src": "https://onboarding-resources-dev.s3.ap-south-1.amazonaws.com/assets/loader.gif"
+                  }
+               },
+               {
+                  "type": "TEXT",
+                  "wrapper": {
+                     "style": {
+                        "col": {
+                           "xs": 24,
+                           "md": 24
+                        }
+                     },
+                     "className": "flex justify-center items-center"
+                  },
+                  "props": {
+                     "className": "text-center"
+                  },
+                  "content": {
+                     "label": {
+                        "text": "We are fetching your PAN details",
+                        "className": "text-base font-semibold text-title"
+                     }
+                  }
+               }
+            ]
+         }
+      }
+   ]
+}

@@ -1,0 +1,17 @@
+{
+   "request_id": "4cbaad0f-7163-46cf-8aa7-8e4034cfc1fe",
+   "transaction_id": "2842efd3-540b-4cec-8ebe-b8409d9b1b59",
+   "status": 200,
+   "data": {
+      "code": "1007",
+      "message": "Fetched RC Details By Chassis.",
+      "vehicle_details": [
+         {
+            "rc_registration_number": "UXXXXXXXX8",
+            "chassis_number": "MXXXXXXXXXXXXXXX8"
+         }
+      ]
+   },
+   "timestamp": 1736770369511,
+   "path": "/rc-api/fetch-reg-num-by-chassis"
+}

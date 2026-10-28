@@ -1,0 +1,37 @@
+{
+   "request_id": "081c3724-efdc-48cb-9dd7-68e563952b5c",
+   "status": 200,
+   "data": {
+      "code": "1001",
+      "message": "Found 5 records",
+      "results": [
+         {
+            "document_type": "GSTIN",
+            "document_id": "20AXXXXXXXXXXXXX",
+            "trade_name": "HOTEL RELIANCE"
+         },
+         {
+            "document_type": "GSTIN",
+            "document_id": "27AXXXXXXXXXXXXX",
+            "trade_name": "RELIANCE FOUNDATION"
+         },
+         {
+            "document_type": "GSTIN",
+            "document_id": "29AXXXXXXXXXXXXX",
+            "trade_name": "RELIANCE RETAIL LIMITED (FORMERLY RELIANCE FRESH LIMITED)"
+         },
+         {
+            "document_type": "GSTIN",
+            "document_id": "21AXXXXXXXXXXXXX",
+            "trade_name": "RELIANCE RETAIL LIMITED (Formerly Reliance Fresh Limited)"
+         },
+         {
+            "document_type": "GSTIN",
+            "document_id": "97AXXXXXXXXXXXXX",
+            "trade_name": "RELIANCE INDUSTRIES LIMITED"
+         }
+      ]
+   },
+   "timestamp": 1626238554488,
+   "path": "/fetch-by-name"
+}

@@ -1,0 +1,22 @@
+{
+   "request_id": "2l54p12c-62eb-318q-8bb9-7f9136c76830",
+   "status": 200,
+   "data": {
+      "code": "1002",
+      "message": "Fetched director details.",
+      "director_data": {
+         "din": "12345678",
+         "name": "XXXX",
+         "company_details": [
+            {
+               "cin": "XXXX",
+               "company_name": "XXXX",
+               "begin_date": "XXXX",
+               "active_compliance": "ACTIVE compliant"
+            }
+         ]
+      }
+   },
+   "timestamp": 1685963628688,
+   "path": "/fetch-director"
+}

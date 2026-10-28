@@ -1,0 +1,59 @@
+{
+   "request_id": "0b06eed3-92bd-4e6c-99aa-6e7ef40f72b3",
+   "transaction_id": "2e962875-c20a-4c48-9ec7-1d0e2dcb8ef2",
+   "status": 200,
+   "data": {
+      "code": "1016",
+      "message": "Udyam details fetched successfully.",
+      "udyam_number": "UDYAM-HR-15-XXXXXXX",
+      "enterprise_data": {
+         "document_id": "UDYAM-HR-15-XXXXXXX",
+         "major_activity": "Services",
+         "enterprise_type": "MICRO",
+         "organization_type": "Private Limited Company",
+         "name": "Gridlines",
+         "mobile": "99*****999",
+         "email": "abcd.XXXXXXXX@gmail.com",
+         "address": {
+            "door_no": "Plot no.18",
+            "building": "Basement Ground First and second floor Front part",
+            "area": "Gurgaon",
+            "block": "Sector 32",
+            "street": "SECTOR-32",
+            "city": "Gurgaon",
+            "state": "HARYANA",
+            "district": "GURUGRAM",
+            "pincode": "122018"
+         },
+         "date_of_incorporation": "2010-01-01",
+         "date_of_commencement": "2010-01-01",
+         "date_of_udyam_registration": "2010-01-01",
+         "dic": "GURGAON",
+         "msme_di": "KARNAL",
+         "social_category": "General"
+      },
+      "nic_data": {
+         "nic_2_digit": "82 - Office administrative, office support and other business support activities",
+         "nic_4_digit": "8299 - Other business support service activities n.e.c.",
+         "nic_5_digit": "82990 - Other business support service activities n.e.c."
+      },
+      "enterprise_units": [
+         {
+            "name": "Gridlines",
+            "address": {
+               "door_no": "Plot no.18",
+               "building": "Basement Ground First and second floor Front part",
+               "area": "Gurgaon",
+               "street": "SECTOR-32",
+               "city": "Gurgaon",
+               "state": "122018",
+               "district": "HARYANA",
+               "pincode": "122018"
+            }
+         }
+      ],
+      "udyam_certificate_url": "https://gridlines-io.s3.ap-south-1.amazonaws.com/udyam/certificates/abcd.pdf"
+   },
+   "timestamp": 1741349459905,
+   "path": "/msme-api/udyam/fetch-by-pan"
+}

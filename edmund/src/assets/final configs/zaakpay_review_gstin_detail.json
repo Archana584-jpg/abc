@@ -1,0 +1,583 @@
+{
+   "id": "zaakpay_review_gstin_detail",
+   "name": "Zaakpay Review GSTIN Details",
+   "header": {
+      "title": { "text": "Verify GSTIN Details", "className": "text-md font-semibold text-title" },
+      "image": {
+         "src": "https://onboarding-resources-dev.s3.ap-south-1.amazonaws.com/assets/gst.svg"
+      },
+      "icon": { "src": "", "className": "text-xl cursor-pointer mr-2", "iconName": "ArrowLeftOutlined" },
+      "action": {
+         "onClick": {
+            "api": {
+               "type": "EXECUTE_ACTION",
+               "executeActionType": "IMMEDIATE_BACK_NODE_MOVEMENT_ACTION",
+               "requestType": "EXECUTE_ACTION"
+            }
+         }
+      }
+   },
+   "layout": [
+      {
+         "type": "STEPPER",
+         "wrapper": {
+            "className": "mx-auto",
+            "style": {
+               "className": "block",
+               "col": {
+                  "xs": 24,
+                  "md": 16
+               }
+            }
+         },
+         "visibilityCondition": {
+            "conditions": [
+               {
+                  "dependOn": "data.additional_data.gstin_detail.gstin_data",
+                  "operator": "MORE_THAN",
+                  "value": "1"
+               }
+            ]
+         },
+         "content": {
+            "steps": [
+               {
+                  "label": "A",
+                  "id": "zaakpay_list_gstins",
+                  "name": "Zaakpay List GSTINS",
+                  "title": {
+                     "text": "Select State and GSTIN",
+                     "className": "text-base font-normal text-title"
+                  }
+               },
+               {
+                  "label": "B",
+                  "id": "zaakpay_review_gstin_detail",
+                  "name": "Zaakpay Review GSTIN Details",
+                  "title": {
+                     "text": "Review GST Details",
+                     "className": "text-base font-normal text-title"
+                  }
+               }
+            ]
+         }
+      },
+      {
+         "type": "TEXT",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } }
+         },
+         "dataSource": {
+            "onValidCondition": "data.generic_data"
+         },
+         "content": {
+            "label": {
+               "text": "Showing GST information fetched using PAN <b>{individual_pan_number}</b>",
+               "isHTML": true
+            }
+         }
+      },
+      {
+         "type": "FORM",
+         "formId": "zaakpay_review_gstin_detail_readonly_form",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "mt-4"
+         },
+         "props": {
+            "layout": "vertical",
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "requiredMark": true,
+            "variant": "borderless"
+         },
+         "dataSource": {
+            "onValidCondition": "data.additional_data.gstin_detail.gstin_data",
+            "dependOn": "data.additional_data.gstin_detail.gstin_verification_in_progress_id",
+            "lookupKey": "id"
+         },
+         "content": {
+            "fields": [
+               {
+                  "type": "INPUT",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 8 } },
+                     "className": "borderless"
+                  },
+                  "props": {
+                     "name": "number",
+                     "isEditable": false,
+                     "direction": "horizontal",
+                     "value": "number",
+                     "className": "mb-2 pr-2"
+                  },
+                  "content": {
+                     "label": { "text": "GSTIN", "className": "text-xs text-subtitle" },
+                     "placeHolder": { "className": "text-sm borderless" }
+                  }
+               },
+               {
+                  "type": "INPUT",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 8 } },
+                     "className": "borderless"
+                  },
+                  "props": {
+                     "name": "status",
+                     "isEditable": false,
+                     "direction": "horizontal",
+                     "value": "status",
+                     "className": "mb-2 pr-2"
+                  },
+                  "content": {
+                     "label": { "text": "GST Status", "className": "text-xs text-subtitle" },
+                     "placeHolder": { "className": "text-sm borderless" }
+                  }
+               },
+               {
+                  "type": "INPUT",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 8 } },
+                     "className": "borderless"
+                  },
+                  "props": {
+                     "name": "constitution_of_business",
+                     "isEditable": false,
+                     "direction": "horizontal",
+                     "value": "constitution_of_business",
+                     "className": "mb-2"
+                  },
+                  "content": {
+                     "label": { "text": "Constitution of Business", "className": "text-xs text-subtitle" },
+                     "placeHolder": { "className": "text-sm borderless" }
+                  }
+               },
+               {
+                  "type": "INPUT",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 8 } },
+                     "className": "borderless"
+                  },
+                  "props": {
+                     "name": "trade_name",
+                     "isEditable": false,
+                     "direction": "horizontal",
+                     "value": "trade_name",
+                     "className": "mb-2 pr-2"
+                  },
+                  "content": {
+                     "label": { "text": "Trade Name", "className": "text-xs text-subtitle" },
+                     "placeHolder": { "className": "text-sm borderless" }
+                  }
+               },
+               {
+                  "type": "INPUT",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 8 } },
+                     "className": "borderless"
+                  },
+                  "props": {
+                     "name": "legal_name",
+                     "isEditable": false,
+                     "direction": "horizontal",
+                     "value": "legal_name",
+                     "className": "mb-2 pr-2"
+                  },
+                  "content": {
+                     "label": { "text": "Legal Name", "className": "text-xs text-subtitle" },
+                     "placeHolder": { "className": "text-sm borderless" }
+                  }
+               },
+               {
+                  "type": "DATE",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 8 } },
+                     "className": "borderless"
+                  },
+                  "props": {
+                     "name": "registration_date",
+                     "isEditable": false,
+                     "direction": "horizontal",
+                     "value": "registration_date",
+                     "style": { "width": "100%" },
+                     "mode": "date",
+                     "className": "mb-2"
+                  },
+                  "content": {
+                     "label": { "text": "Registration Date (dd/mm/yyyy)", "className": "text-xs text-subtitle" },
+                     "placeHolder": { "className": "text-sm !px-0 borderless" }
+                  }
+               },
+               {
+                  "type": "INPUT",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 8 } },
+                     "className": "borderless"
+                  },
+                  "props": {
+                     "name": "principal_address.nature_of_business_activity",
+                     "isEditable": false,
+                     "direction": "horizontal",
+                     "value": "principal_address.nature_of_business_activity",
+                     "className": "mb-2 pr-2"
+                  },
+                  "content": {
+                     "label": { "text": "Nature of Business", "className": "text-xs text-subtitle" },
+                     "placeHolder": { "className": "text-sm borderless" }
+                  }
+               },
+               {
+                  "type": "TEXTAREA",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 8 } },
+                     "className": "borderless"
+                  },
+                  "props": {
+                     "name": "principal_address.address",
+                     "isEditable": false,
+                     "direction": "horizontal",
+                     "value": "principal_address.address",
+                     "className": "mb-2"
+                  },
+                  "content": {
+                     "label": { "text": "Principal Place of Business", "className": "text-xs text-subtitle" },
+                     "placeHolder": { "className": "text-sm borderless" }
+                  }
+               },
+               {
+                  "type": "COLLAPSIBLE_LIST",
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "additional_addresses",
+                           "operator": "MORE_THAN",
+                           "value": "0"
+                        }
+                     ]
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } }
+                  },
+                  "props": {
+                     "accordion": true,
+                     "defaultActiveKey": ["1"],
+                     "expandIconPosition": "left",
+                     "expandIcon": "ExpansionPanel",
+                     "bordered": true,
+                     "destroyOnHidden": true,
+                     "size": "small",
+                     "className": "!bg-transparent w-full"
+                  },
+                  "content": {
+                     "items": [
+                        {
+                           "label": {
+                              "text": "Additional Place of Business(s) <span class=\"collapsible-header-tag ml-1\">{additional_addresses.length}</span>",
+                              "isHTML": true,
+                              "className": "text-sm text-subtitle"
+                           },
+                           "content": [
+                              {
+                                 "type": "LIST",
+                                 "props": {
+                                    "itemClassName": "w-full",
+                                    "grid": { "gutter": 16, "column": 3 },
+                                    "lookupKey": "additional_addresses"
+                                 },
+                                 "wrapper": {
+                                    "className": "mt-4",
+                                    "style": {
+                                       "col": {
+                                          "xs": 24,
+                                          "md": 24
+                                       }
+                                    }
+                                 },
+                                 "dataSource": {
+                                    "onValidCondition": "data.additional_data.gstin_detail.gstin_data",
+                                    "dependOn": "data.additional_data.gstin_detail.gstin_verification_in_progress_id",
+                                    "lookupKey": "id"
+                                 },
+                                 "content": {
+                                    "body": {
+                                       "default": {
+                                          "title": {
+                                             "text": "Additional Address {index}",
+                                             "className": "text-xs text-subtitle"
+                                          },
+                                          "description": {
+                                             "text": "{address}",
+                                             "className": "text-sm"
+                                          }
+                                       }
+                                    }
+                                 }
+                              }
+                           ]
+                        }
+                     ]
+                  }
+               },
+               {
+                  "type": "DIVIDER",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } }
+                  },
+                  "props": {
+                     "className": "mt-2 mb-4"
+                  }
+               }
+            ]
+         }
+      },
+      {
+         "type": "FORM",
+         "formId": "zaakpay_review_gstin_detail_form",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } }
+         },
+         "dataSource": {
+            "onValidCondition": "data.additional_data.gstin_detail.gstin_data",
+            "dependOn": "data.additional_data.gstin_detail.gstin_verification_in_progress_id",
+            "lookupKey": "id"
+         },
+         "props": {
+            "layout": "vertical",
+            "requiredMark": true,
+            "className": "mt-6"
+         },
+         "content": {
+            "fields": [
+               {
+                  "type": "INPUT",
+                  "props": {
+                     "name": "gstin_data.0.id",
+                     "value": "id"
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } },
+                     "className": "hidden"
+                  }
+               },
+               {
+                  "type": "RADIO_GROUP",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 20 } }
+                  },
+                  "props": {
+                     "name": "gstin_data.0.is_gstin_operational_address_same",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "Please select an option to proceed."
+                        }
+                     },
+                     "size": 16,
+                     "direction": "horizontal",
+                     "value": "is_gstin_operational_address_same"
+                  },
+                  "impactedFields": {
+                     "gstin_data.0.gstin_address_proof_document_type": "",
+                     "gstin_data.0.other_gstin_address_proof_name": "",
+                     "gstin_data.0.gstin_address_proof_document_file": ""
+                  },
+                  "content": {
+                     "label": {
+                        "text": "Is your operational address the same as the GST registered Principal and/or Additional address?",
+                        "className": "font-medium text-title"
+                     },
+                     "options": [
+                        {
+                           "label": {
+                              "text": "Yes, it's same",
+                              "className": "text-subtitle"
+                           },
+                           "value": "true"
+                        },
+                        {
+                           "label": {
+                              "text": "No, it's different",
+                              "className": "text-subtitle"
+                           },
+                           "value": "false"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "type": "SELECT",
+                  "props": {
+                     "name": "gstin_data.0.gstin_address_proof_document_type",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        }
+                     },
+                     "value": "gstin_address_proof_document_type"
+                  },
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "gstin_data.0.is_gstin_operational_address_same",
+                           "operator": "EQUALS",
+                           "value": "false"
+                        }
+                     ]
+                  },
+                  "impactedFields": {
+                     "gstin_data.0.other_gstin_address_proof_name": "",
+                     "gstin_data.0.gstin_address_proof_document_file": ""
+                  },
+                  "content": {
+                     "label": { "text": "Select Address Proof", "className": "text-subtitle" },
+                     "placeHolder": { "text": "Select Any One Document", "className": "" },
+                     "options": [
+                        {
+                           "label": "Electricity Bill",
+                           "value": "Electricity Bill"
+                        },
+                        {
+                           "label": "Telephone Bill",
+                           "value": "Telephone Bill"
+                        },
+                        {
+                           "label": "Rent Agreement",
+                           "value": "Rent Agreement"
+                        },
+                        {
+                           "label": "Other",
+                           "value": "Other"
+                        }
+                     ]
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 10 } }
+                  }
+               },
+               {
+                  "type": "INPUT",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 10 } }
+                  },
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "gstin_data.0.gstin_address_proof_document_type",
+                           "operator": "EQUALS",
+                           "value": "Other"
+                        },
+                        {
+                           "dependOn": "gstin_data.0.is_gstin_operational_address_same",
+                           "operator": "EQUALS",
+                           "value": "false"
+                        }
+                     ]
+                  },
+                  "props": {
+                     "name": "gstin_data.0.other_gstin_address_proof_name",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        }
+                     },
+                     "direction": "horizontal",
+                     "value": "other_gstin_address_proof_name"
+                  },
+                  "content": {
+                     "label": { "text": "Specify Other Document", "className": "text-subtitle" },
+                     "placeHolder": { "text": "Type document name", "className": "" }
+                  }
+               },
+               {
+                  "type": "UPLOAD",
+                  "props": {
+                     "name": "gstin_data.0.gstin_address_proof_document_file",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "Please select an option to proceed."
+                        },
+                        "maxAllowedSize": {
+                           "size": 5,
+                           "message": "Please check the file size"
+                        },
+                        "allowedTypes": {
+                           "types": ["image/jpeg", "image/jpg", "image/png", "application/pdf"],
+                           "message": "Please check the file type"
+                        }
+                     },
+                     "mode": "DRAG_AND_DROP",
+                     "value": "gstin_address_proof_document_file_urls",
+                     "fileKey": "gstin_detail.gstin_data.gstin_address_proof_document_file"
+                  },
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "gstin_data.0.is_gstin_operational_address_same",
+                           "operator": "EQUALS",
+                           "value": "false"
+                        }
+                     ]
+                  },
+                  "content": {
+                     "label": { "text": "Upload Address Proof", "className": "text-subtitle" },
+                     "title": {
+                        "text": "Drag and drop or click 'Choose File' to upload",
+                        "className": "text-subtitle text-[12px]"
+                     },
+                     "subtitle": {
+                        "text": "Supported format: jpeg, jpg, png, pdf • Max size: 5MB",
+                        "className": "text-subtitle text-[10px]"
+                     }
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 16 } }
+                  },
+                  "action": {
+                     "onUpload": {
+                        "payloadKey": "additional_data.gstin_detail",
+                        "api": {
+                           "type": "UPLOAD_DOCUMENT",
+                           "executeActionType": "DOCUMENT_UPLOAD_ACTION",
+                           "requestType": "DOCUMENT_UPLOAD",
+                           "fileKey": "gstin_detail.gstin_data.gstin_address_proof_document_file",
+                           "formId": "zaakpay_review_gstin_detail_form"
+                        }
+                     }
+                  }
+               },
+               {
+                  "type": "BUTTON",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } },
+                     "className": "flex justify-center"
+                  },
+                  "content": {
+                     "label": { "text": "Save and Proceed", "className": "text-white" }
+                  },
+                  "props": {
+                     "className": "px-6 py-0",
+                     "type": "primary"
+                  },
+                  "action": {
+                     "onClick": {
+                        "payloadKey": "additional_data.gstin_detail",
+                        "api": {
+                           "type": "EXECUTE_ACTION",
+                           "executeActionType": "SAVE_DATA_ACTION",
+                           "requestType": "EXECUTE_ACTION",
+                           "formId": "zaakpay_review_gstin_detail_form"
+                        }
+                     }
+                  }
+               }
+            ]
+         }
+      }
+   ]
+}

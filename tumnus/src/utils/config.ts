@@ -1,0 +1,17 @@
+export const baseURL = "https://api-dev.gridlines.io";
+export const portalUrl = "https://app-dev.gridlines.io";
+export const s3BucketUrl = "https://gridlines-resources-dev.s3.ap-south-1.amazonaws.com";
+export const gridlinesMetaContentUrl = `${s3BucketUrl}/metaContent.json`;
+export const apiDocumentationUrl = "https://gridlines.stoplight.io/";
+export const statusPageUrl = "https://gridlines.freshstatus.io/";
+export const knowledgeBaseUrl = "https://ongrid.freshdesk.com/support/home";
+export const linkedInUrl = "https://www.linkedin.com/company/ongrid.in/mycompany/";
+export const fbUrl = "https://www.facebook.com/OnGridIndia/";
+export const twitterUrl = "https://twitter.com/on_grid";
+export const contactSupportHubSpotUrl = "https://share.hsforms.com/10GyyP3gsQ36YXrRjic00kA5k84w";
+export const portal = "portal";
+export const homeUrl = "https://dev.gridlines.io";
+export const blogUrl = `${homeUrl}/blogs`;
+export const gtmId = "GTM-MZ4S3SC";
+export const gridlinesProductContentUrl = `${s3BucketUrl}/productsContent.json`;
+export const finttechApisStartupUrl = `${s3BucketUrl}/startupAcceleratorPage/fintechAPIsStartups.json`;

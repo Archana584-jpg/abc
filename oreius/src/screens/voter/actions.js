@@ -1,0 +1,23 @@
+export const GET_VOTER_DATA = "GET_VOTER_DATA";
+export const GET_VOTER_DATA_LOADING = "GET_VOTER_DATA_LOADING";
+export const GET_VOTER_DATA_SUCCESS = "GET_VOTER_DATA_SUCCESS";
+export const GET_VOTER_DATA_ERROR = "GET_VOTER_DATA_ERROR";
+export const CLEAR_VOTER_DATA = "CLEAR_VOTER_DATA";
+export const GET_VOTER_TRANSACTIONAL_INFO = "GET_VOTER_TRANSACTIONAL_INFO";
+export const GET_VOTER_TRANSACTIONAL_INFO_LOADING =
+  "GET_VOTER_TRANSACTIONAL_INFO_LOADING";
+export const GET_VOTER_TRANSACTIONAL_INFO_SUCCESS =
+  "GET_VOTER_TRANSACTIONAL_INFO_SUCCESS";
+export const GET_VOTER_TRANSACTIONAL_INFO_ERROR =
+  "GET_VOTER_TRANSACTIONAL_INFO_ERROR";
+export const CLEAR_VOTER_TRANSACTIONAL_INFO = "CLEAR_VOTER_TRANSACTIONAL_INFO";
+
+export const getVoterData = (body) => ({ type: GET_VOTER_DATA, body });
+export const getVoterTransactionalInfo = () => ({
+  type: GET_VOTER_TRANSACTIONAL_INFO,
+});
+export const clearVoterData = () => ({ type: CLEAR_VOTER_DATA, data: {} });
+export const clearVoterTransactionalInfo = () => ({
+  type: CLEAR_VOTER_TRANSACTIONAL_INFO,
+  data: {},
+});

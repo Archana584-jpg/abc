@@ -1,0 +1,20 @@
+{
+   "request_id": "d7d6047c-f974-4690-81ed-50670ea038e8",
+   "transaction_id": "83b9b632-e8cd-429e-9de4-eac692170a41",
+   "status": 200,
+   "data": {
+      "code": "1014",
+      "message": "Data extracted.",
+      "ocr_data": {
+         "id_number": "390335416073",
+         "name": "Axxxk Kxxxr D",
+         "guardian_name": "S/O Dxxxxa",
+         "gender": "MALE",
+         "date_of_birth": "1994-05-20",
+         "address": "S/O Dxxxxa, Nxxxxxt, Tumkur, Karnataka-572116",
+         "contact_number": "8XXXXXXXX2"
+      }
+   },
+   "timestamp": 1727777257248,
+   "path": "/aadhaar-api/ocr/v2"
+}

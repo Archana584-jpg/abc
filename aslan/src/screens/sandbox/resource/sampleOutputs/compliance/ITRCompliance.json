@@ -1,0 +1,18 @@
+{
+   "request_id": "896baef3-0ec7-4b02-a0cc-e20cf2f2d0b7",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "ITR 206 compliance data extracted.",
+      "itr_206_compliance_data": {
+         "pan": "XXXXXXXXXX",
+         "name": "XXXX",
+         "allotment_date": "2014-09-10",
+         "financial_year": "2022-23",
+         "aadhaar_linked_status": "LK",
+         "specified_person": false
+      }
+   },
+   "timestamp": 1675246028493,
+   "path": "/itr-206"
+}

@@ -1,0 +1,18 @@
+{
+   "request_id": "60b20641-5d19-443a-8296-ee17dc98a349",
+   "transaction_id": "7ff1b2ed-5a6f-4b05-9907-e2d2f957b320",
+   "status": 200,
+   "data": {
+      "code": "1014",
+      "message": "Fetch CIN details.",
+      "cin_list": ["U8XXXXX12XXXXX19"],
+      "cin_details": [
+         {
+            "cin": "U8XXXXX12XXXXX19",
+            "entity_name": "HANDY ONLINE"
+         }
+      ]
+   },
+   "timestamp": 1746176545212,
+   "path": "/mca-api/cin-by-pan"
+}

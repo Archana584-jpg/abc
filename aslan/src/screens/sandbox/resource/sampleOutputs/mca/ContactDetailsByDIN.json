@@ -1,0 +1,16 @@
+{
+   "request_id": "e2519a4e-b709-459f-b148-a6656c32564f",
+   "transaction_id": "1d46008b-6dff-4140-97d0-947219070183",
+   "status": 200,
+   "data": {
+      "code": "1018",
+      "message": "Fetched contact details by DIN.",
+      "contact_details": {
+         "din": "0XXXXXX6",
+         "mobile": "9XXXXXXXX7",
+         "email": "sxxxxt@ongrid.in"
+      }
+   },
+   "timestamp": 1752830303634,
+   "path": "/mca-api/fetch-contact-details-by-din"
+}

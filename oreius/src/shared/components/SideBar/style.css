@@ -1,0 +1,21 @@
+.headingBlock {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #e3e3e3;
+  background: #2fbcbc;
+  color: white;
+  height: 8vh;
+}
+
+.heading {
+  font-weight: 500;
+  font-size: 23;
+  padding: 3%;
+  background: transparent;
+}
+
+.menuStyle {
+  min-height: 92vh;
+  background: #2fbcbc;
+  color: white;
+}

@@ -1,0 +1,10 @@
+{
+   "request_id": "5285ea7f-82d4-4b1d-808c-1a0111d10476",
+   "status": 200,
+   "data": {
+      "code": "1001",
+      "message": "Valid MRZ"
+   },
+   "timestamp": 1624440333766,
+   "path": "/verify-mrz"
+}

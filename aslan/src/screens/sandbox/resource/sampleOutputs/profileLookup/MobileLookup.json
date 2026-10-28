@@ -1,0 +1,63 @@
+{
+   "request_id": "635dd9fd-53a1-46de-bd81-233d1d4da901",
+   "transaction_id": "16bd0d58-daf3-46b5-9ffe-9d64e003dff5",
+   "status": 200,
+   "data": {
+      "code": "1007",
+      "message": "Fetched mobile lookup data.",
+      "mobile_lookup_data": {
+         "is_valid": true,
+         "subscriber_status": "CONNECTED",
+         "network_connection_status": {
+            "status_code": "DELIVERED",
+            "error_code_id": ""
+         },
+         "network_connection_type": "prepaid",
+         "msisdn_data": {
+            "msisdn_country_code": "IN",
+            "msisdn": "+917XXXXX501",
+            "type": "MOBILE",
+            "mnc": "XXX",
+            "imsi": "XXXXX",
+            "mcc": "XXX",
+            "mcc_mnc": "XXXXX"
+         },
+         "current_network_service_provider": {
+            "network_prefix": "XXX",
+            "network_name": "Reliance Jio",
+            "network_region": "Karxxxxka",
+            "mcc": "XXX",
+            "mnc": "XXX",
+            "country_prefix": "+91",
+            "country_code": "IN",
+            "country_name": "India"
+         },
+         "original_network_service_provider": {
+            "network_prefix": "XXXX",
+            "network_name": "Airtel",
+            "network_region": "Karxxxxka",
+            "mcc": "XXX",
+            "mnc": "XXX",
+            "country_prefix": "+91",
+            "country_code": "IN",
+            "country_name": "India"
+         },
+         "is_roaming": true,
+         "roaming_network_service_provider": {
+            "network_prefix": "XXX",
+            "network_name": "Reliance Jio",
+            "network_region": "Karxxxxka",
+            "mcc": "XXX",
+            "mnc": "XXX",
+            "country_prefix": "+91",
+            "country_code": "IN",
+            "country_name": "India"
+         },
+         "is_ported": true,
+         "last_ported_date": "2019-12-20",
+         "porting_history": []
+      }
+   },
+   "timestamp": 1731325229084,
+   "path": "/profile-api/telco/mobile-lookup"
+}

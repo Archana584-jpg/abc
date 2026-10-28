@@ -1,0 +1,12 @@
+{
+   "request_id": "3ca1eb82-e75b-4ee1-ad0f-f242a40f6aa8",
+   "transaction_id": "5e76247a-30fb-4f8c-b03e-296149fcb3eb",
+   "status": 200,
+   "data": {
+      "code": "1021",
+      "message": "GST Certificate Fetched Successfully.",
+      "gst_certificate_link": "https://galvatron-dev-gridlines-io.s3.ap-south-1.amazonaws.com/udyam/certificates/%2Fgstin/certificates/cb8a1d12-2c40-4bc8-965e-9cae5d3936f1/2025/07/09/11912868_5e76247a-30fb-4f8c-b03e-296149fcb3eb.pdf?X-Amz-Security-Token=FwoGZXIvYXdzEKb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaDK%2BVMvkD9L%2FwqVvy%2FyKGAYtjCVAJpHFYWHUM%2F6fwn4tx1tvUAA%2BpTlFORkgkXmOpkZPGeZPyVyoF%2ByQsLBp8r9er8WdmojYYoPHrY834y6DizwFPzB1UaUCHgG60lcVo3eaDcS5%2FGaNRb3xHF8qZdWW8XcJ9fQkNy464K%2BVUmXBkx4b4bCX4YF65nZ6%2B6ZATmKRFJjmKKLPct8MGMijSL8RNTsCgDwaUu9IIULnUchp6OVGUf0qwRFfLFmmu765JF9yYM1RJ&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250709T055625Z&X-Amz-SignedHeaders=host&X-Amz-Expires=604800&X-Amz-Credential=ASIA4IDJ3JRGQBXXSEES%2F20250709%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Signature=9ccaa690530d93c36221e4048576aa309929c11ae4a4c04d9f5c748bed2152f9"
+   },
+   "timestamp": 1752040585290,
+   "path": "/gstin-api/fetch-certificate"
+}

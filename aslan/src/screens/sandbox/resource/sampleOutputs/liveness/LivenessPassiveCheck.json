@@ -1,0 +1,11 @@
+{
+   "request_id": "caed107a-4fe6-4078-82f6-478ba39f4bf3",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "Live.",
+      "confidence": 0.9996144771575928
+   },
+   "timestamp": 1692771189080,
+   "path": "/passive-check"
+}

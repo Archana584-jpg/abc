@@ -1,0 +1,51 @@
+{
+   "request_id": "7d861beb-ce69-4f23-b2bf-5ed812d7b2bc",
+   "transaction_id": "6a996385-5f0b-4e5f-bca4-53edcb05beb5",
+   "status": 200,
+   "data": {
+      "code": "1015",
+      "message": "Details retrieved successfully.",
+      "personal_data": {
+         "personal_information": {
+            "full_name": "KXXXN",
+            "gender": "XXXX",
+            "age": "38",
+            "date_of_birth": "XXXX-XX-XX"
+         },
+         "alternate_phone": [
+            {
+               "serial_number": "1",
+               "value": "9XXXXXXXX6"
+            }
+         ],
+         "email": [
+            {
+               "serial_number": "1",
+               "value": "kxxxxxxxx@gmail.com"
+            }
+         ],
+         "address": [
+            {
+               "detailed_address": "XXXX XXXX XXXX",
+               "state": "XXXXXXX",
+               "pincode": "XXXXXX"
+            },
+            {
+               "detailed_address": "XXXXX",
+               "state": "XXXXX",
+               "pincode": "XXXXXX"
+            }
+         ],
+         "document_data": {
+            "pan": [
+               {
+                  "serial_number": "1",
+                  "value": "XXXXXXXXXX"
+               }
+            ]
+         }
+      }
+   },
+   "timestamp": 1757667506928,
+   "path": "/profile-api/mobile/prefill"
+}

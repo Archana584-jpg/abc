@@ -1,0 +1,18 @@
+{
+   "request_id": "fd659e38-5634-4360-a806-0abaac21342f",
+   "status": 200,
+   "data": {
+      "code": "1014",
+      "message": "Latest employment history fetched.",
+      "employment_data": {
+         "name": "ASHOK KUMAR",
+         "establishment_name": "Handy Online Solutions Private Limited",
+         "member_id": "GNGGN1XXXXX20000010150",
+         "date_of_joining": "2019-01-25",
+         "date_of_exit": "2021-01-29",
+         "exit_reason": "XXXXX XXXX XXX"
+      }
+   },
+   "timestamp": 1652759513724,
+   "path": "/epfo-api/employment-history/fetch-latest"
+}

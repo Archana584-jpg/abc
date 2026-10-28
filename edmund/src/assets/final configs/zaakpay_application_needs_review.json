@@ -1,0 +1,97 @@
+{
+   "id": "zaakpay_application_needs_review",
+   "name": "Application Needs Review",
+   "layout": [
+      {
+         "type": "TEXT",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "flex justify-center mt-4"
+         },
+         "content": {
+            "label": {
+               "text": "Thank you",
+               "className": "text-2xl font-semibold text-title text-center"
+            }
+         }
+      },
+      {
+         "type": "TEXT",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "flex justify-center mt-4"
+         },
+         "content": {
+            "label": {
+               "text": "Successfully submitted for further proccessing.",
+               "className": "text-base font-medium text-subtitle text-center"
+            }
+         }
+      },
+      {
+         "type": "IMAGE",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "flex justify-center items-center mt-8"
+         },
+         "props": {
+            "src": "https://onboarding-resources-dev.s3.ap-south-1.amazonaws.com/assets/application-inreview.svg"
+         }
+      },
+      {
+         "type": "TEXT",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "flex mt-8"
+         },
+         "content": {
+            "label": {
+               "text": "Next Steps",
+               "className": "text-sm font-medium text-subtitle"
+            }
+         }
+      },
+      {
+         "type": "TEXT",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "flex mt-8"
+         },
+         "content": {
+            "label": {
+               "text": "1. You will receive a mail from noreply@gridlines.com with subject line <b>“Sign the document provided”</b>",
+               "isHTML": true,
+               "className": "text-sm font-normal text-title"
+            }
+         }
+      },
+      {
+         "type": "TEXT",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "flex mt-6"
+         },
+         "content": {
+            "label": {
+               "text": "2. Find the email on your registered email ID and sign the contract to complete the application. Until then, <b>it will not be taken up for further processing.</b>",
+               "isHTML": true,
+               "className": "text-sm font-normal text-title"
+            }
+         }
+      },
+      {
+         "type": "TEXT",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "flex mt-6"
+         },
+         "content": {
+            "label": {
+               "text": "3. If you have added multiple authorized signatories during onboarding, please make sure that, all signatories sign the contract separately  from their registered email ID.",
+               "isHTML": true,
+               "className": "text-sm font-normal text-title"
+            }
+         }
+      }
+   ]
+}

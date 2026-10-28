@@ -1,0 +1,46 @@
+{
+   "request_id": "ecc1985f-feec-44e3-9be7-6966922819be",
+   "transaction_id": "242c449b-ed90-42c0-aa11-d4b9e329395f",
+   "status": 200,
+   "data": {
+      "code": "1031",
+      "message": "Establishment Found.",
+      "establishment_data": {
+         "establishment_id": "GNGGN1758372000",
+         "establishment_name": "Handy Online Solutions Private Limited",
+         "date_of_coverage": "2018-04-02",
+         "last_updated": "2018-08-08",
+         "business_activity": "OTHERS",
+         "pan_status": "VERIFIED",
+         "ownership_type": "Private Limited Company",
+         "status": "LIVE ESTABLISHMENT",
+         "date_of_setup": "2015-05-01",
+         "address_data": {
+            "line_1": "C-806 Nirvana Courtyard",
+            "line_2": "Sector - 50",
+            "city": "Nirvana Country",
+            "district": "GURGAON",
+            "state": "HARYANA"
+         },
+         "pf_payment_details": [
+            {
+               "wage_month": "Jan-24",
+               "number_of_employees": "XXXX",
+               "pf_deposit_amount": "XXXX"
+            },
+            {
+               "wage_month": "Dec-23",
+               "number_of_employees": "XXXX",
+               "pf_deposit_amount": "XXXX"
+            },
+            {
+               "wage_month": "Nov-23",
+               "number_of_employees": "XXXX",
+               "pf_deposit_amount": "XXXX"
+            }
+         ]
+      }
+   },
+   "timestamp": 1709882556131,
+   "path": "/epfo-api/employer-verify"
+}

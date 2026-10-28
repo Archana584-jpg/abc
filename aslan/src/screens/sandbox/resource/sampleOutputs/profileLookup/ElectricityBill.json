@@ -1,0 +1,22 @@
+{
+   "request_id": "0ba04406-cb24-4d7f-88d2-42178381e903",
+   "transaction_id": "9492c46b-5b73-4740-a86c-f07f58bfa9fa",
+   "status": 200,
+   "data": {
+      "code": "1006",
+      "message": "Fetched electricity bill data.",
+      "electricity_bill_data": {
+         "name": "AXXXXM",
+         "amount_payable": "1500.00",
+         "bill_amount": "1500",
+         "bill_due_date": "2024-10-01",
+         "consumer_number": "25XXXXXX69",
+         "electricity_provider": "DAKSHIN HARYANA BIJLI VITRAN NIGAM",
+         "split_address": {
+            "country": ["IN", "IND", "INDIA"]
+         }
+      }
+   },
+   "timestamp": 1727326187389,
+   "path": "/profile-api/utility/fetch-electricity-bill"
+}

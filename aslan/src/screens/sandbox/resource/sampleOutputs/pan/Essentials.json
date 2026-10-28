@@ -1,0 +1,16 @@
+{
+   "request_id": "550ff89b-caf7-484d-9923-eccb4afe035f",
+   "transaction_id": "fd9dfd4a-81b4-463c-930d-3f69db864ca2",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "Valid PAN.",
+      "pan_data": {
+         "document_type": "PAN",
+         "name": "SXX CXXXXXL LXXXD",
+         "date_of_birth": "1986-07-02"
+      }
+   },
+   "timestamp": 1729764260168,
+   "path": "/pan-api/fetch-essentials"
+}

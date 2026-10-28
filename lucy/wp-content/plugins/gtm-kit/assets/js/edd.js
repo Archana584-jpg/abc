@@ -1,0 +1,36 @@
+jQuery(document).ready(function (r) {
+   const e = window.gtmkit_settings.edd,
+      d = window.gtmkit_settings.datalayer_name;
+   function u(t) {
+      window[d].push({ ecommerce: null }),
+         window[d].push({
+            event: "add_to_cart",
+            ecommerce: { currency: e.currency, value: t.price * t.quantity, items: [t] },
+         });
+   }
+   r(document.body).on("click.eddAddToCart", ".edd-add-to-cart", function (t) {
+      t.preventDefault();
+      t = r(this);
+      let e = t.parents("form").last();
+      var d = t.data("download-id"),
+         a = t.data("variable-price");
+      const i = t.data("price-mode"),
+         n = [];
+      let c = JSON.parse(e.find(".gtmkit_product_data").val()),
+         o = parseInt(e.find(".edd-item-quantity").val());
+      if ("yes" === a) {
+         if (!e.find(".edd_price_option_" + d + ":checked", e).length) return !1;
+         e.find(".edd_price_option_" + d + ":checked", e).each(function (t) {
+            n[t] = r(this).val();
+            t = r(this).data("price");
+            t && 0 < t && (c.price = parseFloat(t)),
+               "multi" === i &&
+                  (o = parseInt(
+                     e.find('.edd-item-quantity[name="edd_download_quantity_' + r(this).val() + '"]').val()
+                  )),
+               (c.quantity = o),
+               u(c);
+         });
+      } else (c.quantity = o), u(c);
+   });
+});

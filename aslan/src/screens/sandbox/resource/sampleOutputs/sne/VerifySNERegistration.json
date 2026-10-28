@@ -1,0 +1,25 @@
+{
+   "request_id": "f31c5911-7eec-40c3-a1df-a058863be648",
+   "transaction_id": "041e704f-d152-4376-98a3-809cd4feaa7a",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "Details Fetched.",
+      "shop_establishment_data": {
+         "name_of_business": "XXXXX",
+         "registration_date": "20XX-06-11",
+         "registration_validity": "20XX-06-10",
+         "address": {
+            "line_1": "ABCD",
+            "city": "HARIDHARPUR (P)",
+            "district": "HARIDHARPUR (P)",
+            "state": "WEST BENGAL",
+            "pincode": "712201",
+            "country": "INDIA"
+         },
+         "date_of_commencement": "20XX-06-XX"
+      }
+   },
+   "timestamp": 1701433576032,
+   "path": "/verify-registration"
+}

@@ -1,0 +1,27 @@
+{
+   "request_id": "abdf6e92-af1f-45d9-9c30-44d2b60b6c3f",
+   "status": 200,
+   "data": {
+      "code": "1014",
+      "message": "Data extracted.",
+      "ocr_data": {
+         "document": {
+            "document_type": "AADHAAR",
+            "document_id": "337XXXXXXXXX",
+            "virtual_id": "9195XXXXXXXXXXXX",
+            "name": "KARAN XXXXXXX",
+            "date_of_birth": "1994-XX-XX",
+            "gender": "MALE"
+         },
+         "metadata": {
+            "components": [
+               {
+                  "tags": ["AADHAAR_FRONT"]
+               }
+            ]
+         }
+      }
+   },
+   "timestamp": 1622186700166,
+   "path": "/ocr"
+}

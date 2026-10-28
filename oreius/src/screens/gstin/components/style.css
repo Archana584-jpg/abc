@@ -1,0 +1,28 @@
+.resultGstin {
+  margin-top: 2%;
+  overflow: auto;
+  max-height: 93vh;
+}
+
+.customCardContentGstin {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 10;
+}
+
+.customCardDescriptionGstin {
+  border: 1px solid #ccc;
+  padding: 4px;
+  margin: 10;
+}
+
+.customCardTitleGstin {
+  font-weight: bold;
+  background: #f0f0f0;
+  padding: 10px;
+}
+
+.customCardValueGstin {
+  border: 1px solid #f0f0f0;
+  padding: 10px;
+}

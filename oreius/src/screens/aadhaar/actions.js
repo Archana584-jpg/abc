@@ -1,0 +1,65 @@
+export const GET_GENERATE_OTP_AADHAAR = 'GET_GENERATE_OTP_AADHAAR'
+export const GET_GENERATE_OTP_AADHAAR_LOADING = 'GET_GENERATE_OTP_AADHAAR_LOADING'
+export const GET_GENERATE_OTP_AADHAAR_SUCCESS = 'GET_GENERATE_OTP_AADHAAR_SUCCESS'
+export const GET_GENERATE_OTP_AADHAAR_ERROR = 'GET_GENERATE_OTP_AADHAAR_ERROR'
+
+export const SUBMIT_OTP_AADHAAR = 'SUBMIT_OTP_AADHAAR'
+export const SUBMIT_OTP_AADHAAR_LOADING = 'SUBMIT_OTP_AADHAAR_LOADING'
+export const SUBMIT_OTP_AADHAAR_SUCCESS = 'SUBMIT_OTP_AADHAAR_SUCCESS'
+export const SUBMIT_OTP_AADHAAR_ERROR = 'SUBMIT_OTP_AADHAAR_ERROR'
+
+export const GET_INIT_AADHAAR = 'GET_INIT_AADHAAR'
+export const GET_INIT_AADHAAR_LOADING = 'GET_INIT_AADHAAR_LOADING'
+export const GET_INIT_AADHAAR_SUCCESS = 'GET_INIT_AADHAAR_SUCCESS'
+export const GET_INIT_AADHAAR_ERROR = 'GET_INIT_AADHAAR_ERROR'
+
+export const GET_EXTRACT_DATA_AADHAAR = "GET_EXTRACT_DATA_AADHAAR";
+export const GET_EXTRACT_DATA_AADHAAR_LOADING =
+  "GET_EXTRACT_DATA_AADHAAR_LOADING";
+export const GET_EXTRACT_DATA_AADHAAR_SUCCESS =
+  "GET_EXTRACT_DATA_AADHAAR_SUCCESS";
+export const GET_EXTRACT_DATA_AADHAAR_ERROR = "GET_EXTRACT_DATA_AADHAAR_ERROR";
+
+export const GET_OCR_AADHAAR = "GET_OCR_AADHAAR";
+export const GET_OCR_AADHAAR_LOADING = "GET_OCR_AADHAAR_LOADING";
+export const GET_OCR_AADHAAR_SUCCESS = "GET_OCR_AADHAAR_SUCCESS";
+export const GET_OCR_AADHAAR_ERROR = "GET_OCR_AADHAAR_ERROR";
+export const CLEAR_OCR_AADHAAR_DATA = "CLEAR_OCR_AADHAAR_DATA";
+
+export const GET_VERIFIED_AADHAAR_DATA = "GET_VERIFIED_AADHAAR_DATA";
+export const GET_VERIFIED_AADHAAR_DATA_LOADING =
+  "GET_VERIFIED_AADHAAR_DATA_LOADING";
+export const GET_VERIFIED_AADHAAR_DATA_SUCCESS =
+  "GET_VERIFIED_AADHAAR_DATA_SUCCESS";
+export const GET_VERIFIED_AADHAAR_DATA_ERROR =
+  "GET_VERIFIED_AADHAAR_DATA_ERROR";
+export const CLEAR_VERIFIED_AADHAAR_DATA = "CLEAR_VERIFIED_AADHAAR_DATA";
+
+export const generateOTP = (body) => ({ type: GET_GENERATE_OTP_AADHAAR, body })
+export const clearGenerateOTP = () => ({ type: GET_GENERATE_OTP_AADHAAR_SUCCESS, data: {} })
+
+export const submitOTP = (body) => ({ type: SUBMIT_OTP_AADHAAR, body })
+export const clearResult = () => ({ type: SUBMIT_OTP_AADHAAR_SUCCESS, data: {} })
+
+export const initAadhaar = (body) => ({ type: GET_INIT_AADHAAR, body })
+export const clearInitAadhaar = () => ({ type: GET_INIT_AADHAAR_SUCCESS, data: {} })
+
+export const getExtractDataAadhaar = (body) => ({
+  type: GET_EXTRACT_DATA_AADHAAR,
+  body,
+});
+
+export const getOCRAadhaar = (body) => ({ type: GET_OCR_AADHAAR, body });
+export const clearAadhaarOcrData = () => ({
+  type: CLEAR_OCR_AADHAAR_DATA,
+  data: {},
+});
+
+export const getAadhaarVerifiedData = (body) => ({
+  type: GET_VERIFIED_AADHAAR_DATA,
+  body,
+});
+export const clearAadhaarVerifiedData = () => ({
+  type: CLEAR_VERIFIED_AADHAAR_DATA,
+  data: {},
+});

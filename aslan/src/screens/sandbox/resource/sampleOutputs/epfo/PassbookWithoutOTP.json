@@ -1,0 +1,41 @@
+{
+   "request_id": "2ac86e38-bd20-4d53-b488-9a18a3afcfeb",
+   "transaction_id": "b57ded60-db20-4e9a-a962-2c028ba91478",
+   "status": 200,
+   "data": {
+      "code": "1022",
+      "message": "Passbook fetched",
+      "passbook_data": {
+         "name": "John Smith",
+         "date_of_birth": "1999-09-09",
+         "mobile": "9988776655",
+         "gender": "MALE",
+         "employers": [
+            {
+               "establishment_name": "Google",
+               "member_id": "ABCDE12345670000011111",
+               "total_employer_share": 19456,
+               "total_employee_share": 39947,
+               "total_pension_share": 31250,
+               "date_of_joining": "2022-07-03",
+               "service_period": "18 Months",
+               "passbook_entries": [
+                  {
+                     "status": "Credited",
+                     "description": "Cont. For Due-Month 122024",
+                     "employee_share": "5,800",
+                     "employer_share": "3,550",
+                     "pension_share": "5,250",
+                     "month": "11",
+                     "year": "2022",
+                     "date_of_approval": "2022-12-13"
+                  }
+               ]
+            }
+         ],
+         "guardian_name": "Kelly Smith"
+      }
+   },
+   "timestamp": 1737028213879,
+   "path": "/epfo-api/passbook/fetch-without-otp"
+}

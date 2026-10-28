@@ -1,0 +1,28 @@
+{
+   "request_id": "837d41a4-7e18-45de-bbca-4a62220fddfe",
+   "transaction_id": "1de31327-d32d-477f-a579-ab3016710e8f",
+   "status": 200,
+   "data": {
+      "code": "1030",
+      "message": "Data extracted.",
+      "data": {
+         "name": "Karan XXXX",
+         "employee_id": "XXXX",
+         "pan_number": "XXXXX",
+         "uan_number": "XXXX",
+         "bank_account_number": "XXXXXX",
+         "grade": "XXXX",
+         "designation": "XXXXXX",
+         "company_business_name": "XXXXXX",
+         "office_state": "XXXX",
+         "joining_date": "2024-06-10",
+         "payslip_date": "XXXX-XX",
+         "pf_number": "XXXXXXXX",
+         "pf_amount": 1800,
+         "office_address": "Plot No.na 122003",
+         "net_pay": 271
+      }
+   },
+   "timestamp": 1757330984046,
+   "path": "/bank-api/salary-slip/ocr"
+}

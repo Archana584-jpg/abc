@@ -1,0 +1,11 @@
+{
+   "request_id": "472bbe2c-4379-424a-be29-4223a8fd5e90",
+   "status": 200,
+   "data": {
+      "code": "1007",
+      "message": "Gstin report triggered successfully.",
+      "transaction_id": "dd6e4148-7cda-47c6-b75e-2439f42bba01"
+   },
+   "timestamp": 1687380388178,
+   "path": "/trigger-report"
+}

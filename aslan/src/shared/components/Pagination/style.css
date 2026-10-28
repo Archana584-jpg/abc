@@ -1,0 +1,9 @@
+.paginationIcon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #887173;
+  }
+  
+  .paginationIcon:hover{
+    color: #7cbfbf;
+  }

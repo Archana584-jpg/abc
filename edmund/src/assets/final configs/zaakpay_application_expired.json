@@ -1,0 +1,43 @@
+{
+   "id": "zaakpay_application_expired",
+   "name": "Application Expired",
+   "layout": [
+      {
+         "type": "TEXT",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "flex justify-center mt-4"
+         },
+         "content": {
+            "label": {
+               "text": "Your application has expired",
+               "className": "text-2xl font-semibold text-title text-center"
+            }
+         }
+      },
+      {
+         "type": "TEXT",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "flex justify-center mt-4"
+         },
+         "content": {
+            "label": {
+               "text": "No activity was recorded within the required time. Please <br/> contact zaakpay support for any queries.",
+               "isHTML": true,
+               "className": "text-base font-medium text-subtitle text-center"
+            }
+         }
+      },
+      {
+         "type": "IMAGE",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "flex justify-center items-center mt-8"
+         },
+         "props": {
+            "src": "https://onboarding-resources-dev.s3.ap-south-1.amazonaws.com/assets/application-expired.svg"
+         }
+      }
+   ]
+}

@@ -1,0 +1,83 @@
+.supportMenu:hover {
+   background-color: #edfbfb;
+   border-color: #edfbfb;
+}
+
+.loginButton:hover {
+   color: #33cccc !important;
+   background: rgba(0, 0, 0, 0.018) !important;
+}
+
+.selectedSupportItemMenu {
+   background-color: #edfbfb;
+   border-color: #edfbfb;
+}
+
+.navToggle {
+   font-size: 2rem;
+   cursor: pointer;
+   padding-right: 1.563rem;
+   padding-top: 1.063rem;
+}
+
+.title.title {
+   font-size: 0.875rem;
+   color: #2f2f2f;
+   margin-bottom: 1.125rem;
+}
+
+.productNavTitle.productNavTitle {
+   font-family: Poppins;
+   font-size: 0.75rem;
+   color: #2f2f2f;
+   font-weight: 400;
+   word-break: break-word;
+   max-width: 7.8rem;
+   margin: 0;
+}
+
+.selectedHeaderNavItem {
+   background-color: #ebf7f7;
+   border-color: #ebf7f7;
+}
+
+.supportMenuItems {
+   font-size: 0.75rem;
+   cursor: pointer;
+   display: block;
+   margin-top: 0.938rem;
+}
+
+.headerContainer {
+   width: 75%;
+   margin-left: 0.8rem;
+}
+
+.activeMenu.activeMenu {
+   color: #7cbfbf;
+   font-size: 1rem;
+   font-weight: 500;
+}
+
+.menuText.menuText {
+   color: #2f2f30;
+   font-size: 1rem;
+   font-weight: 500;
+}
+
+.supportMenuTitle.supportMenuTitle {
+   font-size: 0.875rem;
+   line-height: 0;
+   font-weight: 400;
+}
+
+.supportMenuSubTitle.supportMenuSubTitle {
+   font-size: 0.688rem;
+   color: #717988;
+}
+@media (max-width: 1157px) {
+   .headerContainer {
+      width: 50%;
+      margin-left: 0.8rem;
+   }
+}

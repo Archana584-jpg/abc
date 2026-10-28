@@ -1,0 +1,17 @@
+{
+   "request_id": "b062e054-9eb8-4f6f-8c70-aa0679622177",
+   "transaction_id": "a0df60e4-3e69-4b0a-b779-15e2b525f00b",
+   "status": 200,
+   "data": {
+      "code": "1030",
+      "message": "Data extracted.",
+      "bank_account_data": {
+         "name": "HXXXX LXXXXX",
+         "account_number": "6XXXXXXXXXX2",
+         "ifsc": "ICICXXXXXX2",
+         "upi": "7XXXXXXXXX@pthdfc"
+      }
+   },
+   "timestamp": 1742552198358,
+   "path": "/bank-api/account/fetch-by-mobile"
+}

@@ -1,0 +1,22 @@
+.multipleKeyValEpfo {
+  border: 1px solid rgb(223, 223, 223);
+  padding: 5px;
+  margin: 10;
+}
+
+.multipleArrKeyValEpfo {
+  border: 1px solid  rgb(223, 223, 223);
+  padding: 5px;
+  margin: 10;
+}
+
+.headingEpfo {
+  font-weight: bold;
+  background: #f0f0f0;
+  padding: 10px;
+}
+
+.valueEpfo {
+  border: 1px solid #f0f0f0;
+  padding: 4px;
+}

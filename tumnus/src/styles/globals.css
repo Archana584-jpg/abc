@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind components;
+@tailwind utilities;
+body {
+   font-family: "Poppins";
+   margin: 0;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+.ant-menu-light.ant-menu-inline .ant-menu-item::after,
+.ant-menu-light > .ant-menu.ant-menu-inline .ant-menu-item::after {
+   border-right: 5px solid #33cccc;
+   left: 0;
+   right: unset;
+}
+
+.productNavItems:hover {
+   background-color: #ebf7f7;
+   border-color: #ebf7f7;
+}
+
+.ant-message .ant-message-notice .ant-message-info > .anticon {
+   color: #3dcccb;
+}
+
+#launcher-frame {
+   min-width: 85px !important;
+   max-width: 90px !important;
+}
+
+.ant-tabs > .ant-tabs-nav .ant-tabs-nav-operations {
+   display: none !important;
+}

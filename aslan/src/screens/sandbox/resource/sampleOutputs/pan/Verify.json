@@ -1,0 +1,15 @@
+{
+   "request_id": "fd4862ba-6e64-454f-ba35-e58db3dfc829",
+   "status": 200,
+   "data": {
+      "code": "1001",
+      "message": "Valid Details",
+      "pan_data": {
+         "document_type": "PAN",
+         "name_match_status": "MATCH",
+         "dob_match_status": "MATCH"
+      }
+   },
+   "timestamp": 1622451282906,
+   "path": "/verify"
+}

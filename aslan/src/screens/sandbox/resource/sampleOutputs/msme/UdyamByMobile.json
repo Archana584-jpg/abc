@@ -1,0 +1,17 @@
+{
+   "request_id": "203d0101-ec24-416c-bebc-0c3f7969081e",
+   "transaction_id": "043e31ad-f4f6-44ca-ba66-c3147763559b",
+   "status": 200,
+   "data": {
+      "code": "1010",
+      "message": "Udyam details fetched successfully.",
+      "udyam_details": [
+         {
+            "udyam_number": "UDYAM-**-**-*****6",
+            "enterprise_name": "HANDY ONLINE SOLUTIONS PRIVATE LIMITED"
+         }
+      ]
+   },
+   "timestamp": 1718614100666,
+   "path": "/msme-api/udyam/mobile"
+}

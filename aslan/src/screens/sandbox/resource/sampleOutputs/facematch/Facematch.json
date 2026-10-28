@@ -1,0 +1,11 @@
+{
+   "request_id": "cd011dd5-d775-4d82-9bc8-609d81b38343",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "confidence": 0.81954,
+      "message": "The two faces belong to the same person."
+   },
+   "timestamp": 1612932286964,
+   "path": "/verify"
+}

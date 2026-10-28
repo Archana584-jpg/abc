@@ -1,0 +1,535 @@
+{
+   "id": "zaakpay_list_gstins",
+   "name": "Zaakpay List GSTINS",
+   "header": {
+      "title": { "text": "Verify GSTIN Details", "className": "text-md font-semibold text-title" },
+      "image": {
+         "src": "https://onboarding-resources-dev.s3.ap-south-1.amazonaws.com/assets/gst.svg"
+      },
+      "icon": { "src": "", "className": "text-xl cursor-pointer mr-2", "iconName": "ArrowLeftOutlined" },
+      "action": {
+         "onClick": {
+            "api": {
+               "type": "EXECUTE_ACTION",
+               "executeActionType": "IMMEDIATE_BACK_NODE_MOVEMENT_ACTION",
+               "requestType": "EXECUTE_ACTION"
+            }
+         }
+      }
+   },
+   "layout": [
+      {
+         "type": "STEPPER",
+         "wrapper": {
+            "className": "mx-auto",
+            "style": {
+               "className": "block",
+               "col": {
+                  "xs": 24,
+                  "md": 16
+               }
+            }
+         },
+         "visibilityCondition": {
+            "logicalOperator": "OR",
+            "conditions": [
+               {
+                  "dependOn": "data.additional_data.gstin_detail.gstin_data",
+                  "operator": "CUSTOM",
+                  "value": "allActive"
+               },
+               {
+                  "dependOn": "data.additional_data.gstin_detail.gstin_data",
+                  "operator": "CUSTOM",
+                  "value": "activeInactive"
+               }
+            ]
+         },
+         "content": {
+            "steps": [
+               {
+                  "label": "A",
+                  "id": "zaakpay_list_gstins",
+                  "name": "Zaakpay List GSTINS",
+                  "title": {
+                     "text": "Select State and GSTIN",
+                     "className": "text-base font-normal text-title"
+                  }
+               },
+               {
+                  "label": "B",
+                  "id": "zaakpay_review_gstin_detail",
+                  "name": "Zaakpay Review GSTIN Details",
+                  "title": {
+                     "text": "Review GST Details",
+                     "className": "text-base font-normal text-title"
+                  }
+               }
+            ]
+         }
+      },
+      {
+         "type": "ALERT",
+         "visibilityCondition": {
+            "conditions": [
+               {
+                  "dependOn": "data.additional_data.gstin_detail.gstin_data",
+                  "operator": "CUSTOM",
+                  "value": "allInactive"
+               }
+            ]
+         },
+         "dataSource": {
+            "onValidCondition": "data.generic_data"
+         },
+         "props": {
+            "type": "warning",
+            "className": "px-3 py-2 flex items-center"
+         },
+         "wrapper": {
+            "style": {
+               "col": {
+                  "xs": 24,
+                  "md": 14
+               }
+            }
+         },
+         "content": {
+            "title": {
+               "text": "Only Inactive GST record(s) were found for the provided PAN <b>{individual_pan_number}</b>",
+               "isHTML": true,
+               "className": "text-[#AD8B00]"
+            }
+         }
+      },
+      {
+         "type": "ALERT",
+         "visibilityCondition": {
+            "conditions": [
+               {
+                  "dependOn": "data.additional_data.gstin_detail.gstin_data",
+                  "operator": "CUSTOM",
+                  "value": "allActive"
+               }
+            ]
+         },
+         "dataSource": {
+            "onValidCondition": "data.generic_data"
+         },
+         "props": {
+            "type": "warning",
+            "className": "px-3 py-2 flex items-center default-alert"
+         },
+         "wrapper": {
+            "style": {
+               "col": {
+                  "xs": 24,
+                  "md": 14
+               }
+            }
+         },
+         "content": {
+            "title": {
+               "text": "Multiple active GST records found for the provided PAN <b>{individual_pan_number}</b>",
+               "isHTML": true,
+               "className": "text-[#717988]"
+            }
+         }
+      },
+      {
+         "type": "ALERT",
+         "visibilityCondition": {
+            "conditions": [
+               {
+                  "dependOn": "data.additional_data.gstin_detail.gstin_data",
+                  "operator": "CUSTOM",
+                  "value": "activeInactive"
+               }
+            ]
+         },
+         "dataSource": {
+            "onValidCondition": "data.generic_data"
+         },
+         "props": {
+            "type": "warning",
+            "className": "px-3 py-2 flex items-center"
+         },
+         "wrapper": {
+            "style": {
+               "col": {
+                  "xs": 24,
+                  "md": 16
+               }
+            }
+         },
+         "content": {
+            "title": {
+               "text": "Both active and inactive GST(s) records were found for the provided PAN <b>{individual_pan_number}</b>",
+               "isHTML": true,
+               "className": "text-[#AD8B00]"
+            }
+         }
+      },
+      {
+         "type": "FORM",
+         "formId": "zaakpay_list_gstins_form",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "mt-4"
+         },
+         "dataSource": {
+            "onValidCondition": "data.additional_data.gstin_detail"
+         },
+         "props": {
+            "layout": "vertical",
+            "requiredMark": true,
+            "className": "mt-6"
+         },
+         "content": {
+            "fields": [
+               {
+                  "type": "INPUT",
+                  "props": {
+                     "name": "gstin_data.0.id",
+                     "value": "gstin_data.0.id"
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } },
+                     "className": "hidden"
+                  }
+               },
+               {
+                  "type": "INPUT",
+                  "props": {
+                     "name": "gstin_data.0.number",
+                     "value": "gstin_data.0.number"
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } },
+                     "className": "hidden"
+                  }
+               },
+               {
+                  "type": "INPUT",
+                  "props": {
+                     "name": "gstin_data.0.state",
+                     "value": "gstin_data.0.state"
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } },
+                     "className": "hidden"
+                  }
+               },
+               {
+                  "type": "INPUT",
+                  "props": {
+                     "name": "gstin_data.0.status",
+                     "value": "gstin_data.0.status"
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } },
+                     "className": "hidden"
+                  }
+               },
+               {
+                  "type": "SELECTABLE_LIST",
+                  "dataSource": "gstin_data",
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "gstin_data",
+                           "operator": "CUSTOM",
+                           "value": "allInactive"
+                        }
+                     ]
+                  },
+                  "props": {
+                     "name": "gstin_verification_in_progress_id",
+                     "isEditable": false,
+                     "value": "gstin_verification_in_progress_id",
+                     "itemClassName": "flex justify-between items-center border-b border-[#E8E8E8]"
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 20 } },
+                     "className": "w-full"
+                  },
+                  "impactedFields": {
+                     "gstin_data.0.id": {
+                        "key": "id",
+                        "lookupKey": "id",
+                        "dataSource": "gstin_data",
+                        "dependOn": "gstin_verification_in_progress_id"
+                     },
+                     "gstin_data.0.number": {
+                        "key": "number",
+                        "lookupKey": "id",
+                        "dataSource": "gstin_data",
+                        "dependOn": "gstin_verification_in_progress_id"
+                     },
+                     "gstin_data.0.state": {
+                        "key": "state",
+                        "lookupKey": "id",
+                        "dataSource": "gstin_data",
+                        "dependOn": "gstin_verification_in_progress_id"
+                     },
+                     "gstin_data.0.status": {
+                        "key": "status",
+                        "lookupKey": "id",
+                        "dataSource": "gstin_data",
+                        "dependOn": "gstin_verification_in_progress_id"
+                     }
+                  },
+                  "optionMapper": {
+                     "label": {
+                        "key": "state",
+                        "string": "{state}"
+                     },
+                     "value": "id",
+                     "subTitle": {
+                        "key": "number",
+                        "string": "GSTIN: {number}"
+                     },
+                     "isActive": "status",
+                     "disabled": {
+                        "conditions": [
+                           {
+                              "dependOn": "status",
+                              "operator": "EQUALS",
+                              "value": "Inactive"
+                           }
+                        ]
+                     }
+                  },
+                  "content": {
+                     "label": { "text": "Inactive GSTIN(s)", "className": "text-subtitle" }
+                  },
+                  "action": {
+                     "onChange": {
+                        "api": {
+                           "type": "EXECUTE_ACTION",
+                           "executeActionType": "GSTIN_DETAILED_V2_ACTION",
+                           "requestType": "EXECUTE_ACTION",
+                           "formId": "zaakpay_list_gstins_form"
+                        }
+                     }
+                  }
+               },
+               {
+                  "type": "SELECTABLE_LIST",
+                  "dataSource": "gstin_data",
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "gstin_data",
+                           "operator": "CUSTOM",
+                           "value": "allActive"
+                        }
+                     ]
+                  },
+                  "props": {
+                     "name": "gstin_verification_in_progress_id",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "Please select an option to proceed"
+                        }
+                     },
+                     "value": "gstin_verification_in_progress_id",
+                     "itemClassName": "flex justify-between items-center border-b border-[#E8E8E8]"
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 20 } },
+                     "className": "w-full"
+                  },
+                  "impactedFields": {
+                     "gstin_data.0.id": {
+                        "key": "id",
+                        "lookupKey": "id",
+                        "dataSource": "gstin_data",
+                        "dependOn": "gstin_verification_in_progress_id"
+                     },
+                     "gstin_data.0.number": {
+                        "key": "number",
+                        "lookupKey": "id",
+                        "dataSource": "gstin_data",
+                        "dependOn": "gstin_verification_in_progress_id"
+                     },
+                     "gstin_data.0.state": {
+                        "key": "state",
+                        "lookupKey": "id",
+                        "dataSource": "gstin_data",
+                        "dependOn": "gstin_verification_in_progress_id"
+                     },
+                     "gstin_data.0.status": {
+                        "key": "status",
+                        "lookupKey": "id",
+                        "dataSource": "gstin_data",
+                        "dependOn": "gstin_verification_in_progress_id"
+                     }
+                  },
+                  "optionMapper": {
+                     "label": {
+                        "key": "state",
+                        "string": "{state}"
+                     },
+                     "value": "id",
+                     "subTitle": {
+                        "key": "number",
+                        "string": "GSTIN: {number}"
+                     },
+                     "isActive": "status",
+                     "disabled": {
+                        "conditions": [
+                           {
+                              "dependOn": "status",
+                              "operator": "EQUALS",
+                              "value": "Inactive"
+                           }
+                        ]
+                     }
+                  },
+                  "content": {
+                     "label": { "text": "Choose an GSTIN (state and GSTIN) to proceed", "className": "text-subtitle" },
+                     "helperText": {
+                        "text": "The GSTIN selected must be from the same state where the company is registered.",
+                        "className": "text-xs font-normal text-subtitle"
+                     }
+                  }
+               },
+               {
+                  "type": "SELECTABLE_LIST",
+                  "dataSource": "gstin_data",
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "gstin_data",
+                           "operator": "CUSTOM",
+                           "value": "activeInactive"
+                        }
+                     ]
+                  },
+                  "props": {
+                     "name": "gstin_verification_in_progress_id",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "Please select an option to proceed"
+                        }
+                     },
+                     "value": "gstin_verification_in_progress_id",
+                     "itemClassName": "flex justify-between items-center border-b border-[#E8E8E8]"
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 20 } },
+                     "className": "w-full"
+                  },
+                  "impactedFields": {
+                     "gstin_data.0.id": {
+                        "key": "id",
+                        "lookupKey": "id",
+                        "dataSource": "gstin_data",
+                        "dependOn": "gstin_verification_in_progress_id"
+                     },
+                     "gstin_data.0.number": {
+                        "key": "number",
+                        "lookupKey": "id",
+                        "dataSource": "gstin_data",
+                        "dependOn": "gstin_verification_in_progress_id"
+                     },
+                     "gstin_data.0.state": {
+                        "key": "state",
+                        "lookupKey": "id",
+                        "dataSource": "gstin_data",
+                        "dependOn": "gstin_verification_in_progress_id"
+                     },
+                     "gstin_data.0.status": {
+                        "key": "status",
+                        "lookupKey": "id",
+                        "dataSource": "gstin_data",
+                        "dependOn": "gstin_verification_in_progress_id"
+                     }
+                  },
+                  "optionMapper": {
+                     "label": {
+                        "key": "state",
+                        "string": "{state}"
+                     },
+                     "value": "id",
+                     "subTitle": {
+                        "key": "number",
+                        "string": "GSTIN: {number}"
+                     },
+                     "isActive": "status",
+                     "disabled": {
+                        "conditions": [
+                           {
+                              "dependOn": "status",
+                              "operator": "EQUALS",
+                              "value": "Inactive"
+                           }
+                        ]
+                     }
+                  },
+                  "content": {
+                     "label": {
+                        "text": "Choose an active GSTIN (state and GSTIN) to proceed",
+                        "className": "text-subtitle"
+                     },
+                     "helperText": {
+                        "text": "The GSTIN selected must be from the same state where the company is registered.",
+                        "className": "text-xs font-normal text-subtitle"
+                     }
+                  },
+                  "action": {
+                     "onChange": {
+                        "api": {
+                           "type": "EXECUTE_ACTION",
+                           "executeActionType": "GSTIN_DETAILED_V2_ACTION",
+                           "requestType": "EXECUTE_ACTION",
+                           "formId": "zaakpay_list_gstins_form"
+                        }
+                     }
+                  }
+               },
+               {
+                  "type": "BUTTON",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } },
+                     "className": "flex justify-center"
+                  },
+                  "content": {
+                     "label": { "text": "Save and Proceed", "className": "text-white" }
+                  },
+                  "props": {
+                     "className": "px-6 py-0",
+                     "type": "primary"
+                  },
+                  "action": {
+                     "onClick": {
+                        "payloadKey": "additional_data.gstin_detail",
+                        "api": {
+                           "type": "EXECUTE_ACTION",
+                           "executeActionType": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "gstin_data",
+                                    "operator": "CUSTOM",
+                                    "value": "allInactive"
+                                 }
+                              ],
+                              "onValidCondition": "MOVE_TO_NEXT_NODE_ACTION",
+                              "onInvalidCondition": "GSTIN_DETAILED_V2_ACTION"
+                           },
+                           "requestType": "EXECUTE_ACTION",
+                           "formId": "zaakpay_list_gstins_form"
+                        }
+                     }
+                  }
+               }
+            ]
+         }
+      }
+   ]
+}

@@ -1,0 +1,294 @@
+{
+   "request_id": "9ada48a7-d051-4b5f-9c32-ed48ce54f1dc",
+   "transaction_id": "cc274d7b-0d88-453d-b0dd-055a4b6f7604",
+   "status": 200,
+   "data": {
+      "code": "1030",
+      "message": "Fetched digital footprint data.",
+      "digital_profile_data": [
+         {
+            "data_type": "phone_data",
+            "primary_data": {
+               "key": "+9191751XXXX",
+               "type": "phone",
+               "social_profile_count": 11,
+               "account_details": [
+                  {
+                     "platform": "TOI",
+                     "user_exist": false
+                  },
+                  {
+                     "platform": "SNAPDEAL",
+                     "user_exist": false
+                  },
+                  {
+                     "platform": "FLIPKART",
+                     "user_exist": true
+                  },
+                  {
+                     "platform": "OYOROOMS",
+                     "user_exist": true
+                  },
+                  {
+                     "platform": "NOBROKER",
+                     "user_exist": true
+                  },
+                  {
+                     "platform": "TWITTER",
+                     "user_exist": false
+                  },
+                  {
+                     "platform": "LINKEDIN",
+                     "user_exist": true
+                  },
+                  {
+                     "platform": "SHAADI",
+                     "user_exist": false
+                  },
+                  {
+                     "platform": "GAANA",
+                     "user_exist": false
+                  },
+                  {
+                     "platform": "WHATSAPP",
+                     "user_exist": true
+                  },
+                  {
+                     "platform": "INDIANEXPRESS",
+                     "user_exist": false
+                  },
+                  {
+                     "platform": "HOUSING",
+                     "user_exist": false
+                  },
+                  {
+                     "platform": "IRCTC",
+                     "user_exist": true
+                  },
+                  {
+                     "platform": "JEEVANSATHI",
+                     "user_exist": false
+                  },
+                  {
+                     "platform": "SWIGGY",
+                     "user_exist": true
+                  },
+                  {
+                     "platform": "INSTAGRAM",
+                     "user_exist": true
+                  },
+                  {
+                     "platform": "DIGILOCKER",
+                     "user_exist": true
+                  },
+                  {
+                     "platform": "TIMES_PRIME",
+                     "user_exist": false
+                  },
+                  {
+                     "platform": "FACEBOOK",
+                     "user_exist": true
+                  },
+                  {
+                     "platform": "MICROSOFT",
+                     "user_exist": false
+                  },
+                  {
+                     "platform": "AMAZON",
+                     "user_exist": true
+                  },
+                  {
+                     "platform": "SKYPE",
+                     "error": true
+                  },
+                  {
+                     "platform": "ALTBALAJI",
+                     "error": true
+                  },
+                  {
+                     "platform": "POLICYBAZAR",
+                     "error": true
+                  },
+                  {
+                     "platform": "SAMSUNG",
+                     "error": true
+                  },
+                  {
+                     "platform": "PHONEPE",
+                     "error": true
+                  }
+               ],
+               "phone_meta": {
+                  "phone_number": "+91917519XXXX",
+                  "operator": "Airtel",
+                  "circle": "Maharashtra and Goa (except Mumbai)",
+                  "revocations": {}
+               }
+            },
+            "intelligence_data": {
+               "bank_verified_name": "XXXXX",
+               "verified_names_status": "found",
+               "associated_names": [
+                  {
+                     "name": "XXXXX",
+                     "source": "s17",
+                     "confidence_score": "high"
+                  }
+               ],
+               "verified_names": [
+                  {
+                     "name": "XXXXX",
+                     "source": "a1"
+                  }
+               ],
+               "digital_age": {
+                  "age": "9+",
+                  "year": 2016
+               }
+            }
+         },
+         {
+            "data_type": "intelligence_data",
+            "digital_age": {
+               "error": true
+            },
+            "scores": [
+               {
+                  "score_type": "phone_email_linking_score",
+                  "score_data": {}
+               },
+               {
+                  "score_type": "finance_presence_score",
+                  "score_data": {
+                     "checked": 0,
+                     "user_exist": 0
+                  }
+               },
+               {
+                  "score_type": "ecommerce_presence_score",
+                  "score_data": {
+                     "checked": 3,
+                     "user_exist": 2
+                  }
+               },
+               {
+                  "score_type": "education_presence_score",
+                  "score_data": {
+                     "checked": 2,
+                     "user_exist": 0
+                  }
+               },
+               {
+                  "score_type": "matrimony_website_presence_score",
+                  "score_data": {
+                     "checked": 2,
+                     "user_exist": 0
+                  }
+               },
+               {
+                  "score_type": "professional_presence_score",
+                  "score_data": {
+                     "checked": 1,
+                     "user_exist": 1
+                  }
+               },
+               {
+                  "score_type": "social_media_presence_score",
+                  "score_data": {
+                     "checked": 3,
+                     "user_exist": 2
+                  }
+               },
+               {
+                  "score_type": "entertainment_presence_score",
+                  "score_data": {
+                     "checked": 2,
+                     "user_exist": 0
+                  }
+               },
+               {
+                  "score_type": "quick_commerce_presence_score",
+                  "score_data": {
+                     "checked": 1,
+                     "user_exist": 1
+                  }
+               },
+               {
+                  "score_type": "travel_and_hotel_presence_score",
+                  "score_data": {
+                     "checked": 2,
+                     "user_exist": 2
+                  }
+               },
+               {
+                  "score_type": "health_and_fitness_presence_score",
+                  "score_data": {
+                     "checked": 0,
+                     "user_exist": 0
+                  }
+               },
+               {
+                  "score_type": "messaging_platform_presence_score",
+                  "score_data": {
+                     "checked": 1,
+                     "user_exist": 1
+                  }
+               },
+               {
+                  "score_type": "jobs_and_employment_presence_score",
+                  "score_data": {
+                     "checked": 1,
+                     "user_exist": 1
+                  }
+               },
+               {
+                  "score_type": "verification_platform_presence_score",
+                  "score_data": {
+                     "checked": 1,
+                     "user_exist": 1
+                  }
+               },
+               {
+                  "score_type": "persona_premium_service_presence_score",
+                  "score_data": {
+                     "checked": 3,
+                     "user_exist": 0
+                  }
+               },
+               {
+                  "score_type": "persona_tier_1_platform_presence_score",
+                  "score_data": {
+                     "checked": 6,
+                     "user_exist": 1
+                  }
+               },
+               {
+                  "score_type": "developer_and_product_tools_presence_score",
+                  "score_data": {
+                     "checked": 1,
+                     "user_exist": 0
+                  }
+               },
+               {
+                  "score_type": "real_estate_search_platform_presence_score",
+                  "score_data": {
+                     "checked": 2,
+                     "user_exist": 1
+                  }
+               },
+               {
+                  "score_type": "onboarding_phone_risk_score",
+                  "score_data": {
+                     "max_score_value": 1,
+                     "min_score_value": 0,
+                     "score_value": 0.146
+                  }
+               }
+            ],
+            "fintech_count": 0
+         }
+      ]
+   },
+   "timestamp": 1759725259371,
+   "path": "/profile-api/mobile/digital-footprint"
+}

@@ -1,0 +1,53 @@
+{
+   "request_id": "2l54p12c-62eb-318q-8bb9-7f9136c76830",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "Fetched company details.",
+      "company_data": {
+         "company_details": {
+            "type": "CIN",
+            "company_id": "XXXX",
+            "name": "XXXX",
+            "email": "XXXX",
+            "address": "XXXX",
+            "roc_code": "RoC-Mumbai",
+            "registration_number": "XXXX",
+            "category": "Company limited by Shares",
+            "sub_category": "Non-govt company",
+            "class": "Public",
+            "efiling_status": "Active",
+            "listing": "Listed",
+            "incorporation_date": "1995-01-19",
+            "last_agm_date": "XXXX",
+            "balance_sheet_date": "XXXX",
+            "active_compliance": "ACTIVE compliant",
+            "authorised_capital": "XXXX",
+            "paid_up_capital": "XXXX",
+            "no_of_members": "0"
+         },
+         "assets_under_charge": [
+            {
+               "asset": "Book debts",
+               "amount": "XXXX",
+               "creation_date": "XXXX",
+               "status": "CLOSED"
+            }
+         ],
+         "director_and_signatory_details": [
+            {
+               "din": "XXXX",
+               "name": "ABCD",
+               "begin_date": "XXX"
+            },
+            {
+               "pan": "XXXX",
+               "name": "ABCD",
+               "begin_date": "XXXX"
+            }
+         ]
+      }
+   },
+   "timestamp": 1685958462868,
+   "path": "/fetch-company"
+}

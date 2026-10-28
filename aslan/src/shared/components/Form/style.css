@@ -1,0 +1,34 @@
+.passwordStrengthBox {
+   position: absolute;
+   top: 30%;
+   left: -77%;
+   z-index: 10;
+   background-color: #f8f8f8;
+   border-radius: 0.25rem;
+   opacity: 10;
+   width: 70%;
+   padding: 0.31rem;
+}
+
+.passwordStrengthBox:after {
+   content: "";
+   position: absolute;
+   margin-left: -1em;
+   margin-top: -1em;
+   left: 104%;
+   top: 2.5em;
+   border: 0.4em solid #f8f8f8;
+   border-color: transparent transparent #f8f8f8 #f8f8f8;
+   transform-origin: 50% 50%;
+   transform: rotate(-135deg);
+}
+
+/* for small screens, will be implemented later based on product discussion */
+/* @media (max-width:480px){
+    .passwordStrengthBox {
+        position: absolute;
+        bottom: 40%;
+        left: -100;
+        overflow: visible;
+    }
+} */

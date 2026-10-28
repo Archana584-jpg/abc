@@ -1,0 +1,202 @@
+{
+   "id": "zaakpay_business_owner_pan_data_review_and_verify",
+   "name": "Business Owner PAN Data Review and Verify",
+   "header": {
+      "title": { "text": "Verify Business Owner PAN", "className": "text-md font-semibold text-title" },
+      "subtitle": {
+         "text": "Upload a business owner's PAN card to verify their details.",
+         "className": "text-xs font-normal text-subtitle"
+      },
+      "image": {
+         "src": "https://onboarding-resources-dev.s3.ap-south-1.amazonaws.com/assets/pan.svg"
+      },
+      "icon": { "src": "", "className": "text-xl cursor-pointer mr-2", "iconName": "ArrowLeftOutlined" },
+      "action": {
+         "onClick": {
+            "api": {
+               "type": "EXECUTE_ACTION",
+               "executeActionType": "IMMEDIATE_BACK_NODE_MOVEMENT_ACTION",
+               "requestType": "EXECUTE_ACTION"
+            }
+         }
+      }
+   },
+   "layout": [
+      {
+         "type": "STEPPER",
+         "wrapper": {
+            "className": "mx-auto",
+            "style": {
+               "className": "block",
+               "col": {
+                  "xs": 24,
+                  "md": 16
+               }
+            }
+         },
+         "content": {
+            "steps": [
+               {
+                  "label": "A",
+                  "id": "zaakpay_business_owner_pan_upload_and_ocr",
+                  "name": "Business Owner PAN Upload And OCR",
+                  "title": {
+                     "text": "Upload PAN",
+                     "className": "text-base font-normal text-title"
+                  }
+               },
+               {
+                  "label": "B",
+                  "id": "zaakpay_business_owner_pan_data_review_and_verify",
+                  "name": "Business Owner PAN Data Review and Verify",
+                  "title": {
+                     "text": "Review and Proceed",
+                     "className": "text-base font-normal text-title"
+                  }
+               }
+            ]
+         }
+      },
+      {
+         "type": "IMAGE_VIEWER",
+         "props": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "fileKey": "individual_pan_document_file"
+         },
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 10 } },
+            "className": "mt-4"
+         },
+         "dataSource": {
+            "onValidCondition": "individual_pan_document_file_urls"
+         },
+         "action": {
+            "onReupload": {
+               "api": {
+                  "type": "EXECUTE_ACTION",
+                  "executeActionType": "IMMEDIATE_BACK_NODE_MOVEMENT_ACTION",
+                  "requestType": "EXECUTE_ACTION"
+               }
+            }
+         }
+      },
+      {
+         "type": "FORM",
+         "formId": "pan_ocr_review_and_verify_form",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 14 } },
+            "className": "mt-4"
+         },
+         "props": {
+            "layout": "vertical",
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "requiredMark": true
+         },
+         "dataSource": {
+            "onValidCondition": "data.generic_data"
+         },
+         "content": {
+            "fields": [
+               {
+                  "type": "INPUT",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 12 } }
+                  },
+                  "props": {
+                     "name": "individual_pan_number",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "pattern": {
+                           "key": "PAN"
+                        }
+                     },
+                     "direction": "horizontal",
+                     "value": "individual_pan_number"
+                  },
+                  "content": {
+                     "label": { "text": "PAN", "className": "text-subtitle" },
+                     "placeHolder": { "text": "Enter PAN", "className": "" }
+                  }
+               },
+               {
+                  "type": "INPUT",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 12 } }
+                  },
+                  "props": {
+                     "name": "individual_pan_name",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "pattern": {
+                           "key": "NAME"
+                        }
+                     },
+                     "direction": "horizontal",
+                     "value": "individual_pan_name"
+                  },
+                  "content": {
+                     "label": { "text": "Name", "className": "text-subtitle" },
+                     "placeHolder": { "text": "Enter Name", "className": "" }
+                  }
+               },
+               {
+                  "type": "DATE",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 12 } }
+                  },
+                  "props": {
+                     "name": "individual_pan_date_of_birth",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        }
+                     },
+                     "direction": "horizontal",
+                     "style": { "width": "100%" },
+                     "mode": "date",
+                     "value": "individual_pan_date_of_birth"
+                  },
+                  "content": {
+                     "label": { "text": "Date of Birth (yyyy-mm-dd)", "className": "text-subtitle" },
+                     "placeHolder": { "text": "Enter Date of Birth" }
+                  }
+               }
+            ]
+         }
+      },
+      {
+         "type": "BUTTON",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "flex justify-center mt-8"
+         },
+         "content": {
+            "label": { "text": "Save and Proceed", "className": "text-white" }
+         },
+         "props": {
+            "className": "px-6 py-0",
+            "type": "primary"
+         },
+         "action": {
+            "onClick": {
+               "api": {
+                  "type": "EXECUTE_ACTION",
+                  "requestType": "EXECUTE_ACTION",
+                  "executeActionType": "INDIVIDUAL_PAN_VERIFY_ACTION",
+                  "formId": "pan_ocr_review_and_verify_form"
+               }
+            }
+         }
+      }
+   ]
+}

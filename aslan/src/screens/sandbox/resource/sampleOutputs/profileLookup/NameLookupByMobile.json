@@ -1,0 +1,16 @@
+{
+   "request_id": "186590eb-00f5-47c2-8327-6d2a4d6f5b7e",
+   "transaction_id": "1d7c34d8-0d0e-438d-b072-3cfe61845fc5",
+   "status": 200,
+   "data": {
+      "code": "1014",
+      "message": "Name fetched successfully.",
+      "name_lookup_data": {
+         "first_name": "ANKIT",
+         "last_name": "SINGH",
+         "full_name": "ANKIT SINGH"
+      }
+   },
+   "timestamp": 1758796747427,
+   "path": "/profile-api/mobile/name-lookup"
+}

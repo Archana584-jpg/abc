@@ -1,0 +1,22 @@
+.customCardContentCreditVerification {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 10;
+}
+
+.customCardDescriptionCreditVerification {
+  border: 1px solid #ccc;
+  padding: 4px;
+  margin: 10;
+}
+
+.customCardTitleCreditVerification {
+  font-weight: bold;
+  background: #f0f0f0;
+  padding: 10px;
+}
+
+.customCardValueCreditVerification {
+  border: 1px solid #f0f0f0;
+  padding: 4px;
+}

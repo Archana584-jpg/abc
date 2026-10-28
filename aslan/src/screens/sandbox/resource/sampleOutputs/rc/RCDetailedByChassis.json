@@ -1,0 +1,122 @@
+{
+   "request_id": "2ee7abe0-ecd3-4b1d-ae9b-40c55208cb56",
+   "transaction_id": "4c572d7a-2b7f-46e2-8b3e-63d7f01bc7ad",
+   "status": 200,
+   "data": {
+      "code": "1007",
+      "message": "Fetched RC Details By Chassis.",
+      "vehicle_details": [
+         {
+            "status_message": "OK",
+            "rc_registration_number": "KL******12",
+            "rc_registration_date": "2025-01-01",
+            "rc_registration_upto": "2025-01-01",
+            "rc_purchase_date": "2025-01-01",
+            "rc_owner_serial_number": "1",
+            "rc_owner_name": "A**A A****A",
+            "state_code": "KL",
+            "rto_code": "12",
+            "present_address": "Gurgaon, 111111",
+            "permanent_address": "Gurgaon, 111111",
+            "vehicle_category": "HGV",
+            "vehicle_category_description": "HEAVY GOODS VEHICLE",
+            "vehicle_class_description": "Goods Carrier(HGV)",
+            "chassis_number": "MA*******A1******",
+            "engine_number": "15A63******",
+            "maker_description": "TATA MOTORS LTD",
+            "maker_model": "TATA LPK",
+            "body_type_description": "BUILT TIPPER",
+            "fuel_description": "DIESEL",
+            "colour": "WHITE and BLUE",
+            "norms_description": "Not Available",
+            "fit_upto": "2025-01-01",
+            "tax_upto": "2025-01-01",
+            "financer": "Company",
+            "insurance_company": "Insurance Company Limited",
+            "insurance_policy_number": "12345678909863252",
+            "insurance_upto": "2025-01-01",
+            "manufacturing_month_year": "01/2025",
+            "unladen_weight": "10870",
+            "gross_weight": "28000",
+            "numberOf_cylinders": "6",
+            "cubic_capacity": "5883.00",
+            "seat_capacity": "2",
+            "sleeper_capacity": "0",
+            "standing_capacity": "0",
+            "wheel_base": "3880",
+            "registration_at": "RTO, Haryana",
+            "rc_status_as_on": "2025-01-01",
+            "rc_status": "ACTIVE",
+            "noc_details": "NOC issued for RTO, Gurgaon",
+            "vehicle_type": "T",
+            "vehicle_class": "59",
+            "noc_date": "2025-01-01",
+            "fuel_code": "2",
+            "maker_code": "86",
+            "model_code": "TATA LPK",
+            "norms_code": "0",
+            "sale_amount": "3057542.0",
+            "owner_category_description": "OTHERS",
+            "owner_code_description": "OTHERS",
+            "deemed_owner_details": {
+               "auc_valid_upto": "",
+               "authorization_certificate_number": "",
+               "dealer_code": "",
+               "dealer_name": "",
+               "dealer_mail": "",
+               "dealer_mobile": ""
+            },
+            "vehicle_surrendered_to_dealer": "0",
+            "dealer_data": {
+               "dealer_contact_number": "0",
+               "dealer_district": "0",
+               "dealer_pincode": "0"
+            },
+            "owner_history": [
+               {
+                  "off_name": "RTO",
+                  "owner_name": "ABCD",
+                  "owner_serial_number": "2",
+                  "state_code": "KL"
+               },
+               {
+                  "off_name": "RTO",
+                  "owner_name": "ABCD",
+                  "owner_serial_number": "3",
+                  "state_code": "KL"
+               },
+               {
+                  "off_name": "RTO",
+                  "owner_name": "ABCD",
+                  "owner_serial_number": "0",
+                  "state_code": "KL"
+               }
+            ],
+            "current_address_district_code": "0",
+            "rc_non_use": "false",
+            "passenger_tax": "abcd",
+            "goods_tax": "abcd",
+            "temp_permit_data": {
+               "permit_category": "31",
+               "permit_code": "105",
+               "permit_issue_date": "2025-01-01",
+               "permit_number": "KL****-****-*****",
+               "permit_type": "Goods Permit",
+               "permit_valid_from": "2025-01-01",
+               "permit_valid_upto": "2025-01-01"
+            },
+            "number_of_axle": "0",
+            "qr_url": "abcd",
+            "auth_name": "abcd",
+            "auth_sign": "abcd",
+            "approval_date": "2025-01-01",
+            "horse_power": "123",
+            "mandal_description": "abcd",
+            "taluk_code": "abcd",
+            "tax_mode": "Q"
+         }
+      ]
+   },
+   "timestamp": 1737375277257,
+   "path": "/rc-api/fetch-detailed-by-chassis"
+}

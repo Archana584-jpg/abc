@@ -1,0 +1,19 @@
+{
+   "request_id": "36b4d01c-4270-4e82-8c4c-5822e2d48856",
+   "transaction_id": "1b67143a-a27a-4566-a875-f2fa7031866b",
+   "status": 200,
+   "data": {
+      "code": "1017",
+      "message": "ITR 206 compliance data extracted.",
+      "itr_206_compliance_data": {
+         "pan": "XXXXXXXXXX",
+         "name": "MXXXXXP SXXXH",
+         "allotment_date": "2012-05-17",
+         "financial_year": "2024-25",
+         "aadhaar_linked_status": "Y",
+         "specified_person": false
+      }
+   },
+   "timestamp": 1724310663955,
+   "path": "/pan-api/compliance-checks/itr-206"
+}

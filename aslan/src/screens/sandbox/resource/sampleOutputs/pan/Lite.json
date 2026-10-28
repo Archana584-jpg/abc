@@ -1,0 +1,14 @@
+{
+   "request_id": "b1e64dba-591d-4beb-969f-c75e63c22776",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "Valid Pan",
+      "pan_data": {
+         "document_type": "PAN",
+         "name": "ASHOK XXXXXX"
+      }
+   },
+   "timestamp": 1622451218751,
+   "path": "/fetch"
+}

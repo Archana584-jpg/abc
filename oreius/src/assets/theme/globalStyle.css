@@ -1,0 +1,96 @@
+@import "~antd/dist/antd.css";
+
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+  background: rgba(0, 0, 0, 0.14);
+  color: white;
+  font-weight: 600;
+}
+
+.ant-menu:not(.ant-menu-horizontal) :hover {
+  background: rgba(19, 1, 1, 0.14);
+  color: white;
+}
+
+.ant-menu-vertical .ant-menu-item::after,
+.ant-menu-vertical-left .ant-menu-item::after,
+.ant-menu-vertical-right .ant-menu-item::after,
+.ant-menu-inline .ant-menu-item::after {
+  border-right: 3px solid rgb(0, 98, 128);
+}
+
+.ant-menu-sub.ant-menu-inline {
+  background: rgb(3, 161, 161);
+  color: white;
+}
+
+.ant-menu-submenu-selected {
+  color: rgb(228, 248, 240);
+}
+
+.ant-menu-submenu-arrow {
+  color: rgb(252, 252, 252);
+}
+
+.ant-menu-submenu-arrow::before,
+.ant-menu-submenu-arrow::after {
+  background: white !important;
+}
+
+.privateLayoutContent {
+  margin: 10px 34px 30px 24px;
+  padding: 0;
+  min-height: 80vh;
+}
+
+.basicForm {
+  background: white;
+  border-radius: 4;
+  padding: 1rem;
+}
+
+.creditVerificationForm {
+  overflow-x: auto;
+  height: 93vh;
+}
+
+.loginForm {
+  background: #f9f9f9;
+  padding: 1rem;
+  position: absolute;
+  top: 11rem;
+  width: 100%;
+}
+
+.commonResultHeading {
+  font-weight: bold;
+  background: #fcfbfb;
+  padding: 3px;
+}
+
+.commonResultValue {
+  border: 1px solid #f0f0f0;
+  padding: 5px;
+}
+
+.customCardContent {
+  border: 1px solid rgb(223, 223, 223);
+  padding: 5px;
+  margin: 10;
+}
+
+.customCardTitle {
+  font-weight: bold;
+  background: #f0f0f0;
+  padding: 7px;
+}
+
+.customCardDescription {
+  border: 1px solid #f0f0f0;
+  padding: 4px;
+  word-break: break-word;
+}
+
+.resultCard {
+  overflow-x: auto;
+  max-height: 93vh;
+}

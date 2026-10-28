@@ -1,0 +1,41 @@
+{
+   "name": "tumnus-revamped",
+   "version": "0.1.0",
+   "private": true,
+   "scripts": {
+      "dev": "NODE_OPTIONS='--inspect' next dev -p 8000",
+      "build": "next build",
+      "start": "next start --port=9988",
+      "lint": "next lint",
+      "predev": "ts-node --project ./tsconfig.node.json ./scripts/genAntdCss.tsx",
+      "prebuild": "cross-env NODE_ENV=production ts-node --project ./tsconfig.node.json ./scripts/genAntdCss.tsx",
+      "postbuild": "ts-node --project ./tsconfig.node.json ./scripts/sitemap-generator.tsx"
+   },
+   "dependencies": {
+      "@ant-design/cssinjs": "1.16.2",
+      "@ant-design/static-style-extract": "1.0.1",
+      "@tanstack/react-query": "4.33.0",
+      "@types/lodash": "4.14.197",
+      "@types/node": "20.4.9",
+      "@types/react": "18.2.20",
+      "@types/react-dom": "18.2.7",
+      "antd": "5.8.3",
+      "autoprefixer": "10.4.14",
+      "axios": "1.4.0",
+      "cross-env": "7.0.3",
+      "eslint": "8.46.0",
+      "eslint-config-next": "13.4.13",
+      "globby": "11.0.1",
+      "lodash": "4.17.21",
+      "next": "13.4.13",
+      "postcss": "8.4.27",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "react-multi-carousel": "2.8.4",
+      "sharp": "0.32.5",
+      "tailwindcss": "3.3.3",
+      "ts-node": "10.9.1",
+      "tslib": "2.6.1",
+      "typescript": "5.1.6"
+   }
+}

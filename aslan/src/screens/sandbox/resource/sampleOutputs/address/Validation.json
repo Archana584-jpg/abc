@@ -1,0 +1,28 @@
+{
+   "request_id": "a6bf58e1-1e9f-4933-871e-bcca6a7f352f",
+   "transaction_id": "e0a204d9-376c-4fc5-98eb-a743e4007fa1",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "Address validated.",
+      "address_validation_data": {
+         "address_validity": "Valid",
+         "address_type": "residential",
+         "address_sub_type": "non_identifiable",
+         "address_checks": {
+            "rooftop_confirmed": true,
+            "is_rural": false,
+            "landmark_confirmed": false,
+            "state_confirmed": true,
+            "city_confirmed": true,
+            "pin_confirmed": true,
+            "pin_state_mismatched": false,
+            "pin_city_mismatched": false,
+            "multiple_city_present": false,
+            "is_localizable": true
+         }
+      }
+   },
+   "timestamp": 1714022223034,
+   "path": "/address-api/validate"
+}

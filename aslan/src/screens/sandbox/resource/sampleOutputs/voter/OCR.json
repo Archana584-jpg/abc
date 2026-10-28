@@ -1,0 +1,18 @@
+{
+   "request_id": "216c07f7-9bf7-4052-965f-4d253d64ce2a",
+   "transaction_id": "aeb23f76-a7d4-4bde-b05c-f1785fe1a0ab",
+   "status": 200,
+   "data": {
+      "code": "1008",
+      "message": "Data extracted.",
+      "ocr_data": {
+         "id_number": "ABCXXXX123",
+         "name": "KLXXXXXXON",
+         "date_of_birth": "01/07/1982",
+         "issue_date": "15/06/2014",
+         "state": "MAXXXXXRE"
+      }
+   },
+   "timestamp": 1726552935651,
+   "path": "/voter-api/ocr"
+}

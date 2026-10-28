@@ -1,0 +1,10 @@
+{
+   "request_id": "9430f64e-7d95-4674-9e4c-d3fa67fd37db",
+   "status": 200,
+   "data": {
+      "code": "1003",
+      "message": "Passport doesn't exist"
+   },
+   "timestamp": 1623979510883,
+   "path": "/verify"
+}

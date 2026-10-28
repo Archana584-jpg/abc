@@ -1,0 +1,145 @@
+.offeringsSelection.offeringsSelection {
+   background-color: white;
+}
+
+.offeringsSelection.offeringsSelection.offeringsSelection.offeringsSelection:hover {
+   background-color: #7cbfbf;
+   color: white;
+   border-color: white;
+}
+
+.talkToSalesButton {
+   color: #33cccc;
+   border: none;
+   background-color: white;
+}
+
+.talkToSalesButton:hover {
+   background-color: #7cbfbf !important;
+   color: white !important;
+}
+
+.viewApiButton:hover {
+   opacity: 0.7 !important;
+}
+
+.arrowIcon {
+   width: 1rem;
+   height: 2rem;
+   margin-top: 1.25rem;
+   margin-left: 0.2rem;
+   border-top: 1.25rem solid transparent;
+   border-bottom: 1.25rem solid transparent;
+
+   border-right: 1.875rem solid white;
+   background-color: #eaf7f7;
+}
+
+.offeringDescriptionText > div > p {
+   color: #717988;
+   font-size: 1.125rem;
+   line-height: 1.5rem;
+   border: none;
+   background: none;
+   padding: 0rem;
+   font-family: Poppins;
+   overflow: hidden;
+   margin-top: 0;
+}
+
+.offeringDescriptionTextMobileView > div > p {
+   color: #717988;
+   font-size: 0.813rem;
+   line-height: 1.25rem;
+   border: none;
+   background: none;
+   padding: 0rem;
+   font-family: Poppins;
+   overflow: hidden;
+   margin-top: 0;
+}
+
+.productIntegrationText > code {
+   color: #a5d6ff;
+   font-size: 1.125rem;
+   line-height: 1.5rem;
+   background: none;
+   border: none;
+   font-family: Poppins;
+   overflow: hidden;
+   padding-top: 1rem;
+}
+
+.productIntegrationTextMobileView > code {
+   color: #a5d6ff;
+   font-size: 0.813rem;
+   line-height: 1.25rem;
+   background: none;
+   border: none;
+   font-family: Poppins;
+   overflow: hidden;
+   padding-top: 1rem;
+}
+
+.offeringDescription {
+   color: #717988;
+   font-size: 1.118rem;
+   white-space: pre-wrap;
+   line-height: 1.5rem;
+   border: none !important;
+   background: none !important;
+}
+
+.buttonStyle.buttonStyle.buttonStyle {
+   width: 100%;
+   height: 4.063rem;
+   margin: 0.5rem 0.5rem 0.5rem 0rem;
+   text-align: left;
+   font-weight: 500;
+   border: none;
+}
+
+.selectedButtonstyle.selectedButtonstyle {
+   background: #7cbfbf;
+   color: white;
+   border-color: #7cbfbf;
+}
+
+.title.title {
+   font-size: 2.2885rem;
+   font-weight: 700;
+   margin-top: 0;
+}
+
+.hoverableRightIcon {
+   font-size: 0.9rem;
+   margin-left: 0.5rem;
+}
+
+.offeringButtonIcon {
+   padding-right: 1rem;
+   margin-top: 0.25rem;
+}
+
+.salesButton.salesButton {
+   color: #33cccc;
+   border-color: #33cccc;
+   background-color: #f2f4f7;
+   font-weight: 500;
+}
+
+.salesButton:hover {
+   color: white;
+   background-color: #7cbfbf;
+   border-color: #7cbfbf;
+}
+
+@media screen and (max-width: 720px) {
+   .getAPIKeysButton {
+      font-size: 0.813rem !important;
+   }
+
+   .salesButton {
+      font-size: 0.813rem !important;
+   }
+}

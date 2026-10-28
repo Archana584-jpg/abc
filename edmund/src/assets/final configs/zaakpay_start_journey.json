@@ -1,0 +1,69 @@
+{
+   "id": "zaakpay_start_journey",
+   "name": "Start Journey",
+   "layout": [
+      {
+         "type": "TEXT",
+         "content": {
+            "label": {
+               "text": "Complete the following steps to finish your onboarding journey.",
+               "className": "text-base font-semibold text-title"
+            }
+         }
+      },
+      {
+         "type": "LIST",
+         "props": {
+            "itemClassName": "bg-snowWhite border-solid border border-border-silver rounded-md mb-2"
+         },
+         "wrapper": {
+            "className": "mt-4",
+            "style": {
+               "col": {
+                  "xs": 24,
+                  "md": 24
+               }
+            }
+         },
+         "dataSource": {
+            "onValidCondition": "metadata.node_metadata"
+         },
+         "content": {
+            "body": {
+               "default": {
+                  "title": {
+                     "text": "{order}. {title}",
+                     "className": "font-medium text-subtitle px-4"
+                  }
+               }
+            }
+         }
+      },
+      {
+         "type": "BUTTON",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "flex justify-center mt-4"
+         },
+         "content": {
+            "label": { "text": "Start", "className": "text-white" }
+         },
+         "props": {
+            "className": "px-6 py-0",
+            "type": "primary"
+         },
+         "dataSource": {
+            "onValidCondition": "business_owner_id_verification_document_type"
+         },
+         "action": {
+            "onClick": {
+               "api": {
+                  "type": "EXECUTE_ACTION",
+                  "executeActionType": "MOVE_TO_NEXT_NODE_ACTION",
+                  "requestType": "EXECUTE_ACTION"
+               }
+            }
+         }
+      }
+   ]
+}

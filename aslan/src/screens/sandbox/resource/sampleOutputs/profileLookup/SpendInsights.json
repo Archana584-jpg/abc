@@ -1,0 +1,351 @@
+{
+   "request_id": "a1f96733-dd62-4230-aa8a-f4408fd1401f",
+   "transaction_id": "32ff2d4b-9549-4ee4-b431-aa2c71c8f737",
+   "status": 200,
+   "data": {
+      "code": "1038",
+      "message": "Spend Insights fetched successfully.",
+      "enrichment_data": {
+         "last_updated_timestamp": "2025-12-11T11:44:24.276908021Z",
+         "customer_identifier": "XXXXXXXXXX",
+         "data_vector": {
+            "affluence_score": [
+               {
+                  "affluence_tier": 1
+               }
+            ],
+            "weekday_vs_weekend": [
+               {
+                  "year_month": "2025-11",
+                  "weekday_transaction_count": "0",
+                  "weekend_transaction_count": "1",
+                  "weekday_spend_amount_rs": "0",
+                  "weekend_spend_amount_rs": "100"
+               },
+               {
+                  "year_month": "2025-09",
+                  "weekday_transaction_count": "0",
+                  "weekend_transaction_count": "2",
+                  "weekday_spend_amount_rs": "0",
+                  "weekend_spend_amount_rs": "3117"
+               },
+               {
+                  "year_month": "2025-07",
+                  "weekday_transaction_count": "0",
+                  "weekend_transaction_count": "1",
+                  "weekday_spend_amount_rs": "0",
+                  "weekend_spend_amount_rs": "845"
+               }
+            ],
+            "monthly_average_spend": [
+               {
+                  "year_month": "2025-07",
+                  "average_monthly_spend_amount_rs": "845",
+                  "total_monthly_spend_amount_rs": "845",
+                  "total_monthly_spend_count": "1"
+               },
+               {
+                  "year_month": "2025-09",
+                  "average_monthly_spend_amount_rs": "1558",
+                  "total_monthly_spend_amount_rs": "3117",
+                  "total_monthly_spend_count": "2"
+               },
+               {
+                  "year_month": "2025-11",
+                  "average_monthly_spend_amount_rs": "100",
+                  "total_monthly_spend_amount_rs": "100",
+                  "total_monthly_spend_count": "1"
+               }
+            ],
+            "top_3_spends_location": [
+               {
+                  "city": "Delhi",
+                  "state": "Delhi",
+                  "zip_code": "110078",
+                  "total_spend_amount_rs": "3117",
+                  "total_spend_count": "2"
+               },
+               {
+                  "city": "Delhi",
+                  "state": "Delhi",
+                  "zip_code": "110034",
+                  "total_spend_amount_rs": "845",
+                  "total_spend_count": "1"
+               },
+               {
+                  "city": "GANDHINAGAR",
+                  "state": "Gujarat",
+                  "zip_code": "380006",
+                  "total_spend_amount_rs": "100",
+                  "total_spend_count": "1"
+               }
+            ],
+            "payment_share_of_wallet": [
+               {
+                  "credit_card_share_of_wallet": "0.0000%",
+                  "debit_card_share_of_wallet": "0.0000%",
+                  "upi_share_of_wallet": "100.0000%",
+                  "credit_card_spends": "0",
+                  "debit_card_spends": "0",
+                  "total_spends": "4062",
+                  "upi_spends": "4062",
+                  "other_payment_share_of_wallet": "0.0000%",
+                  "other_payment_spends": "0"
+               }
+            ],
+            "min_max_amount": [
+               {
+                  "year_month": "2025-07",
+                  "maximum_transaction_amount": "845",
+                  "minimum_transaction_amount": "845"
+               },
+               {
+                  "year_month": "2025-11",
+                  "maximum_transaction_amount": "100",
+                  "minimum_transaction_amount": "100"
+               },
+               {
+                  "year_month": "2025-09",
+                  "maximum_transaction_amount": "2069",
+                  "minimum_transaction_amount": "1048"
+               }
+            ],
+            "recent_3_transaction_location": [
+               {
+                  "city": "GANDHINAGAR",
+                  "state": "Gujarat",
+                  "zip_code": "380006",
+                  "transaction_amount_rs": "100",
+                  "recent_transaction_time": "2025-11-01"
+               },
+               {
+                  "city": "Delhi",
+                  "state": "Delhi",
+                  "zip_code": "110078",
+                  "transaction_amount_rs": "2069",
+                  "recent_transaction_time": "2025-09-01"
+               },
+               {
+                  "city": "Delhi",
+                  "state": "Delhi",
+                  "zip_code": "110078",
+                  "transaction_amount_rs": "1048",
+                  "recent_transaction_time": "2025-09-01"
+               }
+            ],
+            "first_15_days_vs_second_15_days": [
+               {
+                  "year_month": "2025-11",
+                  "last_15_days_count": "1",
+                  "first_15_days_count": "0",
+                  "last_15_days_spend_amount_rs": "100",
+                  "first_15_days_spend_amount_rs": "0"
+               },
+               {
+                  "year_month": "2025-09",
+                  "last_15_days_count": "0",
+                  "first_15_days_count": "2",
+                  "last_15_days_spend_amount_rs": "0",
+                  "first_15_days_spend_amount_rs": "3117"
+               },
+               {
+                  "year_month": "2025-07",
+                  "last_15_days_count": "0",
+                  "first_15_days_count": "1",
+                  "last_15_days_spend_amount_rs": "0",
+                  "first_15_days_spend_amount_rs": "845"
+               }
+            ],
+            "days_since_last_transaction": [
+               {
+                  "last_transaction_date": "2025-11-23",
+                  "days_since_last_transaction": 14
+               }
+            ],
+            "essential_category_spends": [
+               {
+                  "total_counts": "4",
+                  "total_fuel_count": 0,
+                  "total_spends_amount_rs": "4062",
+                  "total_hotel_count": 0,
+                  "total_jewellery_count": 0,
+                  "total_other_count": 2,
+                  "total_flight_count": 0,
+                  "total_fuel_spends": 0,
+                  "total_health_count": 0,
+                  "total_travel_count": 0,
+                  "total_fashion_count": 2,
+                  "total_grocery_count": 0,
+                  "total_hotel_spend_amount_rs": 0,
+                  "total_jewellery_spend_amount_rs": 0,
+                  "total_other_spend_amount_rs": 1893,
+                  "total_flight_spend_amount_rs": 0,
+                  "total_health_spend_amount_rs": 0,
+                  "total_travel_spend_amount_rs": 0,
+                  "total_fashion_spend_amount_rs": 2169,
+                  "total_grocery_spend_amount_rs": 0,
+                  "total_electronics_count": 0,
+                  "total_electronics_spend_amount_rs": 0
+               }
+            ],
+            "mcc_spend_analysis": [
+               {
+                  "merchant_category_code": "5621",
+                  "year_month": "2025-11",
+                  "number_of_count": "1",
+                  "transaction_amount_rs": "100"
+               },
+               {
+                  "merchant_category_code": "5699",
+                  "year_month": "2025-09",
+                  "number_of_count": "1",
+                  "transaction_amount_rs": "2069"
+               },
+               {
+                  "merchant_category_code": "5812",
+                  "year_month": "2025-09",
+                  "number_of_count": "1",
+                  "transaction_amount_rs": "1048"
+               },
+               {
+                  "merchant_category_code": "5812",
+                  "year_month": "2025-07",
+                  "number_of_count": "1",
+                  "transaction_amount_rs": "845"
+               }
+            ],
+            "top_3_locations_transaction_count": [
+               {
+                  "city": "Delhi",
+                  "state": "Delhi",
+                  "zip_code": "110078",
+                  "total_spend_amount_rs": "3117",
+                  "total_spend_count": "2"
+               },
+               {
+                  "city": "Delhi",
+                  "state": "Delhi",
+                  "zip_code": "110034",
+                  "total_spend_amount_rs": "845",
+                  "total_spend_count": "1"
+               },
+               {
+                  "city": "GANDHINAGAR",
+                  "state": "Gujarat",
+                  "zip_code": "380006",
+                  "total_spend_amount_rs": "100",
+                  "total_spend_count": "1"
+               }
+            ],
+            "annual_spend": [
+               {
+                  "year": "2025",
+                  "average_yearly_spend_amount_rs": "1015",
+                  "total_yearly_spend_amount_rs": "4062",
+                  "total_yearly_spend_count": "4"
+               }
+            ],
+            "top_3_categories_by_transaction_count": [
+               {
+                  "code": "5812",
+                  "total_spend_amount_rs": "1893",
+                  "category_name": "Dinning",
+                  "total_spend_count": "2"
+               },
+               {
+                  "code": "5621",
+                  "total_spend_amount_rs": "100",
+                  "category_name": "Apparels",
+                  "total_spend_count": "1"
+               },
+               {
+                  "code": "5699",
+                  "total_spend_amount_rs": "2069",
+                  "category_name": "Fashion Accessories",
+                  "total_spend_count": "1"
+               }
+            ],
+            "volume_bucket_size": [
+               {
+                  "a_lt_1k": 2,
+                  "b_1k_5k": 2,
+                  "c_5k_10k": 0,
+                  "d_10k_25k": 0,
+                  "e_25k_50k": 0,
+                  "g_ge_100k": 0,
+                  "f_50k_100k": 0,
+                  "alt1k": 2,
+                  "gge100k": 0
+               }
+            ],
+            "income_estimator": [
+               {
+                  "confidence_score": "Low",
+                  "income_range_max": "40000",
+                  "income_range_min": "25000"
+               }
+            ]
+         }
+      },
+      "data_vectors_requested": [
+         "affluence_score",
+         "annual_spend",
+         "big_ticket_purchases",
+         "card_network",
+         "essential_category_spends",
+         "weekday_vs_weekend",
+         "category_spends_on_card",
+         "mcc_spend_analysis",
+         "days_since_last_txn",
+         "emi_purchases",
+         "first_15days_vs_second_15days",
+         "min_max_amount",
+         "monthly_avg_spend",
+         "num_of_card_owned",
+         "payment_share_of_wallet",
+         "preferred_card_network",
+         "recent_3_txn_location",
+         "mobile_recharge_amount",
+         "fuel_txn_spends",
+         "top_3_categories_by_txncnt",
+         "top_3_locations_txn_cnt",
+         "top_3_spends_location",
+         "volume_bucket_size",
+         "top3_spends_categories",
+         "top3_recent_transacted_city_bycnt",
+         "top3_recent_transaction_spend_city",
+         "income_estimator"
+      ],
+      "data_vectors_effective": [
+         "affluence_score",
+         "annual_spend",
+         "big_ticket_purchases",
+         "card_network",
+         "essential_category_spends",
+         "weekday_vs_weekend",
+         "category_spends_on_card",
+         "mcc_spend_analysis",
+         "days_since_last_txn",
+         "emi_purchases",
+         "first_15days_vs_second_15days",
+         "min_max_amount",
+         "monthly_avg_spend",
+         "num_of_card_owned",
+         "payment_share_of_wallet",
+         "preferred_card_network",
+         "recent_3_txn_location",
+         "mobile_recharge_amount",
+         "fuel_txn_spends",
+         "top_3_categories_by_txncnt",
+         "top_3_locations_txn_cnt",
+         "top_3_spends_location",
+         "volume_bucket_size",
+         "top3_spends_categories",
+         "top3_recent_transacted_city_bycnt",
+         "top3_recent_transaction_spend_city",
+         "income_estimator"
+      ]
+   },
+   "timestamp": 1765453464282,
+   "path": "/profile-api/individual/fetch-spend-insights"
+}

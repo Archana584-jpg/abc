@@ -1,0 +1,18 @@
+{
+   "request_id": "string",
+   "transaction_id": "string",
+   "status": 0,
+   "data": {
+      "code": "string",
+      "message": "string",
+      "pan_data": {
+         "document_type": "string",
+         "aadhaar_linked": true,
+         "name_match_status": "string",
+         "dob_match_status": "string",
+         "status": "string"
+      }
+   },
+   "timestamp": 0,
+   "path": "string"
+}

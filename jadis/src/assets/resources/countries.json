@@ -1,0 +1,1247 @@
+{
+   "AF": {
+      "countryName": "Afghanistan",
+      "regionCode": "AF",
+      "countryCode": "+93"
+   },
+   "AX": {
+      "countryName": "Aland Islands",
+      "regionCode": "AX",
+      "countryCode": "+358"
+   },
+   "AL": {
+      "countryName": "Albania",
+      "regionCode": "AL",
+      "countryCode": "+355"
+   },
+   "DZ": {
+      "countryName": "Algeria",
+      "regionCode": "DZ",
+      "countryCode": "+213"
+   },
+   "AS": {
+      "countryName": "American Samoa",
+      "regionCode": "AS",
+      "countryCode": "+1"
+   },
+   "AD": {
+      "countryName": "Andorra",
+      "regionCode": "AD",
+      "countryCode": "+376"
+   },
+   "AO": {
+      "countryName": "Angola",
+      "regionCode": "AO",
+      "countryCode": "+244"
+   },
+   "AI": {
+      "countryName": "Anguilla",
+      "regionCode": "AI",
+      "countryCode": "+1"
+   },
+   "AQ": {
+      "countryName": "Antarctica",
+      "regionCode": "AQ",
+      "countryCode": "+672"
+   },
+   "AG": {
+      "countryName": "Antigua and Barbuda",
+      "regionCode": "AG",
+      "countryCode": "+1"
+   },
+   "AR": {
+      "countryName": "Argentina",
+      "regionCode": "AR",
+      "countryCode": "+54"
+   },
+   "AM": {
+      "countryName": "Armenia",
+      "regionCode": "AM",
+      "countryCode": "+374"
+   },
+   "AW": {
+      "countryName": "Aruba",
+      "regionCode": "AW",
+      "countryCode": "+297"
+   },
+   "AU": {
+      "countryName": "Australia",
+      "regionCode": "AU",
+      "countryCode": "+61"
+   },
+   "AT": {
+      "countryName": "Austria",
+      "regionCode": "AT",
+      "countryCode": "+43"
+   },
+   "AZ": {
+      "countryName": "Azerbaijan",
+      "regionCode": "AZ",
+      "countryCode": "+994"
+   },
+   "BS": {
+      "countryName": "Bahamas",
+      "regionCode": "BS",
+      "countryCode": "+1"
+   },
+   "BH": {
+      "countryName": "Bahrain",
+      "regionCode": "BH",
+      "countryCode": "+973"
+   },
+   "BD": {
+      "countryName": "Bangladesh",
+      "regionCode": "BD",
+      "countryCode": "+880"
+   },
+   "BB": {
+      "countryName": "Barbados",
+      "regionCode": "BB",
+      "countryCode": "+1"
+   },
+   "BY": {
+      "countryName": "Belarus",
+      "regionCode": "BY",
+      "countryCode": "+375"
+   },
+   "BE": {
+      "countryName": "Belgium",
+      "regionCode": "BE",
+      "countryCode": "+32"
+   },
+   "BZ": {
+      "countryName": "Belize",
+      "regionCode": "BZ",
+      "countryCode": "+501"
+   },
+   "BJ": {
+      "countryName": "Benin",
+      "regionCode": "BJ",
+      "countryCode": "+229"
+   },
+   "BM": {
+      "countryName": "Bermuda",
+      "regionCode": "BM",
+      "countryCode": "+1"
+   },
+   "BT": {
+      "countryName": "Bhutan",
+      "regionCode": "BT",
+      "countryCode": "+975"
+   },
+   "BO": {
+      "countryName": "Bolivia",
+      "regionCode": "BO",
+      "countryCode": "+591"
+   },
+   "BQ": {
+      "countryName": "Bonaire, Saint Eustatius and Saba",
+      "regionCode": "BQ",
+      "countryCode": "+599"
+   },
+   "BA": {
+      "countryName": "Bosnia and Herzegovina",
+      "regionCode": "BA",
+      "countryCode": "+387"
+   },
+   "BW": {
+      "countryName": "Botswana",
+      "regionCode": "BW",
+      "countryCode": "+267"
+   },
+   "BV": {
+      "countryName": "Bouvet Island",
+      "regionCode": "BV",
+      "countryCode": "+47"
+   },
+   "BR": {
+      "countryName": "Brazil",
+      "regionCode": "BR",
+      "countryCode": "+55"
+   },
+   "IO": {
+      "countryName": "British Indian Ocean Territory",
+      "regionCode": "IO",
+      "countryCode": "+246"
+   },
+   "VG": {
+      "countryName": "British Virgin Islands",
+      "regionCode": "VG",
+      "countryCode": "+1"
+   },
+   "BN": {
+      "countryName": "Brunei",
+      "regionCode": "BN",
+      "countryCode": "+673"
+   },
+   "BG": {
+      "countryName": "Bulgaria",
+      "regionCode": "BG",
+      "countryCode": "+359"
+   },
+   "BF": {
+      "countryName": "Burkina Faso",
+      "regionCode": "BF",
+      "countryCode": "+226"
+   },
+   "BI": {
+      "countryName": "Burundi",
+      "regionCode": "BI",
+      "countryCode": "+257"
+   },
+   "KH": {
+      "countryName": "Cambodia",
+      "regionCode": "KH",
+      "countryCode": "+855"
+   },
+   "CM": {
+      "countryName": "Cameroon",
+      "regionCode": "CM",
+      "countryCode": "+237"
+   },
+   "CA": {
+      "countryName": "Canada",
+      "regionCode": "CA",
+      "countryCode": "+1"
+   },
+   "CV": {
+      "countryName": "Cape Verde",
+      "regionCode": "CV",
+      "countryCode": "+238"
+   },
+   "KY": {
+      "countryName": "Cayman Islands",
+      "regionCode": "KY",
+      "countryCode": "+1"
+   },
+   "CF": {
+      "countryName": "Central African Republic",
+      "regionCode": "CF",
+      "countryCode": "+236"
+   },
+   "TD": {
+      "countryName": "Chad",
+      "regionCode": "TD",
+      "countryCode": "+235"
+   },
+   "CL": {
+      "countryName": "Chile",
+      "regionCode": "CL",
+      "countryCode": "+56"
+   },
+   "CN": {
+      "countryName": "China",
+      "regionCode": "CN",
+      "countryCode": "+86"
+   },
+   "CX": {
+      "countryName": "Christmas Island",
+      "regionCode": "CX",
+      "countryCode": "+61"
+   },
+   "CC": {
+      "countryName": "Cocos Islands",
+      "regionCode": "CC",
+      "countryCode": "+61"
+   },
+   "CO": {
+      "countryName": "Colombia",
+      "regionCode": "CO",
+      "countryCode": "+57"
+   },
+   "KM": {
+      "countryName": "Comoros",
+      "regionCode": "KM",
+      "countryCode": "+269"
+   },
+   "CK": {
+      "countryName": "Cook Islands",
+      "regionCode": "CK",
+      "countryCode": "+682"
+   },
+   "CR": {
+      "countryName": "Costa Rica",
+      "regionCode": "CR",
+      "countryCode": "+506"
+   },
+   "HR": {
+      "countryName": "Croatia",
+      "regionCode": "HR",
+      "countryCode": "+385"
+   },
+   "CU": {
+      "countryName": "Cuba",
+      "regionCode": "CU",
+      "countryCode": "+53"
+   },
+   "CW": {
+      "countryName": "Curacao",
+      "regionCode": "CW",
+      "countryCode": "+599"
+   },
+   "CY": {
+      "countryName": "Cyprus",
+      "regionCode": "CY",
+      "countryCode": "+357"
+   },
+   "CZ": {
+      "countryName": "Czech Republic",
+      "regionCode": "CZ",
+      "countryCode": "+420"
+   },
+   "CD": {
+      "countryName": "Democratic Republic of the Congo",
+      "regionCode": "CD",
+      "countryCode": "+243"
+   },
+   "DK": {
+      "countryName": "Denmark",
+      "regionCode": "DK",
+      "countryCode": "+45"
+   },
+   "DJ": {
+      "countryName": "Djibouti",
+      "regionCode": "DJ",
+      "countryCode": "+253"
+   },
+   "DM": {
+      "countryName": "Dominica",
+      "regionCode": "DM",
+      "countryCode": "+1"
+   },
+   "DO": {
+      "countryName": "Dominican Republic",
+      "regionCode": "DO",
+      "countryCode": "+1"
+   },
+   "TL": {
+      "countryName": "East Timor",
+      "regionCode": "TL",
+      "countryCode": "+670"
+   },
+   "EC": {
+      "countryName": "Ecuador",
+      "regionCode": "EC",
+      "countryCode": "+593"
+   },
+   "EG": {
+      "countryName": "Egypt",
+      "regionCode": "EG",
+      "countryCode": "+20"
+   },
+   "SV": {
+      "countryName": "El Salvador",
+      "regionCode": "SV",
+      "countryCode": "+503"
+   },
+   "GQ": {
+      "countryName": "Equatorial Guinea",
+      "regionCode": "GQ",
+      "countryCode": "+240"
+   },
+   "ER": {
+      "countryName": "Eritrea",
+      "regionCode": "ER",
+      "countryCode": "+291"
+   },
+   "EE": {
+      "countryName": "Estonia",
+      "regionCode": "EE",
+      "countryCode": "+372"
+   },
+   "ET": {
+      "countryName": "Ethiopia",
+      "regionCode": "ET",
+      "countryCode": "+251"
+   },
+   "FK": {
+      "countryName": "Falkland Islands",
+      "regionCode": "FK",
+      "countryCode": "+500"
+   },
+   "FO": {
+      "countryName": "Faroe Islands",
+      "regionCode": "FO",
+      "countryCode": "+298"
+   },
+   "FJ": {
+      "countryName": "Fiji",
+      "regionCode": "FJ",
+      "countryCode": "+679"
+   },
+   "FI": {
+      "countryName": "Finland",
+      "regionCode": "FI",
+      "countryCode": "+358"
+   },
+   "FR": {
+      "countryName": "France",
+      "regionCode": "FR",
+      "countryCode": "+33"
+   },
+   "GF": {
+      "countryName": "French Guiana",
+      "regionCode": "GF",
+      "countryCode": "+594"
+   },
+   "PF": {
+      "countryName": "French Polynesia",
+      "regionCode": "PF",
+      "countryCode": "+689"
+   },
+   "TF": {
+      "countryName": "French Southern Territories",
+      "regionCode": "TF",
+      "countryCode": "+262"
+   },
+   "GA": {
+      "countryName": "Gabon",
+      "regionCode": "GA",
+      "countryCode": "+241"
+   },
+   "GM": {
+      "countryName": "Gambia",
+      "regionCode": "GM",
+      "countryCode": "+220"
+   },
+   "GE": {
+      "countryName": "Georgia",
+      "regionCode": "GE",
+      "countryCode": "+995"
+   },
+   "DE": {
+      "countryName": "Germany",
+      "regionCode": "DE",
+      "countryCode": "+49"
+   },
+   "GH": {
+      "countryName": "Ghana",
+      "regionCode": "GH",
+      "countryCode": "+233"
+   },
+   "GI": {
+      "countryName": "Gibraltar",
+      "regionCode": "GI",
+      "countryCode": "+350"
+   },
+   "GR": {
+      "countryName": "Greece",
+      "regionCode": "GR",
+      "countryCode": "+30"
+   },
+   "GL": {
+      "countryName": "Greenland",
+      "regionCode": "GL",
+      "countryCode": "+299"
+   },
+   "GD": {
+      "countryName": "Grenada",
+      "regionCode": "GD",
+      "countryCode": "+1"
+   },
+   "GP": {
+      "countryName": "Guadeloupe",
+      "regionCode": "GP",
+      "countryCode": "+590"
+   },
+   "GU": {
+      "countryName": "Guam",
+      "regionCode": "GU",
+      "countryCode": "+1"
+   },
+   "GT": {
+      "countryName": "Guatemala",
+      "regionCode": "GT",
+      "countryCode": "+502"
+   },
+   "GG": {
+      "countryName": "Guernsey",
+      "regionCode": "GG",
+      "countryCode": "+44"
+   },
+   "GN": {
+      "countryName": "Guinea",
+      "regionCode": "GN",
+      "countryCode": "+224"
+   },
+   "GW": {
+      "countryName": "Guinea-Bissau",
+      "regionCode": "GW",
+      "countryCode": "+245"
+   },
+   "GY": {
+      "countryName": "Guyana",
+      "regionCode": "GY",
+      "countryCode": "+592"
+   },
+   "HT": {
+      "countryName": "Haiti",
+      "regionCode": "HT",
+      "countryCode": "+509"
+   },
+   "HM": {
+      "countryName": "Heard Island and McDonald Islands",
+      "regionCode": "HM",
+      "countryCode": "+672"
+   },
+   "HN": {
+      "countryName": "Honduras",
+      "regionCode": "HN",
+      "countryCode": "+504"
+   },
+   "HK": {
+      "countryName": "Hong Kong",
+      "regionCode": "HK",
+      "countryCode": "+852"
+   },
+   "HU": {
+      "countryName": "Hungary",
+      "regionCode": "HU",
+      "countryCode": "+36"
+   },
+   "IS": {
+      "countryName": "Iceland",
+      "regionCode": "IS",
+      "countryCode": "+354"
+   },
+   "IN": {
+      "countryName": "India",
+      "regionCode": "IN",
+      "countryCode": "+91"
+   },
+   "ID": {
+      "countryName": "Indonesia",
+      "regionCode": "ID",
+      "countryCode": "+62"
+   },
+   "IR": {
+      "countryName": "Iran",
+      "regionCode": "IR",
+      "countryCode": "+98"
+   },
+   "IQ": {
+      "countryName": "Iraq",
+      "regionCode": "IQ",
+      "countryCode": "+964"
+   },
+   "IE": {
+      "countryName": "Ireland",
+      "regionCode": "IE",
+      "countryCode": "+353"
+   },
+   "IM": {
+      "countryName": "Isle of Man",
+      "regionCode": "IM",
+      "countryCode": "+44"
+   },
+   "IL": {
+      "countryName": "Israel",
+      "regionCode": "IL",
+      "countryCode": "+972"
+   },
+   "IT": {
+      "countryName": "Italy",
+      "regionCode": "IT",
+      "countryCode": "+39"
+   },
+   "CI": {
+      "countryName": "Ivory Coast",
+      "regionCode": "CI",
+      "countryCode": "+225"
+   },
+   "JM": {
+      "countryName": "Jamaica",
+      "regionCode": "JM",
+      "countryCode": "+1"
+   },
+   "JP": {
+      "countryName": "Japan",
+      "regionCode": "JP",
+      "countryCode": "+81"
+   },
+   "JE": {
+      "countryName": "Jersey",
+      "regionCode": "JE",
+      "countryCode": "+44"
+   },
+   "JO": {
+      "countryName": "Jordan",
+      "regionCode": "JO",
+      "countryCode": "+962"
+   },
+   "KZ": {
+      "countryName": "Kazakhstan",
+      "regionCode": "KZ",
+      "countryCode": "+7"
+   },
+   "KE": {
+      "countryName": "Kenya",
+      "regionCode": "KE",
+      "countryCode": "+254"
+   },
+   "KI": {
+      "countryName": "Kiribati",
+      "regionCode": "KI",
+      "countryCode": "+686"
+   },
+   "XK": {
+      "countryName": "Kosovo",
+      "regionCode": "XK",
+      "countryCode": "+383"
+   },
+   "KW": {
+      "countryName": "Kuwait",
+      "regionCode": "KW",
+      "countryCode": "+965"
+   },
+   "KG": {
+      "countryName": "Kyrgyzstan",
+      "regionCode": "KG",
+      "countryCode": "+996"
+   },
+   "LA": {
+      "countryName": "Laos",
+      "regionCode": "LA",
+      "countryCode": "+856"
+   },
+   "LV": {
+      "countryName": "Latvia",
+      "regionCode": "LV",
+      "countryCode": "+371"
+   },
+   "LB": {
+      "countryName": "Lebanon",
+      "regionCode": "LB",
+      "countryCode": "+961"
+   },
+   "LS": {
+      "countryName": "Lesotho",
+      "regionCode": "LS",
+      "countryCode": "+266"
+   },
+   "LR": {
+      "countryName": "Liberia",
+      "regionCode": "LR",
+      "countryCode": "+231"
+   },
+   "LY": {
+      "countryName": "Libya",
+      "regionCode": "LY",
+      "countryCode": "+218"
+   },
+   "LI": {
+      "countryName": "Liechtenstein",
+      "regionCode": "LI",
+      "countryCode": "+423"
+   },
+   "LT": {
+      "countryName": "Lithuania",
+      "regionCode": "LT",
+      "countryCode": "+370"
+   },
+   "LU": {
+      "countryName": "Luxembourg",
+      "regionCode": "LU",
+      "countryCode": "+352"
+   },
+   "MO": {
+      "countryName": "Macao",
+      "regionCode": "MO",
+      "countryCode": "+853"
+   },
+   "MK": {
+      "countryName": "Macedonia",
+      "regionCode": "MK",
+      "countryCode": "+389"
+   },
+   "MG": {
+      "countryName": "Madagascar",
+      "regionCode": "MG",
+      "countryCode": "+261"
+   },
+   "MW": {
+      "countryName": "Malawi",
+      "regionCode": "MW",
+      "countryCode": "+265"
+   },
+   "MY": {
+      "countryName": "Malaysia",
+      "regionCode": "MY",
+      "countryCode": "+60"
+   },
+   "MV": {
+      "countryName": "Maldives",
+      "regionCode": "MV",
+      "countryCode": "+960"
+   },
+   "ML": {
+      "countryName": "Mali",
+      "regionCode": "ML",
+      "countryCode": "+223"
+   },
+   "MT": {
+      "countryName": "Malta",
+      "regionCode": "MT",
+      "countryCode": "+356"
+   },
+   "MH": {
+      "countryName": "Marshall Islands",
+      "regionCode": "MH",
+      "countryCode": "+692"
+   },
+   "MQ": {
+      "countryName": "Martinique",
+      "regionCode": "MQ",
+      "countryCode": "+596"
+   },
+   "MR": {
+      "countryName": "Mauritania",
+      "regionCode": "MR",
+      "countryCode": "+222"
+   },
+   "MU": {
+      "countryName": "Mauritius",
+      "regionCode": "MU",
+      "countryCode": "+230"
+   },
+   "YT": {
+      "countryName": "Mayotte",
+      "regionCode": "YT",
+      "countryCode": "+262"
+   },
+   "MX": {
+      "countryName": "Mexico",
+      "regionCode": "MX",
+      "countryCode": "+52"
+   },
+   "FM": {
+      "countryName": "Micronesia",
+      "regionCode": "FM",
+      "countryCode": "+691"
+   },
+   "MD": {
+      "countryName": "Moldova",
+      "regionCode": "MD",
+      "countryCode": "+373"
+   },
+   "MC": {
+      "countryName": "Monaco",
+      "regionCode": "MC",
+      "countryCode": "+377"
+   },
+   "MN": {
+      "countryName": "Mongolia",
+      "regionCode": "MN",
+      "countryCode": "+976"
+   },
+   "ME": {
+      "countryName": "Montenegro",
+      "regionCode": "ME",
+      "countryCode": "+382"
+   },
+   "MS": {
+      "countryName": "Montserrat",
+      "regionCode": "MS",
+      "countryCode": "+1"
+   },
+   "MA": {
+      "countryName": "Morocco",
+      "regionCode": "MA",
+      "countryCode": "+212"
+   },
+   "MZ": {
+      "countryName": "Mozambique",
+      "regionCode": "MZ",
+      "countryCode": "+258"
+   },
+   "MM": {
+      "countryName": "Myanmar",
+      "regionCode": "MM",
+      "countryCode": "+95"
+   },
+   "NA": {
+      "countryName": "Namibia",
+      "regionCode": "NA",
+      "countryCode": "+264"
+   },
+   "NR": {
+      "countryName": "Nauru",
+      "regionCode": "NR",
+      "countryCode": "+674"
+   },
+   "NP": {
+      "countryName": "Nepal",
+      "regionCode": "NP",
+      "countryCode": "+977"
+   },
+   "NL": {
+      "countryName": "Netherlands",
+      "regionCode": "NL",
+      "countryCode": "+31"
+   },
+   "NC": {
+      "countryName": "New Caledonia",
+      "regionCode": "NC",
+      "countryCode": "+687"
+   },
+   "NZ": {
+      "countryName": "New Zealand",
+      "regionCode": "NZ",
+      "countryCode": "+64"
+   },
+   "NI": {
+      "countryName": "Nicaragua",
+      "regionCode": "NI",
+      "countryCode": "+505"
+   },
+   "NE": {
+      "countryName": "Niger",
+      "regionCode": "NE",
+      "countryCode": "+227"
+   },
+   "NG": {
+      "countryName": "Nigeria",
+      "regionCode": "NG",
+      "countryCode": "+234"
+   },
+   "NU": {
+      "countryName": "Niue",
+      "regionCode": "NU",
+      "countryCode": "+683"
+   },
+   "NF": {
+      "countryName": "Norfolk Island",
+      "regionCode": "NF",
+      "countryCode": "+672"
+   },
+   "KP": {
+      "countryName": "North Korea",
+      "regionCode": "KP",
+      "countryCode": "+850"
+   },
+   "MP": {
+      "countryName": "Northern Mariana Islands",
+      "regionCode": "MP",
+      "countryCode": "+1"
+   },
+   "NO": {
+      "countryName": "Norway",
+      "regionCode": "NO",
+      "countryCode": "+47"
+   },
+   "OM": {
+      "countryName": "Oman",
+      "regionCode": "OM",
+      "countryCode": "+968"
+   },
+   "PK": {
+      "countryName": "Pakistan",
+      "regionCode": "PK",
+      "countryCode": "+92"
+   },
+   "PW": {
+      "countryName": "Palau",
+      "regionCode": "PW",
+      "countryCode": "+680"
+   },
+   "PS": {
+      "countryName": "Palestinian Territory",
+      "regionCode": "PS",
+      "countryCode": "+970"
+   },
+   "PA": {
+      "countryName": "Panama",
+      "regionCode": "PA",
+      "countryCode": "+507"
+   },
+   "PG": {
+      "countryName": "Papua New Guinea",
+      "regionCode": "PG",
+      "countryCode": "+675"
+   },
+   "PY": {
+      "countryName": "Paraguay",
+      "regionCode": "PY",
+      "countryCode": "+595"
+   },
+   "PE": {
+      "countryName": "Peru",
+      "regionCode": "PE",
+      "countryCode": "+51"
+   },
+   "PH": {
+      "countryName": "Philippines",
+      "regionCode": "PH",
+      "countryCode": "+63"
+   },
+   "PN": {
+      "countryName": "Pitcairn",
+      "regionCode": "PN",
+      "countryCode": "+870"
+   },
+   "PL": {
+      "countryName": "Poland",
+      "regionCode": "PL",
+      "countryCode": "+48"
+   },
+   "PT": {
+      "countryName": "Portugal",
+      "regionCode": "PT",
+      "countryCode": "+351"
+   },
+   "PR": {
+      "countryName": "Puerto Rico",
+      "regionCode": "PR",
+      "countryCode": "+1"
+   },
+   "QA": {
+      "countryName": "Qatar",
+      "regionCode": "QA",
+      "countryCode": "+974"
+   },
+   "CG": {
+      "countryName": "Republic of the Congo",
+      "regionCode": "CG",
+      "countryCode": "+242"
+   },
+   "RE": {
+      "countryName": "Reunion",
+      "regionCode": "RE",
+      "countryCode": "+262"
+   },
+   "RO": {
+      "countryName": "Romania",
+      "regionCode": "RO",
+      "countryCode": "+40"
+   },
+   "RU": {
+      "countryName": "Russia",
+      "regionCode": "RU",
+      "countryCode": "+7"
+   },
+   "RW": {
+      "countryName": "Rwanda",
+      "regionCode": "RW",
+      "countryCode": "+250"
+   },
+   "BL": {
+      "countryName": "Saint Barthelemy",
+      "regionCode": "BL",
+      "countryCode": "+590"
+   },
+   "SH": {
+      "countryName": "Saint Helena",
+      "regionCode": "SH",
+      "countryCode": "+290"
+   },
+   "KN": {
+      "countryName": "Saint Kitts and Nevis",
+      "regionCode": "KN",
+      "countryCode": "+1"
+   },
+   "LC": {
+      "countryName": "Saint Lucia",
+      "regionCode": "LC",
+      "countryCode": "+1"
+   },
+   "MF": {
+      "countryName": "Saint Martin",
+      "regionCode": "MF",
+      "countryCode": "+590"
+   },
+   "PM": {
+      "countryName": "Saint Pierre and Miquelon",
+      "regionCode": "PM",
+      "countryCode": "+508"
+   },
+   "VC": {
+      "countryName": "Saint Vincent and the Grenadines",
+      "regionCode": "VC",
+      "countryCode": "+1"
+   },
+   "WS": {
+      "countryName": "Samoa",
+      "regionCode": "WS",
+      "countryCode": "+685"
+   },
+   "SM": {
+      "countryName": "San Marino",
+      "regionCode": "SM",
+      "countryCode": "+378"
+   },
+   "ST": {
+      "countryName": "Sao Tome and Principe",
+      "regionCode": "ST",
+      "countryCode": "+239"
+   },
+   "SA": {
+      "countryName": "Saudi Arabia",
+      "regionCode": "SA",
+      "countryCode": "+966"
+   },
+   "SN": {
+      "countryName": "Senegal",
+      "regionCode": "SN",
+      "countryCode": "+221"
+   },
+   "RS": {
+      "countryName": "Serbia",
+      "regionCode": "RS",
+      "countryCode": "+381"
+   },
+   "SC": {
+      "countryName": "Seychelles",
+      "regionCode": "SC",
+      "countryCode": "+248"
+   },
+   "SL": {
+      "countryName": "Sierra Leone",
+      "regionCode": "SL",
+      "countryCode": "+232"
+   },
+   "SG": {
+      "countryName": "Singapore",
+      "regionCode": "SG",
+      "countryCode": "+65"
+   },
+   "SX": {
+      "countryName": "Sint Maarten",
+      "regionCode": "SX",
+      "countryCode": "+599"
+   },
+   "SK": {
+      "countryName": "Slovakia",
+      "regionCode": "SK",
+      "countryCode": "+421"
+   },
+   "SI": {
+      "countryName": "Slovenia",
+      "regionCode": "SI",
+      "countryCode": "+386"
+   },
+   "SB": {
+      "countryName": "Solomon Islands",
+      "regionCode": "SB",
+      "countryCode": "+677"
+   },
+   "SO": {
+      "countryName": "Somalia",
+      "regionCode": "SO",
+      "countryCode": "+252"
+   },
+   "ZA": {
+      "countryName": "South Africa",
+      "regionCode": "ZA",
+      "countryCode": "+27"
+   },
+   "GS": {
+      "countryName": "South Georgia and the South Sandwich Islands",
+      "regionCode": "GS",
+      "countryCode": "+500"
+   },
+   "KR": {
+      "countryName": "South Korea",
+      "regionCode": "KR",
+      "countryCode": "+82"
+   },
+   "SS": {
+      "countryName": "South Sudan",
+      "regionCode": "SS",
+      "countryCode": "+211"
+   },
+   "ES": {
+      "countryName": "Spain",
+      "regionCode": "ES",
+      "countryCode": "+34"
+   },
+   "LK": {
+      "countryName": "Sri Lanka",
+      "regionCode": "LK",
+      "countryCode": "+94"
+   },
+   "SD": {
+      "countryName": "Sudan",
+      "regionCode": "SD",
+      "countryCode": "+249"
+   },
+   "SR": {
+      "countryName": "Suriname",
+      "regionCode": "SR",
+      "countryCode": "+597"
+   },
+   "SZ": {
+      "countryName": "Swaziland",
+      "regionCode": "SZ",
+      "countryCode": "+268"
+   },
+   "SE": {
+      "countryName": "Sweden",
+      "regionCode": "SE",
+      "countryCode": "+46"
+   },
+   "CH": {
+      "countryName": "Switzerland",
+      "regionCode": "CH",
+      "countryCode": "+41"
+   },
+   "SY": {
+      "countryName": "Syria",
+      "regionCode": "SY",
+      "countryCode": "+963"
+   },
+   "TW": {
+      "countryName": "Taiwan",
+      "regionCode": "TW",
+      "countryCode": "+886"
+   },
+   "TJ": {
+      "countryName": "Tajikistan",
+      "regionCode": "TJ",
+      "countryCode": "+992"
+   },
+   "TZ": {
+      "countryName": "Tanzania",
+      "regionCode": "TZ",
+      "countryCode": "+255"
+   },
+   "TH": {
+      "countryName": "Thailand",
+      "regionCode": "TH",
+      "countryCode": "+66"
+   },
+   "TG": {
+      "countryName": "Togo",
+      "regionCode": "TG",
+      "countryCode": "+228"
+   },
+   "TK": {
+      "countryName": "Tokelau",
+      "regionCode": "TK",
+      "countryCode": "+690"
+   },
+   "TO": {
+      "countryName": "Tonga",
+      "regionCode": "TO",
+      "countryCode": "+676"
+   },
+   "TT": {
+      "countryName": "Trinidad and Tobago",
+      "regionCode": "TT",
+      "countryCode": "+1"
+   },
+   "TN": {
+      "countryName": "Tunisia",
+      "regionCode": "TN",
+      "countryCode": "+216"
+   },
+   "TR": {
+      "countryName": "Turkey",
+      "regionCode": "TR",
+      "countryCode": "+90"
+   },
+   "TM": {
+      "countryName": "Turkmenistan",
+      "regionCode": "TM",
+      "countryCode": "+993"
+   },
+   "TC": {
+      "countryName": "Turks and Caicos Islands",
+      "regionCode": "TC",
+      "countryCode": "+1"
+   },
+   "TV": {
+      "countryName": "Tuvalu",
+      "regionCode": "TV",
+      "countryCode": "+688"
+   },
+   "VI": {
+      "countryName": "U.S. Virgin Islands",
+      "regionCode": "VI",
+      "countryCode": "+1"
+   },
+   "UG": {
+      "countryName": "Uganda",
+      "regionCode": "UG",
+      "countryCode": "+256"
+   },
+   "UA": {
+      "countryName": "Ukraine",
+      "regionCode": "UA",
+      "countryCode": "+380"
+   },
+   "AE": {
+      "countryName": "United Arab Emirates",
+      "regionCode": "AE",
+      "countryCode": "+971"
+   },
+   "GB": {
+      "countryName": "United Kingdom",
+      "regionCode": "GB",
+      "countryCode": "+44"
+   },
+   "US": {
+      "countryName": "United States",
+      "regionCode": "US",
+      "countryCode": "+1"
+   },
+   "UM": {
+      "countryName": "United States Minor Outlying Islands",
+      "regionCode": "UM",
+      "countryCode": "+1"
+   },
+   "UY": {
+      "countryName": "Uruguay",
+      "regionCode": "UY",
+      "countryCode": "+598"
+   },
+   "UZ": {
+      "countryName": "Uzbekistan",
+      "regionCode": "UZ",
+      "countryCode": "+998"
+   },
+   "VU": {
+      "countryName": "Vanuatu",
+      "regionCode": "VU",
+      "countryCode": "+678"
+   },
+   "VA": {
+      "countryName": "Vatican",
+      "regionCode": "VA",
+      "countryCode": "+379"
+   },
+   "VE": {
+      "countryName": "Venezuela",
+      "regionCode": "VE",
+      "countryCode": "+58"
+   },
+   "VN": {
+      "countryName": "Vietnam",
+      "regionCode": "VN",
+      "countryCode": "+84"
+   },
+   "WF": {
+      "countryName": "Wallis and Futuna",
+      "regionCode": "WF",
+      "countryCode": "+681"
+   },
+   "EH": {
+      "countryName": "Western Sahara",
+      "regionCode": "EH",
+      "countryCode": "+212"
+   },
+   "YE": {
+      "countryName": "Yemen",
+      "regionCode": "YE",
+      "countryCode": "+967"
+   },
+   "ZM": {
+      "countryName": "Zambia",
+      "regionCode": "ZM",
+      "countryCode": "+260"
+   },
+   "ZW": {
+      "countryName": "Zimbabwe",
+      "regionCode": "ZW",
+      "countryCode": "+263"
+   }
+}

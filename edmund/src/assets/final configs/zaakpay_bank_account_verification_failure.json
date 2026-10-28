@@ -1,0 +1,288 @@
+{
+   "id": "zaakpay_bank_account_verification_failure",
+   "name": "Verify Bank Account",
+   "header": {
+      "title": { "text": "Verify Bank Account", "className": "text-md font-semibold text-title" },
+      "subtitle": {
+         "text": "Provide your business bank account details for verification.",
+         "className": "text-xs font-normal text-subtitle"
+      },
+      "image": {
+         "src": "https://onboarding-resources-dev.s3.ap-south-1.amazonaws.com/assets/verify_bank_account.svg"
+      },
+      "icon": { "src": "", "className": "text-xl cursor-pointer mr-2", "iconName": "ArrowLeftOutlined" },
+      "action": {
+         "onClick": {
+            "api": {
+               "type": "EXECUTE_ACTION",
+               "executeActionType": "IMMEDIATE_BACK_NODE_MOVEMENT_ACTION",
+               "requestType": "EXECUTE_ACTION"
+            }
+         }
+      }
+   },
+   "layout": [
+      {
+         "type": "ALERT",
+         "props": {
+            "type": "warning",
+            "className": "px-3 py-2 mb-4 flex items-center"
+         },
+         "wrapper": {
+            "style": {
+               "col": {
+                  "xs": 24,
+                  "md": 16
+               }
+            }
+         },
+         "content": {
+            "title": {
+               "text": "Payments from your customers would be transferred to this account",
+               "className": "text-[#AD8B00]"
+            }
+         }
+      },
+      {
+         "type": "FORM",
+         "formId": "bank_account_verification_form",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } }
+         },
+         "props": {
+            "layout": "vertical",
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "requiredMark": true
+         },
+         "dataSource": {
+            "onValidCondition": "data.generic_data"
+         },
+         "content": {
+            "fields": [
+               {
+                  "type": "INPUT",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 18 } }
+                  },
+                  "props": {
+                     "name": "account_holder_name",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "pattern": {
+                           "key": "NAME"
+                        }
+                     },
+                     "direction": "horizontal",
+                     "value": "account_holder_name"
+                  },
+                  "content": {
+                     "label": { "text": "Account Holder's Name", "className": "text-subtitle" },
+                     "placeHolder": { "text": "Enter Account Holder's Name", "className": "" },
+                     "helperText": {
+                        "text": "The bank account name must match the PAN name provided in the business owner's PAN details earlier.",
+                        "className": "text-xs font-normal text-subtitle"
+                     }
+                  }
+               },
+               {
+                  "type": "INPUT",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 9 } }
+                  },
+                  "props": {
+                     "name": "account_number",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "pattern": {
+                           "key": "NUMERIC"
+                        }
+                     },
+                     "direction": "horizontal",
+                     "value": "account_number"
+                  },
+                  "content": {
+                     "label": { "text": "Account Number", "className": "text-subtitle" },
+                     "placeHolder": { "text": "Enter Account Number", "className": "" },
+                     "helperText": {
+                        "text": "To verify your bank account, Rs. 1 will be transferred to it",
+                        "className": "text-xs font-normal text-subtitle"
+                     }
+                  }
+               },
+               {
+                  "type": "INPUT",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 9 } }
+                  },
+                  "props": {
+                     "name": "ifsc",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "pattern": {
+                           "key": "IFSC"
+                        }
+                     },
+                     "direction": "horizontal",
+                     "value": "ifsc"
+                  },
+                  "content": {
+                     "label": { "text": "IFSC Code", "className": "text-subtitle" },
+                     "placeHolder": { "text": "Enter IFSC Code", "className": "" }
+                  }
+               },
+               {
+                  "type": "DIVIDER",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } }
+                  },
+                  "props": {
+                     "className": "mt-2 mb-4"
+                  }
+               },
+               {
+                  "type": "RADIO_GROUP",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } }
+                  },
+                  "props": {
+                     "name": "bank_document_type",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        }
+                     },
+                     "direction": "horizontal",
+                     "value": "bank_document_type",
+                     "size": 16
+                  },
+                  "impactedFields": {
+                     "bank_document_file": ""
+                  },
+                  "content": {
+                     "label": { "text": "Select a document to upload", "className": "font-medium text-title" },
+                     "options": [
+                        {
+                           "label": {
+                              "text": "Bank statement (last 6 months)",
+                              "className": "text-subtitle"
+                           },
+                           "value": "Bank statement (last 6 months)"
+                        },
+                        {
+                           "label": {
+                              "text": "Cancelled cheque",
+                              "className": "text-subtitle"
+                           },
+                           "value": "Cancelled cheque"
+                        },
+                        {
+                           "label": {
+                              "text": "Passbook",
+                              "className": "text-subtitle"
+                           },
+                           "value": "Passbook"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "type": "UPLOAD",
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "bank_document_type",
+                           "operator": "IS_NOT_EMPTY",
+                           "value": ""
+                        }
+                     ]
+                  },
+                  "props": {
+                     "name": "bank_document_file",
+                     "fileKey": "bank_document_file",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "maxAllowedSize": {
+                           "size": 5,
+                           "message": "Please check the file size"
+                        },
+                        "allowedTypes": {
+                           "types": ["image/jpeg", "image/jpg", "image/png", "application/pdf"],
+                           "message": "Please check the file type"
+                        }
+                     },
+                     "value": "bank_document_file_urls",
+                     "mode": "DRAG_AND_DROP"
+                  },
+                  "content": {
+                     "label": { "text": "Upload the document", "className": "text-subtitle" },
+                     "title": {
+                        "text": "Drag and drop or click 'Choose File' to upload",
+                        "className": "text-subtitle text-[12px]"
+                     },
+                     "subtitle": {
+                        "text": "Supported format: jpeg, jpg, png, pdf • Max size: 5MB",
+                        "className": "text-subtitle text-[10px]"
+                     }
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 16 } }
+                  },
+                  "action": {
+                     "onUpload": {
+                        "api": {
+                           "type": "UPLOAD_DOCUMENT",
+                           "executeActionType": "DOCUMENT_UPLOAD_ACTION",
+                           "requestType": "DOCUMENT_UPLOAD",
+                           "fileKey": "bank_document_file",
+                           "formId": "bank_account_verification_form"
+                        }
+                     }
+                  }
+               }
+            ]
+         }
+      },
+      {
+         "type": "BUTTON",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "flex justify-center mt-4"
+         },
+         "content": {
+            "label": { "text": "Save and Proceed", "className": "text-white" }
+         },
+         "props": {
+            "className": "px-6 py-0",
+            "type": "primary"
+         },
+         "action": {
+            "onClick": {
+               "api": {
+                  "type": "EXECUTE_ACTION",
+                  "executeActionType": "SAVE_DATA_ACTION",
+                  "requestType": "EXECUTE_ACTION",
+                  "formId": "bank_account_verification_form"
+               }
+            }
+         }
+      }
+   ]
+}

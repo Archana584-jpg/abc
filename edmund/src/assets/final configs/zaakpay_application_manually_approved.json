@@ -1,0 +1,42 @@
+{
+   "id": "zaakpay_application_manually_approved",
+   "name": "Application Manually Approved",
+   "layout": [
+      {
+         "type": "TEXT",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "flex justify-center mt-4"
+         },
+         "content": {
+            "label": {
+               "text": "Your application has been approved.",
+               "className": "text-2xl font-semibold text-title text-center"
+            }
+         }
+      },
+      {
+         "type": "TEXT",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "flex justify-center mt-4"
+         },
+         "content": {
+            "label": {
+               "text": "Thank you for choosing Zaakpay!",
+               "className": "text-base font-medium text-subtitle text-center"
+            }
+         }
+      },
+      {
+         "type": "IMAGE",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "flex justify-center items-center mt-8"
+         },
+         "props": {
+            "src": "https://onboarding-resources-dev.s3.ap-south-1.amazonaws.com/assets/application-approved.svg"
+         }
+      }
+   ]
+}

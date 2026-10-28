@@ -1,0 +1,10 @@
+.scrollToBottom {
+   display: block;
+   margin: 5rem auto 0rem auto;
+}
+
+@media screen and (max-width: 720px) {
+   .scrollToBottom {
+      display: none !important;
+   }
+}

@@ -1,0 +1,17 @@
+{
+   "request_id": "fcc0021e-d7dc-407b-b003-d064d83502dc",
+   "transaction_id": "fcc0021e-d7dc-407b-b003-d064d83502dc",
+   "status": 200,
+   "data": {
+      "code": "1016",
+      "message": "Request processed successfully.",
+      "pan_data": {
+         "document_type": "PAN",
+         "document_id": "DQXXXXXXXX",
+         "name": "ABCD",
+         "father_name": "ABCD"
+      }
+   },
+   "timestamp": 1713508640601,
+   "path": "/pan-api/fetch-lite-plus"
+}

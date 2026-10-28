@@ -1,0 +1,17 @@
+export const colors = {
+   GREY_10: "",
+   GREY_20: "",
+   GREY_30: "",
+   GREY_40: "#EAF0F4",
+   GREY_50: "#E8E8E8",
+   GREY_60: "",
+   GREY_70: "#717988",
+   GREY_80: "",
+   GREY_90: "#252626",
+   BLACK: "#000000",
+   WHITE: "#FFFFFF",
+   BRAND: "#33CCCC",
+   BRAND_10: "#E6F2F2",
+   RED: "#D50C29",
+   ORANGE: "#FBB400",
+};

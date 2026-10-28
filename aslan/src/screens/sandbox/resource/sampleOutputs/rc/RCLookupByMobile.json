@@ -1,0 +1,15 @@
+{
+   "request_id": "dec74834-614a-45c5-9de8-557bcf1c7f37",
+   "transaction_id": "b0e19416-04fe-4315-aa3d-e33d613bd3e2",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "Extracted details.",
+      "vehicle_data": {
+         "mobile_number": "9934XXXXXX",
+         "rc_number": "JH10XXXXXX"
+      }
+   },
+   "timestamp": 1759489468412,
+   "path": "/rc-api/lookup-by-mobile"
+}

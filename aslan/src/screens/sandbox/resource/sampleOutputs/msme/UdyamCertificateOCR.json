@@ -1,0 +1,42 @@
+{
+   "request_id": "eb4c398c-1dc0-4b58-a0d6-d1b4e31ba48a",
+   "transaction_id": "0fcc915c-7fe5-4a16-bc23-4651247622c9",
+   "status": 200,
+   "data": {
+      "code": "1013",
+      "message": "Data Extracted.",
+      "enterprise_data": {
+         "document_id": "UDYAM-GJ-1X-XXXXXXX",
+         "major_activity": "Services",
+         "enterprise_type": "Micro",
+         "organization_type": "Others",
+         "name": "SXXX ZXXXXXXXXX",
+         "mobile": "99*****739",
+         "email": "sXXXXXXXXXXX@gmail.com",
+         "address": {
+            "door_no": "01",
+            "building": "digvijaygram",
+            "village": "sikka",
+            "block": "main road",
+            "street": "main road fatak",
+            "city": "JAMNAGAR",
+            "district": "JAMNAGAR",
+            "state": "GUJARAT",
+            "pincode": "361140"
+         },
+         "date_of_incorporation": "2023-06-10",
+         "date_of_commencement": "2023-06-10",
+         "date_of_udyam_registration": "2024-05-04",
+         "dic": "JAMNAGAR",
+         "msme_di": "AHMEDABAD",
+         "social_category": "OBC"
+      },
+      "nic_data": {
+         "nic_2_digit": "49-Land transport and transport via pipelines",
+         "nic_4_digit": "4922- Other passenger land transport",
+         "nic_5_digit": "49224-Taxi operation"
+      }
+   },
+   "timestamp": 1727953258104,
+   "path": "/msme-api/udyam-certificate-ocr"
+}

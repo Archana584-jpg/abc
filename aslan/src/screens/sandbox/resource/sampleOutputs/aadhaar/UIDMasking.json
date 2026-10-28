@@ -1,0 +1,14 @@
+{
+   "request_id": "96f7751d-e11b-406c-867c-5de0a59cda81",
+   "transaction_id": "df5e2955-1476-4ded-8bff-e7531ae31917",
+   "status": 200,
+   "data": {
+      "code": "1019",
+      "message": "Provided Aadhaar UID masked successfully.",
+      "masked_aadhaar_data": {
+         "masked_base64": "{{masked_base64_data}}"
+      }
+   },
+   "timestamp": 1725520245615,
+   "path": "/aadhaar-api/uid-masking"
+}

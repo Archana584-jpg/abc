@@ -1,0 +1,69 @@
+{
+   "name": "aslan",
+   "version": "0.1.0",
+   "private": true,
+   "dependencies": {
+      "@ant-design/icons": "^4.7.0",
+      "@craco/craco": "^6.4.3",
+      "@sentry/react": "^7.44.2",
+      "@sentry/tracing": "^7.44.2",
+      "@testing-library/jest-dom": "^5.14.1",
+      "@testing-library/react": "^12.0.0",
+      "@testing-library/user-event": "^13.2.1",
+      "antd": "^4.24.16",
+      "axios": "^0.26.1",
+      "chart.js": "^3.8.0",
+      "connected-react-router": "6.8.0",
+      "craco-less": "^2.0.0",
+      "history": "4.10.1",
+      "html2pdf.js": "^0.10.1",
+      "lodash": "^4.17.21",
+      "moment": "^2.30.1",
+      "react": "18.0.0",
+      "react-chartjs-2": "^4.3.1",
+      "react-dom": "18.0.0",
+      "react-google-recaptcha": "^3.1.0",
+      "react-google-recaptcha-v3": "^1.9.8",
+      "react-icons": "^4.3.1",
+      "react-otp-input": "^2.4.0",
+      "react-redux": "7.2.8",
+      "react-router-dom": "5.2.0",
+      "react-scripts": "4.0.3",
+      "redux": "4.1.2",
+      "redux-persist": "6.0.0",
+      "redux-saga": "1.1.3",
+      "web-vitals": "2.1.0",
+      "xlsx": "^0.18.5",
+      "zxcvbn": "^4.4.2"
+   },
+   "scripts": {
+      "start": "craco start",
+      "build": "GENERATE_SOURCEMAP=false craco build",
+      "test": "craco test",
+      "eject": "react-scripts eject",
+      "deploy": "yarn build && aws s3 sync build/ s3://app-dev-gridlines-io --profile ongrid-dev-session && aws cloudfront create-invalidation --distribution-id E2B99U17AYV3EA --paths '/*' --profile ongrid-dev-session"
+   },
+   "eslintConfig": {
+      "extends": [
+         "react-app",
+         "react-app/jest"
+      ]
+   },
+   "browserslist": {
+      "production": [
+         ">0.2%",
+         "not dead",
+         "not op_mini all"
+      ],
+      "development": [
+         "last 1 chrome version",
+         "last 1 firefox version",
+         "last 1 safari version"
+      ]
+   },
+   "devDependencies": {
+      "autoprefixer": "^9",
+      "postcss": "^7",
+      "tailwindcss": "npm:@tailwindcss/postcss7-compat"
+   }
+}

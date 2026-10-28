@@ -1,0 +1,74 @@
+export const GENERATE_OTP_EPFO_PASSBOOK =
+  "GENERATE_OTP_EPFO_PASSBOOK";
+export const GENERATE_OTP_EPFO_PASSBOOK_LOADING =
+  "GENERATE_OTP_EPFO_PASSBOOK_LOADING";
+export const GENERATE_OTP_EPFO_PASSBOOK_SUCCESS =
+  "GENERATE_OTP_EPFO_PASSBOOK_SUCCESS";
+export const GENERATE_OTP_EPFO_PASSBOOK_ERROR =
+  "GENERATE_OTP_EPFO_PASSBOOK_ERROR";
+export const RESET_GENERATED_OTP =
+  "RESET_GENERATED_OTP";
+
+export const VALIDATE_OTP_EPFO_PASSBOOK =
+  "VALIDATE_OTP_EPFO_PASSBOOK";
+export const VALIDATE_OTP_EPFO_PASSBOOK_LOADING =
+  "VALIDATE_OTP_EPFO_PASSBOOK_LOADING";
+export const VALIDATE_OTP_EPFO_PASSBOOK_SUCCESS =
+  "VALIDATE_OTP_EPFO_PASSBOOK_SUCCESS";
+export const VALIDATE_OTP_EPFO_PASSBOOK_ERROR =
+  "VALIDATE_OTP_EPFO_PASSBOOK_ERROR";
+export const RESET_VALIDATED_OTP =
+  "RESET_VALIDATED_OTP";
+
+export const GET_EPFO_EMPLOYERS_LIST = "GET_EPFO_EMPLOYERS_LIST";
+export const GET_EPFO_EMPLOYERS_LIST_LOADING =
+  "GET_EPFO_EMPLOYERS_LIST_LOADING";
+export const GET_EPFO_EMPLOYERS_LIST_SUCCESS =
+  "GET_EPFO_EMPLOYERS_LIST_SUCCESS";
+export const GET_EPFO_EMPLOYERS_LIST_ERROR = "GET_EPFO_EMPLOYERS_LIST_ERROR";
+export const CLEAR_EPFO_EMPLOYERS_LIST = "CLEAR_EPFO_EMPLOYERS_LIST";
+
+export const GET_EPFO_PASSBOOK_DETAILS = "GET_EPFO_PASSBOOK_DETAILS";
+export const GET_EPFO_PASSBOOK_DETAILS_LOADING =
+  "GET_EPFO_PASSBOOK_DETAILS_LOADING";
+export const GET_EPFO_PASSBOOK_DETAILS_SUCCESS =
+  "GET_EPFO_PASSBOOK_DETAILS_SUCCESS";
+export const GET_EPFO_PASSBOOK_DETAILS_ERROR =
+  "GET_EPFO_PASSBOOK_DETAILS_ERROR";
+export const CLEAR_EPFO_PASSBOOK_DETAILS = "CLEAR_EPFO_PASSBOOK_DETAILS";
+
+export const generatedOtpData = (body) => ({
+  type: GENERATE_OTP_EPFO_PASSBOOK,
+  body,
+});
+export const clearGeneratedOtpData = () => ({
+  type: RESET_GENERATED_OTP,
+  data: {},
+});
+
+export const validatedOtpData = (body) => ({
+  type: VALIDATE_OTP_EPFO_PASSBOOK,
+  body,
+});
+export const clearValidatedOtpData = () => ({
+  type: RESET_VALIDATED_OTP,
+  data: {},
+});
+
+export const getEmployersList = (transaction_id) => ({
+  type: GET_EPFO_EMPLOYERS_LIST,
+  transaction_id,
+});
+export const clearEployersList = () => ({
+  type: CLEAR_EPFO_EMPLOYERS_LIST,
+  data: {},
+});
+
+export const getEpfoPassbookDetails = (body) => ({
+  type: GET_EPFO_PASSBOOK_DETAILS,
+  body,
+});
+export const clearEpfoPassbookDetails = () => ({
+  type: CLEAR_EPFO_PASSBOOK_DETAILS,
+  data: {},
+});

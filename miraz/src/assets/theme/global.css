@@ -1,0 +1,19 @@
+/* Import Tailwind CSS v4 with proper configuration for Ant Design */
+@import "tailwindcss";
+
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300;1,500;1,600&display=swap");
+
+/* Global styles */
+body {
+   font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Ensure Ant Design components work well with Tailwind */
+.ant-btn {
+   font-family: inherit;
+}
+
+.ant-checkbox-wrapper {
+   font-family: inherit;
+}

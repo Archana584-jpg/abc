@@ -1,0 +1,21 @@
+{
+   "request_id": "713feba2-ede7-4eeb-b8f4-64b8b79e0fb7",
+   "transaction_id": "e3d28416-d29d-41d8-aa76-5b56ae761c9d",
+   "status": 200,
+   "data": {
+      "code": "1012",
+      "message": "Tan verified successfully.",
+      "tan_details": {
+         "tan": "ABCE0123F",
+         "company_name": "**** PRIVATE LIMITED",
+         "address": "***, MUMBAI Maharashtra 410206",
+         "state": "Maharashtra",
+         "pincode": "410206",
+         "mobile_number": "7*********7",
+         "email": ["V****.****5@****.COM"],
+         "tan_allotment_date": "12-03-2017"
+      }
+   },
+   "timestamp": 1721200349428,
+   "path": "/mca-api/verify-tan"
+}

@@ -1,0 +1,79 @@
+{
+   "request_id": "3fd5eff8-85f7-47f8-9bbe-d8a083398804",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "Extracted details.",
+      "rc_data": {
+         "document_type": "RC",
+         "owner_data": {
+            "serial": "1",
+            "name": "KARAN  XXXXXXXXX",
+            "name_match_score_1": "XX.09",
+            "name_match_score_2": "XX.0",
+            "father_name": "RAJ XXXXXX",
+            "present_address": "8-2-331/X/X/XXX/X , XXXXXX XXXXXXX, XXXXXX, Hyderabad -500096",
+            "permanent_address": "8-2-331/X/X/XXX/X , XXXXXX XXXXXXX, XXXXXX, Hyderabad -500096",
+            "mobile": "968XXXXXX9"
+         },
+         "issue_date": "2012-12-19",
+         "expiry_date": "2027-12-18",
+         "registered_at": "RTA-HYDERABAD-CZ, Telangana",
+         "status": "ACTIVE",
+         "blacklist_status": "false",
+         "noc_details": "XXXXX",
+         "norms_type": "Not Available",
+         "tax_end_date": "2024-11-22",
+         "non_use_status": "XXXX",
+         "non_use_from": "2024-10-22",
+         "non_use_to": "2024-11-30",
+         "financier": "XXXXX",
+         "financed": true,
+         "pucc_data": {
+            "pucc_number": "3000000XXX",
+            "expiry_date": "2022-11-22"
+         },
+         "insurance_data": {
+            "policy_number": "000000XXX",
+            "company": "null",
+            "expiry_date": "2013-11-22"
+         },
+         "permit_data": {
+            "permit_number": "300000000XXX",
+            "type": "null",
+            "issue_date": "2013-11-22",
+            "expiry_date": "2022-12-20"
+         },
+         "national_permit_data": {
+            "permit_number": "300XXX",
+            "issued_by": "XXXXX",
+            "issue_date": "2013-11-22",
+            "expiry_date": "2022-12-20"
+         },
+         "vehicle_data": {
+            "manufactured_date": "2010-XX-XX",
+            "variant": "VMay XXXX",
+            "category": "2WN",
+            "category_description": "M-Cycle/Scooter(2WN)",
+            "chassis_number": "MD2A14XXXXXXXXX",
+            "engine_number": "JBZWCXXXXXXX",
+            "maker_description": "BAJAJ AUTO LTD",
+            "maker_model": "DISCOVER 100 BSIII",
+            "body_type": "14",
+            "fuel_type": "PETROL",
+            "color": "BLACK DECAL MAGENPA",
+            "cubic_capacity": "94.00",
+            "gross_weight": "245",
+            "number_of_cylinders": "1",
+            "seating_capacity": "2",
+            "sleeper_capacity": "0",
+            "standing_capacity": "0",
+            "wheelbase": "1305",
+            "unladen_weight": "115",
+            "custom_data": {}
+         }
+      }
+   },
+   "timestamp": 1622535028319,
+   "path": "/fetch-detailed"
+}

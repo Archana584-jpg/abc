@@ -1,0 +1,15 @@
+export const GET_EPFO_LATEST_DETAILS = "GET_EPFO_LATEST_DETAILS";
+export const GET_EPFO_LATEST_DETAILS_LOADING =
+    "GET_EPFO_LATEST_DETAILS_LOADING";
+export const GET_EPFO_LATEST_DETAILS_SUCCESS =
+    "GET_EPFO_LATEST_DETAILS_SUCCESS";
+export const GET_EPFO_LATEST_DETAILS_ERROR = "GET_EPFO_LATEST_DETAILS_ERROR";
+export const CLEAR_EPFO_LATEST_DETAILS = "CLEAR_EPFO_LATEST_DETAILS";
+
+export const getEpfoLatestDeatils = (body) => ({
+    type: GET_EPFO_LATEST_DETAILS,
+    body,
+});
+export const clearEpfoLatestDetails = () => ({
+    type: CLEAR_EPFO_LATEST_DETAILS,
+});

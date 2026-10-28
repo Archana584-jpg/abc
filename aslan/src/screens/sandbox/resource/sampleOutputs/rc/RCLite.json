@@ -1,0 +1,38 @@
+{
+   "request_id": "e1ac9d5f-ff48-4c82-866a-4b2f91f34f40",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "Extracted details.",
+      "rc_data": {
+         "document_type": "RC",
+         "owner_data": {
+            "serial": "First Owner",
+            "name": "PRIME XXXXXXXX",
+            "name_match_score_1": "XX.08",
+            "name_match_score_2": "XX.0"
+         },
+         "issue_date": "2012-12-19",
+         "expiry_date": "2027-12-18",
+         "status": "ACTIVE",
+         "norms_type": "Not Available",
+         "pucc_data": {
+            "expiry_date": "1800-01-01"
+         },
+         "insurance_data": {
+            "expiry_date": "2013-11-22"
+         },
+         "vehicle_data": {
+            "category_description": "M-Cycle/Scooter(2WN)",
+            "chassis_number": "MD2A1XXXXXXXXXXX",
+            "engine_number": "JBZXXXXXXXX",
+            "maker_model": "BAJAJ AUTO LTD, DISCOVER 100 BSIII",
+            "fuel_type": "PETROL",
+            "color": "BLACK DECAL MAGENPA",
+            "unladen_weight": "115"
+         }
+      }
+   },
+   "timestamp": 1622535195066,
+   "path": "/fetch-lite"
+}

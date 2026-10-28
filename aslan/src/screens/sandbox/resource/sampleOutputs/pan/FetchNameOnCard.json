@@ -1,0 +1,16 @@
+{
+   "request_id": "fb1a5345-d9e5-4a60-ba30-f942255a2912",
+   "transaction_id": "bb5cdd5d-64a6-4e87-93d1-cd08ff742ce1",
+   "status": 200,
+   "data": {
+      "code": "1018",
+      "message": "Name fetched from Pan Card.",
+      "pan_data": {
+         "document_type": "PAN",
+         "document_id": "ABCD1234E",
+         "name": "John Wick"
+      }
+   },
+   "timestamp": 1742282429618,
+   "path": "/pan-api/fetch-card-name"
+}

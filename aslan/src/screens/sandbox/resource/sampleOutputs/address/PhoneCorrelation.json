@@ -1,0 +1,16 @@
+{
+   "request_id": "e6909d37-2ced-4641-a7d5-c40f1d1bc7f9",
+   "transaction_id": "1e0d7de7-9e18-4f66-8f42-0093776a3c4f",
+   "status": 200,
+   "data": {
+      "code": "1002",
+      "message": "Address and phone number correlation fetched.",
+      "address_phone_correlation_data": {
+         "address_found": true,
+         "phone_found": true,
+         "address_phone_linked": true
+      }
+   },
+   "timestamp": 1714023376549,
+   "path": "/address-api/fetch-phone-correlation"
+}

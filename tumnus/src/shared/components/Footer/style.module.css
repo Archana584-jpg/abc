@@ -1,0 +1,45 @@
+.footerLinkText.footerLinkText {
+   color: #acacac;
+   font-size: 0.625rem;
+   display: block;
+   cursor: pointer;
+   opacity: 0.8;
+   line-height: 1.25rem;
+}
+
+.footerTextMobile.footerTextMobile {
+   color: #acacac;
+   font-size: 0.938rem;
+   display: block;
+   opacity: 0.8;
+   line-height: 1.25rem;
+}
+
+.footerLinkText:hover {
+   color: #f4ffff;
+}
+
+.selectedFooterItem.selectedFooterItem {
+   color: #f6fafa;
+   font-weight: bold;
+}
+
+.socailNetworkIcons {
+   height: 0.875rem;
+   cursor: pointer;
+   width: 0.875rem;
+}
+
+.title.title {
+   color: #ffffff;
+   font-size: 0.688rem;
+   font-weight: 900;
+   margin-top: 0rem;
+}
+
+.mobileTitle.mobileTitle {
+   color: #ffffff;
+   font-size: 0.938rem;
+   font-weight: 900;
+   margin-top: 0rem;
+}

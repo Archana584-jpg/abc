@@ -1,0 +1,33 @@
+{
+   "request_id": "c45da132-d884-48d1-8641-13a246a6e47e",
+   "transaction_id": "7d3287a9-4b20-4da7-92d0-b9e20eb25caa",
+   "status": 200,
+   "data": {
+      "code": "1002",
+      "message": "Fetched address data.",
+      "personal_information": {
+         "full_name": "JOHN SMITH ",
+         "gender": "Male",
+         "age": "31",
+         "date_of_birth": "1999-05-27"
+      },
+      "address_data": [
+         {
+            "detailed_address": "KPMG 8TH FLOOR  BULIDNG NO-10 B DLF CYBER CITY  PHASE-2GURGAON",
+            "state": "XXXXX",
+            "pincode": "1XXX02",
+            "type": "Office",
+            "date_of_reporting": "20XX-07-31"
+         },
+         {
+            "detailed_address": "A3-139 PASCHIM VIHAR DELHI",
+            "state": "DELHI",
+            "pincode": "1XXX63",
+            "type": "Primary",
+            "date_of_reporting": "20XX-07-31"
+         }
+      ]
+   },
+   "timestamp": 1717398586139,
+   "path": "/profile-api/individual/fetch-address"
+}

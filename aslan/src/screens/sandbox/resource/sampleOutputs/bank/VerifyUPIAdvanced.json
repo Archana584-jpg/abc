@@ -1,0 +1,22 @@
+{
+   "request_id": "9e69d43a-26a2-4152-ab21-ed601c2f87ac",
+   "transaction_id": "7fd879ff-50d0-4878-a782-846613901f93",
+   "status": 200,
+   "data": {
+      "code": "1050",
+      "message": "UPI successfully verified.",
+      "upi_data": {
+         "name": "XXXX",
+         "bank": "XXXXXX",
+         "branch": "XXX",
+         "centre": "XXXX",
+         "district": "XXX",
+         "state": "UTTAR PRADESH",
+         "address": "ALLAHABAD, UP-211001",
+         "contact": "+910221800223344",
+         "city": "XXX"
+      }
+   },
+   "timestamp": 1773730735175,
+   "path": "/bank-api/verify-upi-advanced"
+}

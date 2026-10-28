@@ -1,0 +1,26 @@
+{
+   "request_id": "2e261f49-00fa-4e44-b075-1f7fe826fe70",
+   "transaction_id": "26168bf9-08cd-4d79-9b68-e0620c4763ff",
+   "status": 200,
+   "data": {
+      "code": "1017",
+      "message": "Found 3 udyam registration records.",
+      "udyam_list": ["UDYAM-WB-11-1111111", "UDYAM-HR-11-1111111", "UDYAM-MH-11-1111111"],
+      "udyam_source": [
+         {
+            "udyam_number": "UDYAM-WB-11-1111111",
+            "source": ["PAN"]
+         },
+         {
+            "udyam_number": "UDYAM-HR-11-1111111",
+            "source": ["MOBILE", "PAN"]
+         },
+         {
+            "udyam_number": "UDYAM-MH-11-1111111",
+            "source": ["MOBILE"]
+         }
+      ]
+   },
+   "timestamp": 1745813439174,
+   "path": "/msme-api/udyam/lookup"
+}

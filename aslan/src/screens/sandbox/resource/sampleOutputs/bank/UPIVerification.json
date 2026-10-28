@@ -1,0 +1,13 @@
+{
+   "request_id": "a62b5b8a-94ac-4410-b56f-08c28ec089e3",
+   "status": 200,
+   "data": {
+      "code": "1013",
+      "message": "UPI successfully verified.",
+      "upi_data": {
+         "name": "AXXXX YXXXX"
+      }
+   },
+   "timestamp": 1676015564586,
+   "path": "/verify-upi"
+}

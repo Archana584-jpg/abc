@@ -1,0 +1,36 @@
+{
+   "request_id": "2l54p12c-62eb-318q-8bb9-7f9136c76830",
+   "status": 200,
+   "data": {
+      "code": "1004",
+      "message": "Found 3 records for the given company name.",
+      "companies": [
+         {
+            "type": "CIN",
+            "company_id": "XXXX",
+            "name": "TECH 1",
+            "state": "Delhi",
+            "incorporation_date": "2023-01-01",
+            "company_name_status": "Allocated"
+         },
+         {
+            "type": "LLPIN",
+            "company_id": "XXXX",
+            "name": "TECH 2",
+            "state": "Haryana",
+            "incorporation_date": "2023-01-01",
+            "company_name_status": "Reserved"
+         },
+         {
+            "type": "FORM_INC_REF_NUMBER",
+            "company_id": "XXXX",
+            "name": "TECH 3",
+            "state": "Delhi",
+            "incorporation_date": "2023-01-01",
+            "company_name_status": "Applied For"
+         }
+      ]
+   },
+   "timestamp": 1686635213373,
+   "path": "/fetch-by-name"
+}

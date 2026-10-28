@@ -1,0 +1,12 @@
+{
+   "request_id": "054c63f2-0ff0-4b70-8cfa-8ec56c35f1ce",
+   "transaction_id": "347aca94-81ad-4e86-b490-2dfb24ff4bed",
+   "status": 200,
+   "data": {
+      "code": "1019",
+      "message": "Bank statement uploaded successfully.",
+      "transaction_id": "347aca94-XXXX-XXXX-b490-2dfb24ff4bed"
+   },
+   "timestamp": 1712644186999,
+   "path": "/bank-api/bank-statement-analyzer/upload"
+}

@@ -1,0 +1,26 @@
+{
+   "request_id": "1ee5a5d7-ff51-4ee1-97d8-124d3aedd621",
+   "status": 200,
+   "data": {
+      "code": "1009",
+      "message": "Data extracted.",
+      "ocr_data": {
+         "document": {
+            "document_type": "PAN",
+            "document_id": "BEXXXXXXXX",
+            "name": "KARAN XXXXXX",
+            "father_name": "RAJ XXXXXXXXX",
+            "date_of_birth": "1992-XX-XX"
+         },
+         "metadata": {
+            "components": [
+               {
+                  "tags": ["PAN_FRONT"]
+               }
+            ]
+         }
+      }
+   },
+   "timestamp": 1622190587629,
+   "path": "/ocr"
+}

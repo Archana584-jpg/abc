@@ -1,0 +1,28 @@
+{
+   "request_id": "fcc0021e-d7dc-407b-b003-d064d83502dc",
+   "transaction_id": "fcc0021e-d7dc-407b-b003-d064d83502dc",
+   "status": 200,
+   "data": {
+      "code": "1005",
+      "message": "Challan Fetched.",
+      "challan_data": [
+         {
+            "document_type": "CHALLAN",
+            "document_id": "123456",
+            "status": "Not Paid",
+            "area_name": "Delhi",
+            "date_issued": "2021-04-20T16:18:00",
+            "accused_name": "ABCD",
+            "offence_data": [
+               {
+                  "offence_description": "USING MOBILE WHILE DRIVING/RIDING"
+               }
+            ],
+            "amount": 1000,
+            "state": "DL"
+         }
+      ]
+   },
+   "timestamp": 1712136869206,
+   "path": "/rc-api/echallan/fetch"
+}

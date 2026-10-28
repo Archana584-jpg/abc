@@ -1,0 +1,350 @@
+{
+   "id": "zaakpay_save_gstin_document",
+   "name": "Zaakpay Save GSTIN Document",
+   "header": {
+      "title": { "text": "Verify GSTIN Details", "className": "text-md font-semibold text-title" },
+      "image": {
+         "src": "https://onboarding-resources-dev.s3.ap-south-1.amazonaws.com/assets/gst.svg"
+      },
+      "icon": { "src": "", "className": "text-xl cursor-pointer mr-2", "iconName": "ArrowLeftOutlined" },
+      "action": {
+         "onClick": {
+            "api": {
+               "type": "EXECUTE_ACTION",
+               "executeActionType": "IMMEDIATE_BACK_NODE_MOVEMENT_ACTION",
+               "requestType": "EXECUTE_ACTION"
+            }
+         }
+      }
+   },
+   "layout": [
+      {
+         "type": "ALERT",
+         "dataSource": {
+            "onValidCondition": "data.generic_data"
+         },
+         "props": {
+            "type": "error",
+            "className": "px-3 py-2 flex items-center"
+         },
+         "wrapper": {
+            "style": {
+               "col": {
+                  "xs": 24,
+                  "md": 24
+               }
+            }
+         },
+         "content": {
+            "title": {
+               "text": "We couldn't fetch your GSTIN details. Please provide details to proceed."
+            }
+         }
+      },
+      {
+         "type": "FORM",
+         "formId": "zaakpay_save_gstin_document_form",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "mt-4"
+         },
+         "dataSource": {
+            "onValidCondition": "data.additional_data.gstin_detail"
+         },
+         "props": {
+            "layout": "vertical",
+            "requiredMark": true,
+            "className": "mt-6"
+         },
+         "content": {
+            "fields": [
+               {
+                  "type": "UPLOAD",
+                  "props": {
+                     "name": "gstin_detail.gstin_document_file",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "maxAllowedSize": {
+                           "size": 5,
+                           "message": "Please check the file size"
+                        },
+                        "allowedTypes": {
+                           "types": ["image/jpeg", "image/jpg", "image/png", "application/pdf"],
+                           "message": "Please check the file type"
+                        }
+                     },
+                     "mode": "DRAG_AND_DROP",
+                     "value": "gstin_document_file_urls"
+                  },
+                  "content": {
+                     "label": { "text": "Upload GST Certificate", "className": "text-subtitle" },
+                     "helperText": [
+                        {
+                           "text": "The “Legal Name” in the GST document should match with the PAN name",
+                           "className": "text-xs font-normal text-subtitle"
+                        },
+                        {
+                           "text": "The GSTIN must be from the same state where the company is registered",
+                           "className": "text-xs font-normal text-subtitle"
+                        }
+                     ],
+                     "title": {
+                        "text": "Drag and drop or click 'Choose File' to upload",
+                        "className": "text-subtitle text-[12px]"
+                     },
+                     "subtitle": {
+                        "text": "Supported format: jpeg, jpg, png, pdf • Max size: 5MB",
+                        "className": "text-subtitle text-[10px]"
+                     }
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 16 } }
+                  },
+                  "action": {
+                     "onUpload": {
+                        "payloadKey": "additional_data.gstin_detail",
+                        "api": {
+                           "type": "UPLOAD_DOCUMENT",
+                           "executeActionType": "DOCUMENT_UPLOAD_ACTION",
+                           "requestType": "DOCUMENT_UPLOAD",
+                           "fileKey": "gstin_detail.gstin_document_file",
+                           "formId": "zaakpay_save_gstin_document_form"
+                        }
+                     }
+                  }
+               },
+               {
+                  "type": "DIVIDER",
+                  "props": {
+                     "className": "mt-0"
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } }
+                  }
+               },
+               {
+                  "type": "RADIO_GROUP",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 20 } }
+                  },
+                  "props": {
+                     "name": "is_gstin_operational_address_same",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        }
+                     },
+                     "direction": "horizontal",
+                     "size": 16,
+                     "value": "is_gstin_operational_address_same"
+                  },
+                  "impactedFields": {
+                     "other_gstin_address_proof_name": "",
+                     "gstin_detail.gstin_address_proof_document_file": "",
+                     "gstin_address_proof_document_type": ""
+                  },
+                  "content": {
+                     "label": {
+                        "text": "Is your operational address the same as the GST registered Principal and/or Additional address?",
+                        "className": "font-medium text-title"
+                     },
+                     "options": [
+                        {
+                           "label": {
+                              "text": "Yes, it's same",
+                              "className": "text-subtitle"
+                           },
+                           "value": "true"
+                        },
+                        {
+                           "label": {
+                              "text": "No, it's different",
+                              "className": "text-subtitle"
+                           },
+                           "value": "false"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "type": "SELECT",
+                  "props": {
+                     "name": "gstin_address_proof_document_type",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        }
+                     },
+                     "value": "gstin_address_proof_document_type"
+                  },
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "is_gstin_operational_address_same",
+                           "operator": "EQUALS",
+                           "value": "false"
+                        }
+                     ]
+                  },
+                  "impactedFields": {
+                     "other_gstin_address_proof_name": "",
+                     "gstin_detail.gstin_address_proof_document_file": ""
+                  },
+                  "content": {
+                     "label": { "text": "Select Address Proof", "className": "text-subtitle" },
+                     "placeHolder": { "text": "Select Any One Document", "className": "" },
+                     "options": [
+                        {
+                           "label": "Electricity Bill",
+                           "value": "Electricity Bill"
+                        },
+                        {
+                           "label": "Telephone Bill",
+                           "value": "Telephone Bill"
+                        },
+                        {
+                           "label": "Rent Agreement",
+                           "value": "Rent Agreement"
+                        },
+                        {
+                           "label": "Other",
+                           "value": "Other"
+                        }
+                     ]
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 10 } }
+                  }
+               },
+               {
+                  "type": "INPUT",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 10 } }
+                  },
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "is_gstin_operational_address_same",
+                           "operator": "EQUALS",
+                           "value": "false"
+                        },
+                        {
+                           "dependOn": "gstin_address_proof_document_type",
+                           "operator": "EQUALS",
+                           "value": "Other"
+                        }
+                     ]
+                  },
+                  "props": {
+                     "name": "other_gstin_address_proof_name",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        }
+                     },
+                     "direction": "horizontal",
+                     "value": "other_gstin_address_proof_name"
+                  },
+                  "content": {
+                     "label": { "text": "Specify Other Document", "className": "text-subtitle" },
+                     "placeHolder": { "text": "Type document name", "className": "" }
+                  }
+               },
+               {
+                  "type": "UPLOAD",
+                  "props": {
+                     "name": "gstin_detail.gstin_address_proof_document_file",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "maxAllowedSize": {
+                           "size": 5,
+                           "message": "Please check the file size"
+                        },
+                        "allowedTypes": {
+                           "types": ["image/jpeg", "image/jpg", "image/png", "application/pdf"],
+                           "message": "Please check the file type"
+                        }
+                     },
+                     "mode": "DRAG_AND_DROP",
+                     "value": "gstin_address_proof_document_file_urls"
+                  },
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "is_gstin_operational_address_same",
+                           "operator": "EQUALS",
+                           "value": "false"
+                        }
+                     ]
+                  },
+                  "content": {
+                     "label": { "text": "Upload Address Proof", "className": "text-subtitle" },
+                     "title": {
+                        "text": "Drag and drop or click 'Choose File' to upload",
+                        "className": "text-subtitle text-[12px]"
+                     },
+                     "subtitle": {
+                        "text": "Supported format: jpeg, jpg, png, pdf • Max size: 5MB",
+                        "className": "text-subtitle text-[10px]"
+                     }
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 16 } }
+                  },
+                  "action": {
+                     "onUpload": {
+                        "payloadKey": "additional_data.gstin_detail",
+                        "api": {
+                           "type": "UPLOAD_DOCUMENT",
+                           "executeActionType": "DOCUMENT_UPLOAD_ACTION",
+                           "requestType": "DOCUMENT_UPLOAD",
+                           "fileKey": "gstin_detail.gstin_address_proof_document_file",
+                           "formId": "zaakpay_save_gstin_document_form"
+                        }
+                     }
+                  }
+               },
+               {
+                  "type": "BUTTON",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } },
+                     "className": "flex justify-center"
+                  },
+                  "content": {
+                     "label": { "text": "Save and Proceed", "className": "text-white" }
+                  },
+                  "props": {
+                     "className": "px-6 py-0",
+                     "type": "primary"
+                  },
+                  "action": {
+                     "onClick": {
+                        "payloadKey": "additional_data.gstin_detail",
+                        "api": {
+                           "type": "EXECUTE_ACTION",
+                           "executeActionType": "SAVE_DATA_ACTION",
+                           "requestType": "EXECUTE_ACTION",
+                           "formId": "zaakpay_save_gstin_document_form"
+                        }
+                     }
+                  }
+               }
+            ]
+         }
+      }
+   ]
+}

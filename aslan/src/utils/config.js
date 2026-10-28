@@ -1,0 +1,11 @@
+export const baseURL = "https://api-dev.gridlines.io";
+export const reCaptchaV3Key = "6LcgSIMfAAAAAPMMJTxT0bE-yaCYAyE6O-qfLXrI";
+export const reCaptchaV2Key = "6Lfeo20mAAAAAO1itxX4XeerNHNKIeYYXL6GMjDF";
+export const gridlinesWebsiteUrl = "https://dev.gridlines.io";
+export const s3BucketUrl = "https://gridlines-resources-dev.s3.ap-south-1.amazonaws.com";
+export const gridlinesMetaContentUrl = `${s3BucketUrl}/metaContent.json`;
+export const freshdeskPortalAPIKey = "TEg4bkZCand5c0dibWdzWUdZUDpY";
+export const freshdeskURL = "https://ongrid.freshdesk.com";
+export const gridlinesPortalUrl = "https://app-dev.gridlines.io";
+export const portal = "portal";
+export const freshdeskResponderID = 36048102794; //If the freshdeskPortalAPIKey changes in the future, we will need to update this accordingly.

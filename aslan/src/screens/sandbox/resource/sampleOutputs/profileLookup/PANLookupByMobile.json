@@ -1,0 +1,15 @@
+{
+   "request_id": "0fa759c1-14f9-460c-acb3-546008c80ad7",
+   "transaction_id": "8d97a0f8-34e0-4878-83d4-753d222ddaf2",
+   "status": 200,
+   "data": {
+      "code": "1003",
+      "message": "Fetched PAN data.",
+      "pan_data": {
+         "pan_number": "GBSPR704**",
+         "full_name": "*******"
+      }
+   },
+   "timestamp": 1758177939460,
+   "path": "/profile-api/mobile/pan-lookup"
+}

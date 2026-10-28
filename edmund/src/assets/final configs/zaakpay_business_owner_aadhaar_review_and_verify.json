@@ -1,0 +1,377 @@
+{
+   "id": "zaakpay_business_owner_aadhaar_review_and_verify",
+   "name": "Verify Business Owner ID Proof",
+   "header": {
+      "title": { "text": "Verify Business Owner ID Proof", "className": "text-md font-semibold text-title" },
+      "subtitle": {
+         "text": "Provide a valid Identity proof of the Business Owner",
+         "className": "text-xs font-normal text-subtitle"
+      },
+      "image": {
+         "src": "https://onboarding-resources-dev.s3.ap-south-1.amazonaws.com/assets/business_owner_id_proof.svg"
+      },
+      "icon": { "src": "", "className": "text-xl cursor-pointer mr-2", "iconName": "ArrowLeftOutlined" },
+      "action": {
+         "onClick": {
+            "api": {
+               "type": "EXECUTE_ACTION",
+               "executeActionType": "IMMEDIATE_BACK_NODE_MOVEMENT_ACTION",
+               "requestType": "EXECUTE_ACTION"
+            }
+         }
+      }
+   },
+   "layout": [
+      {
+         "type": "STEPPER",
+         "wrapper": {
+            "className": "mx-auto",
+            "style": {
+               "className": "block",
+               "col": {
+                  "xs": 24,
+                  "md": 16
+               }
+            }
+         },
+         "props": {
+            "className": "!w-2/3"
+         },
+         "content": {
+            "steps": [
+               {
+                  "label": "A",
+                  "id": "zaakpay_init_business_owner_id_proof_verification",
+                  "name": "Init Business Owner ID Proof Verification",
+                  "title": {
+                     "text": "Upload ID Proof",
+                     "className": "text-base font-normal text-title"
+                  }
+               },
+               {
+                  "label": "B",
+                  "id": "zaakpay_business_owner_aadhaar_review_and_verify",
+                  "name": "Business Owner ID Proof Review and Verification",
+                  "title": {
+                     "text": "Review and Proceed",
+                     "className": "text-base font-normal text-title"
+                  }
+               }
+            ]
+         }
+      },
+      {
+         "type": "TEXT",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } }
+         },
+         "props": {},
+         "content": {
+            "label": {
+               "text": "Document uploaded : <span class='font-medium'>Aadhaar</span>",
+               "isHTML": true
+            }
+         }
+      },
+      {
+         "type": "IMAGE_VIEWER",
+         "props": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "fileKey": "aadhaar_document_file"
+         },
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 10 } },
+            "className": "mt-4"
+         },
+         "dataSource": {
+            "onValidCondition": "aadhaar_document_file_urls"
+         },
+         "action": {
+            "onReupload": {
+               "api": {
+                  "type": "EXECUTE_ACTION",
+                  "executeActionType": "IMMEDIATE_BACK_NODE_MOVEMENT_ACTION",
+                  "requestType": "EXECUTE_ACTION"
+               }
+            }
+         }
+      },
+      {
+         "type": "FORM",
+         "formId": "aadhaar_review_and_verify_form",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 14 } },
+            "className": "mt-4"
+         },
+         "props": {
+            "layout": "vertical",
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "requiredMark": true
+         },
+         "dataSource": {
+            "onValidCondition": "data.generic_data"
+         },
+         "content": {
+            "fields": [
+               {
+                  "type": "INPUT",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 12 } }
+                  },
+                  "props": {
+                     "name": "aadhaar_number",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "pattern": {
+                           "key": "AADHAAR_NUMBER"
+                        }
+                     },
+                     "direction": "horizontal",
+                     "value": "aadhaar_number"
+                  },
+                  "content": {
+                     "label": { "text": "UID", "className": "text-subtitle" },
+                     "placeHolder": { "text": "Enter UID", "className": "" }
+                  }
+               },
+               {
+                  "type": "INPUT",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 12 } }
+                  },
+                  "props": {
+                     "name": "aadhaar_name",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "pattern": {
+                           "key": "NAME"
+                        }
+                     },
+                     "direction": "horizontal",
+                     "value": "aadhaar_name"
+                  },
+                  "content": {
+                     "label": { "text": "Name", "className": "text-subtitle" },
+                     "placeHolder": { "text": "Enter Name", "className": "" }
+                  }
+               }
+            ]
+         }
+      },
+      {
+         "type": "ALERT",
+         "props": {
+            "type": "warning",
+            "className": "px-3 py-2 flex items-center"
+         },
+         "wrapper": {
+            "style": {
+               "col": {
+                  "xs": 24,
+                  "md": 24
+               }
+            },
+            "className": "my-4"
+         },
+         "content": {
+            "title": {
+               "text": "To verify Aadhaar details, you’ll need to enter an OTP, which will be sent to the mobile number linked to the Aadhaar.",
+               "className": "text-[#AD8B00]"
+            }
+         }
+      },
+      {
+         "type": "BUTTON",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "flex justify-center mt-4"
+         },
+         "content": {
+            "label": { "text": "Save and Proceed", "className": "text-white" }
+         },
+         "props": {
+            "className": "px-6 py-0",
+            "type": "primary"
+         },
+         "action": {
+            "onClick": {
+               "api": {
+                  "type": "EXECUTE_ACTION",
+                  "requestType": "EXECUTE_ACTION",
+                  "executeActionType": "INIT_AADHAAR_VERIFICATION_ACTION",
+                  "formId": "aadhaar_review_and_verify_form",
+                  "onSuccess": {
+                     "setState": [
+                        {
+                           "key": "aadhaar_otp_modal",
+                           "value": true,
+                           "stateChangeType": "MODAL_VISIBILITY"
+                        }
+                     ]
+                  },
+                  "onError": {
+                     "setState": [
+                        {
+                           "key": "aadhaar_otp_modal",
+                           "value": false,
+                           "stateChangeType": "MODAL_VISIBILITY"
+                        }
+                     ]
+                  }
+               }
+            }
+         }
+      },
+      {
+         "type": "OTP_MODAL",
+         "props": {
+            "closable": true,
+            "maskClosable": true,
+            "visibilityDependsOn": "aadhaar_otp_modal"
+         },
+         "content": {
+            "title": {
+               "text": "Please enter the OTP sent by UIDAI to your Aadhaar linked mobile number.",
+               "className": "text-base font-medium text-title mx-2"
+            },
+            "body": [
+               {
+                  "type": "FORM",
+                  "formId": "addhar_otp_form",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } }
+                  },
+                  "dataSource": {
+                     "onValidCondition": "data.generic_data"
+                  },
+                  "props": {
+                     "layout": "vertical",
+                     "style": { "col": { "xs": 24, "md": 24 } },
+                     "requiredMark": true
+                  },
+                  "content": {
+                     "fields": [
+                        {
+                           "type": "INPUT",
+                           "wrapper": {
+                              "style": { "col": { "xs": 24, "md": 12 } },
+                              "className": "hidden"
+                           },
+                           "props": {
+                              "name": "aadhaar_number",
+                              "isEditable": true,
+                              "direction": "horizontal",
+                              "value": "aadhaar_number"
+                           },
+                           "content": {
+                              "label": { "text": "UID", "className": "text-subtitle" },
+                              "placeHolder": { "text": "Enter UID", "className": "" }
+                           }
+                        },
+                        {
+                           "type": "INPUT",
+                           "wrapper": {
+                              "style": { "col": { "xs": 24, "md": 12 } },
+                              "className": "hidden"
+                           },
+                           "props": {
+                              "name": "aadhaar_name",
+                              "isEditable": true,
+                              "direction": "horizontal",
+                              "value": "aadhaar_name"
+                           },
+                           "content": {
+                              "label": { "text": "Name", "className": "text-subtitle" },
+                              "placeHolder": { "text": "Enter Name", "className": "" }
+                           }
+                        },
+                        {
+                           "type": "OTP_INPUT",
+                           "props": {
+                              "name": "aadhaar_verify_otp",
+                              "isEditable": true,
+                              "validation": {
+                                 "required": {
+                                    "isRequired": true,
+                                    "message": "This field is required"
+                                 }
+                              },
+                              "length": 6
+                           },
+                           "wrapper": {
+                              "style": {
+                                 "col": {
+                                    "xs": 24,
+                                    "md": 12
+                                 }
+                              },
+                              "className": "mx-auto my-4"
+                           }
+                        }
+                     ]
+                  }
+               }
+            ],
+            "resendButton": {
+               "type": "BUTTON",
+               "wrapper": {
+                  "style": { "col": { "xs": 24, "md": 24 } },
+                  "className": "flex justify-center"
+               },
+               "content": {
+                  "label": { "text": "Resend OTP", "className": "text-subtitle" }
+               },
+               "props": {
+                  "className": "px-6 py-0",
+                  "type": "link"
+               },
+               "action": {
+                  "onClick": {
+                     "api": {
+                        "type": "EXECUTE_ACTION",
+                        "requestType": "EXECUTE_ACTION",
+                        "executeActionType": "INIT_AADHAAR_VERIFICATION_ACTION",
+                        "formId": "aadhaar_review_and_verify_form"
+                     }
+                  }
+               }
+            },
+            "submitButton": {
+               "type": "BUTTON",
+               "wrapper": {
+                  "style": { "col": { "xs": 24, "md": 24 } },
+                  "className": "flex justify-center mt-6"
+               },
+               "content": {
+                  "label": { "text": "Submit", "className": "text-white" }
+               },
+               "dataSource": {
+                  "onValidCondition": "data.generic_data"
+               },
+               "props": {
+                  "className": "px-6 py-0",
+                  "type": "primary"
+               },
+               "action": {
+                  "onClick": {
+                     "api": {
+                        "type": "EXECUTE_ACTION",
+                        "executeActionType": "AADHAAR_VERIFY_ACTION",
+                        "requestType": "EXECUTE_ACTION",
+                        "formId": "addhar_otp_form"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   ]
+}

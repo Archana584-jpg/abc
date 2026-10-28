@@ -1,0 +1,41 @@
+{
+   "request_id": "56174b8c-5996-4235-b458-756430269256",
+   "transaction_id": "27a64192-cfd0-4451-ae45-04ad8e1dc31d",
+   "status": 200,
+   "data": {
+      "code": "1019",
+      "message": "Turnover details fetched.",
+      "gstin_data": {
+         "document_type": "GSTIN",
+         "document_id": "",
+         "status": "",
+         "pan": "",
+         "legal_name": "",
+         "trade_name": "",
+         "center_jurisdiction": "State - CBIC,Zone - NAGPUR,Commissionerate - NAGPUR II,Division - DIVISION AKOLA,Range - RANGE AKOLA-I",
+         "state_jurisdiction": "State - Maharashtra,Zone - Nagpur,Division - AMRAVATI,Charge - AKOLA_601 (Jurisdictional Office)",
+         "constitution_of_business": "Partnership",
+         "taxpayer_type": "Regular",
+         "aadhaar_verified": false,
+         "ekyc_verified": false,
+         "field_visit_conducted": false,
+         "date_of_registration": "2017-07-01",
+         "directors": [""],
+         "percent_tax_in_cash": "NA",
+         "annual_aggregate_turnover": "Slab: Rs. 5 Cr. to 25 Cr.",
+         "annual_aggregate_turnover_year": "2024-2025",
+         "principal_address": {
+            "email": "abcd@gmail.com",
+            "mobile": "9999999999"
+         }
+      },
+      "turnover_details": {
+         "gstin_estimated_total": 124000000,
+         "gstin_filed_total": 124000000,
+         "pan_estimated_total": 124000000,
+         "pan_filed_total": 124000000
+      }
+   },
+   "timestamp": 1751956749603,
+   "path": "/gstin-api/fetch-turnover-details"
+}

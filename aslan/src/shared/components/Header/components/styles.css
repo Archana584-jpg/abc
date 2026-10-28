@@ -1,0 +1,53 @@
+.account-activation-banner {
+   position: relative;
+   padding: 0rem 0.8rem;
+   border-radius: 8px;
+   border: 1px solid #3cc;
+   overflow: hidden;
+}
+
+.account-activation-banner::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(89deg, #809ce8 28.19%, #5fbbc3 73.11%);
+   opacity: 0.4;
+   z-index: 0;
+   border-radius: 8px;
+}
+
+.banner-text {
+   color: var(--Text-1, #2f2f2f);
+   font-family: Poppins;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+}
+
+.banner-text-sandbox {
+   color: var(--Text-1, #2f2f2f);
+   font-family: Poppins;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: normal;
+   text-decoration-line: underline;
+}
+
+.account-activate-button {
+   float: right;
+   margin: 0.37rem 0 0 1rem;
+   stroke-width: 70;
+   font-size: 0.7rem;
+}
+
+.unverified-banner-icon {
+   float: right;
+   margin: 0.37rem 0 0 1rem;
+   stroke-width: 70;
+   font-size: 0.7rem;
+}

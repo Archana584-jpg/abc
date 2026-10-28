@@ -1,0 +1,19 @@
+{
+   "request_id": "259f3818-d13f-431e-a937-2e38462e6771",
+   "transaction_id": "c017ef57-647b-4578-9d1a-269180427ee4",
+   "status": 200,
+   "data": {
+      "code": "1006",
+      "passport_data": {
+         "document_type": "PASSPORT",
+         "document_id": "VXXXXXXX",
+         "file_number": "VS3XXXXXXXXXXXX",
+         "first_name": "JOHN",
+         "last_name": "MILLER",
+         "date_of_birth": "1995-XX-XX",
+         "issue_date": "2021-XX-XX"
+      }
+   },
+   "timestamp": 1696847069015,
+   "path": "/fetch"
+}

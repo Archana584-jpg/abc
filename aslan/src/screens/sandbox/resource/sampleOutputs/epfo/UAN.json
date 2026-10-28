@@ -1,0 +1,21 @@
+{
+   "request_id": "52d56104-6587-4db1-8c56-1cc0b6166f6e",
+   "status": 200,
+   "data": {
+      "code": "1016",
+      "message": "UAN fetched from mobile.",
+      "uan_list": ["1006XXXXX80X", "1006XXXXX901"],
+      "uan_source": [
+         {
+            "uan": "1006XXXXX80X",
+            "source": ["PAN"]
+         },
+         {
+            "uan": "1006XXXXX901",
+            "source": ["MOBILE", "PAN"]
+         }
+      ]
+   },
+   "timestamp": 1652724873537,
+   "path": "/epfo-api/fetch-uan"
+}

@@ -1,0 +1,21 @@
+{
+   "request_id": "e164dbc6-bcb4-4928-a65d-ad3f79b48744",
+   "transaction_id": "511adc47-10e3-4d73-b0d4-9782b4bd13d4",
+   "status": 200,
+   "data": {
+      "code": "1002",
+      "message": "Data extracted.",
+      "ocr_data": {
+         "document_id": "MHXXXXXXXXXX5",
+         "name": "BXXXXXXXXX",
+         "date_of_birth": "1997-12-24",
+         "issued_date": "2007-12-24",
+         "place_of_issue": "MXXXXXXX",
+         "dependent_name": "JXXXXXXXXXX",
+         "valid_till": "2035-05-13",
+         "address": "1XX3 F-BXXG., AXXXXI (NXX-8) SXXXXD ROAD, NXXXXD CITY, PXXE. PIN 4XXXX1"
+      }
+   },
+   "timestamp": 1726559414490,
+   "path": "/dl-api/ocr"
+}

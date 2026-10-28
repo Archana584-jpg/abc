@@ -1,0 +1,19 @@
+.first_col.first_col {
+   background: var(--BG-gradient, linear-gradient(180deg, #edf5f6 0%, #e8f2fc 100%)) !important;
+}
+
+.title.title {
+   font-size: 1.875rem;
+   line-height: 3.75rem;
+   color: #2f2f2f;
+   font-weight: bold;
+   padding-top: 2.138rem;
+   margin: 0;
+}
+
+@media screen and (max-width: 720px) {
+   .title {
+      font-size: 1.25rem !important;
+      line-height: 1.625rem !important;
+   }
+}

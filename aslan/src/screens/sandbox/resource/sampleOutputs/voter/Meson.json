@@ -1,0 +1,26 @@
+{
+   "request_id": "931de643-f72c-4fbd-b067-53dc3c327269",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "Details Fetched",
+      "voter_data": {
+         "document_type": "VOTER",
+         "name": "Ashok Kumar",
+         "father_name": "Rakesh Kumar",
+         "gender": "MALE",
+         "age": "24",
+         "district": "Nalgonda",
+         "state": "Haryana",
+         "assembly_constituency_number": "90",
+         "assembly_constituency_name": "Gurgaon",
+         "parliamentary_constituency_name": "Nalgonda",
+         "part_number": "180",
+         "part_name": "Sonapur",
+         "serial_number": "791",
+         "polling_station": "E.V Collage,Sonapur - 180"
+      }
+   },
+   "timestamp": 1635844930767,
+   "path": "/meson/fetch"
+}

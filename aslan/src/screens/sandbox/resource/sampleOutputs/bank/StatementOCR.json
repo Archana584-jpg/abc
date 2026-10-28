@@ -1,0 +1,30 @@
+{
+   "request_id": "265a2593-8022-4429-a8f4-dee81d4da818",
+   "transaction_id": "3dde3db2-3a83-4777-9934-3f6b41926e98",
+   "status": 200,
+   "data": {
+      "code": "1030",
+      "message": "Data extracted.",
+      "ocr_data": {
+         "customer_id": "8XXXXXX2",
+         "account_number": "9XXXXXXXXXXXX5",
+         "account_holder_name": "AXXXX XX",
+         "address": "AXX7, SXXR TXXXXX, BXXXXE RXXD, VXXXR, BXXXXXU, KARNATAKA, 5XXXXX",
+         "account_status": "",
+         "pan": "CXXXXXXE",
+         "contact_number": "XXXXXX2601",
+         "email": "MAXXXXTH@GMAIL.COM",
+         "branch_code": "194",
+         "null": null,
+         "branch_name": "",
+         "branch_address": "",
+         "ifsc": "UXXXXXXX4",
+         "micr": "5XXXXXX8",
+         "cif": "5XXXXXXX8",
+         "city": "BXXXXXXXU",
+         "state": "KXXXXXXA"
+      }
+   },
+   "timestamp": 1728450249588,
+   "path": "/bank-api/statement/ocr"
+}

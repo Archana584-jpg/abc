@@ -1,0 +1,24 @@
+{
+   "request_id": "2c2cfbca-b365-44a1-9c69-0cea9d0418cc",
+   "transaction_id": "61acc697-c0b5-4638-8305-71ebc0c8372e",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "Valid PAN.",
+      "pan_data": {
+         "document_type": "PAN",
+         "document_id": "GXXXXXXXXXX",
+         "name": "RXXXXX DXXXX KXXXX",
+         "first_name": "RXXXXX",
+         "middle_name": "DXXXX",
+         "last_name": "KXXXX",
+         "category": "P",
+         "category_type": "Individual",
+         "is_individual": true,
+         "individual_tax_compliance_status": "Operative",
+         "aadhaar_linked": true
+      }
+   },
+   "timestamp": 1725451721715,
+   "path": "/pan-api/fetch-advanced"
+}

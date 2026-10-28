@@ -1,0 +1,17 @@
+{
+   "request_id": "48afc7ee-e3e3-47b5-b873-ca3111bda803",
+   "transaction_id": "ce434fe0-89a0-4001-a756-47aa07248650",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "Extracted details.",
+      "rc_data": {
+         "document_type": "RC",
+         "rc_number": "UPXXXXXXX",
+         "owner_name": "MANISH BHATTNAGAR",
+         "mobile_number": "88XXXXXXXX"
+      }
+   },
+   "timestamp": 1758710053604,
+   "path": "/rc-api/fetch-contact"
+}

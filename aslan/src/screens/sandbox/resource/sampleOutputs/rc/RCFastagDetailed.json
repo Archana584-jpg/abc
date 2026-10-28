@@ -1,0 +1,58 @@
+{
+   "request_id": "2ba7c62f-bd26-469b-9ca9-9b8a02e455eb",
+   "transaction_id": "d8f52b81-e22c-46ef-bd2d-170dfd393c4a",
+   "status": 200,
+   "data": {
+      "code": "1009",
+      "message": "Fetched Fastag Details.",
+      "vehicle_fastag_data": {
+         "rc_number": "TS07GK1843",
+         "active_tag_age": "35 Months",
+         "tags_summary": {
+            "total_tags": 4,
+            "active_tags": 1,
+            "inactive_tags": 3
+         },
+         "fastag_records": [
+            {
+               "tag_id": "3416XXXXXXXXXXXXXXXXD620",
+               "vrn": "TS07GK1843",
+               "tag_status": "INACTIVE",
+               "vehicle_class": "VC4",
+               "action": "Your tag was closed on 2024-07-10.",
+               "issue_date": "2024-04-24",
+               "issuer_bank": "IDFC Bank"
+            },
+            {
+               "tag_id": "3416XXXXXXXXXXXXXXXXB7A0",
+               "vrn": "TS07GK1843",
+               "tag_status": "ACTIVE",
+               "vehicle_class": "VC4",
+               "action": "Your Tag is Active. In case of any issues or further details contact your bank.",
+               "issue_date": "2022-07-18",
+               "issuer_bank": "ICICI Bank"
+            },
+            {
+               "tag_id": "3416XXXXXXXXXXXXXXXX11A0",
+               "vrn": "TS07GK1843",
+               "tag_status": "INACTIVE",
+               "vehicle_class": "VC4",
+               "action": "Your tag was closed on 2022-08-28.",
+               "issue_date": "2021-08-01",
+               "issuer_bank": "PAYTM Bank"
+            },
+            {
+               "tag_id": "3416XXXXXXXXXXXXXXXX9A80",
+               "vrn": "TS07GK1843",
+               "tag_status": "INACTIVE",
+               "vehicle_class": "VC4",
+               "action": "Your tag was closed on 2022-08-25.",
+               "issue_date": "2018-10-25",
+               "issuer_bank": "PAYTM Bank"
+            }
+         ]
+      }
+   },
+   "timestamp": 1750409457702,
+   "path": "/rc-api/fastag/fetch-detailed"
+}

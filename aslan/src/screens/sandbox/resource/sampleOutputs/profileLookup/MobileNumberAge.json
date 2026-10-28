@@ -1,0 +1,22 @@
+{
+   "request_id": "81c98d0a-d818-432a-a6bb-862be59e0f72",
+   "transaction_id": "6e46c7d8-404f-4224-a41a-50425bb454c0",
+   "status": 200,
+   "data": {
+      "code": "1008",
+      "message": "Fetched mobile number age data.",
+      "mobile_number_age_data": {
+         "has_porting_history": "Yes",
+         "mobile_age": "more than 20 Years",
+         "is_number_active": "Yes",
+         "is_number_valid": "Yes",
+         "ported_region": "Delhi",
+         "current_ported_telecom_provider": "Vodafone",
+         "original_region": "Delhi",
+         "original_telecom_provider": "Airtel",
+         "roaming": "No"
+      }
+   },
+   "timestamp": 1744435718425,
+   "path": "/profile-api/mobile/number-age"
+}

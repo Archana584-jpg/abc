@@ -1,0 +1,70 @@
+.offeringsSelection {
+   background-color: white;
+}
+
+.offeringsSelection:hover {
+   background-color: #7cbfbf;
+   color: white;
+   border-color: white;
+}
+
+.talkToSalesButton {
+   color: #33cccc;
+}
+
+.talkToSalesButton:hover {
+   background-color: #7cbfbf;
+   color: white;
+}
+
+.viewApiButton:hover {
+   opacity: 0.7;
+}
+
+.arrowIcon {
+   width: 1rem;
+   height: 2rem;
+   margin-top: 1.25rem;
+   margin-left: 0.2rem;
+   border-top: 1.25rem solid transparent;
+   border-bottom: 1.25rem solid transparent;
+
+   border-right: 1.875rem solid white;
+   background-color: #eaf7f7;
+}
+
+.offeringDescription > p {
+   color: #717988;
+   font-size: 1.125rem;
+   line-height: 1.5rem;
+   border: none;
+   background: none;
+   padding: 0rem;
+   font-family: Poppins;
+   overflow: hidden;
+}
+
+.productIntegrationCode > code {
+   color: #a5d6ff;
+   font-size: 1.125rem;
+   line-height: 1.5rem;
+   background: none;
+   border: none;
+   font-family: Poppins;
+   overflow: hidden;
+   padding-top: 1rem;
+}
+
+.title {
+   color: #2f2f2f;
+   font-weight: 700;
+   font-size: 2.188rem;
+   line-height: 3.75rem;
+}
+
+.input {
+   background: #ffffff;
+   border-radius: 0.25rem;
+   border: 0.063rem solid #d8d8d8;
+   height: 3.75rem;
+}

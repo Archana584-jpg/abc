@@ -1,0 +1,86 @@
+{
+   "request_id": "595e58ce-9325-48f4-8244-99c80144da94",
+   "status": 200,
+   "data": {
+      "code": "1008",
+      "transaction_id": "7863d7f1-0ae7-4912-8f3a-612eba04aea3",
+      "enterprise_data": {
+         "document_id": "UDYAM-MP-33-XXXXX",
+         "major_activity": "Manufacturing",
+         "enterprise_type": "MICRO",
+         "organization_type": "Proprietary",
+         "name": "XXXXX Trading Company",
+         "mobile": "XXXXX",
+         "email": "XXXXX@gmail.com",
+         "address": {
+            "door_no": "XXXXX XXXXX",
+            "building": "XXXXX XXXXX",
+            "area": "XXXXX",
+            "block": "XXXXX XXXXX",
+            "street": "XXXXX Road",
+            "city": "XXXXX",
+            "state": "MADHYA PRADESH",
+            "district": "XXXXX",
+            "pincode": "XXXXX"
+         },
+         "date_of_incorporation": "2020-01-13",
+         "date_of_commencement": "2020-03-09",
+         "date_of_udyam_registration": "2023-05-15",
+         "dic": "dic XXXXX ( MADHYA PRADESH )",
+         "msme_di": "INDORE ( MADHYA PRADESH )",
+         "social_category": "General"
+      },
+      "owner_details": {
+         "owner_name": "SHRI XXXXX XXXXX",
+         "gender": "Male",
+         "owner_category": "General",
+         "specially_abled": false,
+         "mobile": "XXXXX",
+         "pan": "XXXXX"
+      },
+      "bank_details": {
+         "bank_name": "HDFC Bank",
+         "account_number": "XXXXX",
+         "ifsc": "HDFC00xxxxx"
+      },
+      "total_employees": "x",
+      "male_employees": "x",
+      "female_employees": "x",
+      "capital_investments": [
+         {
+            "financial_year": "2021-22",
+            "enterprise_type": "Micro",
+            "writtin_down_value": "0.00",
+            "deductions": "0.00",
+            "turnover": "0.00",
+            "export_turnover": "0.00",
+            "net_turnover": "0.00",
+            "itr_filing_status": true,
+            "itr_filed": "ITR - 3, 5, 6"
+         }
+      ],
+      "enterprise_units": [
+         {
+            "name": "XXXXX XXXXX",
+            "address": {
+               "door_no": "XXXXX XXXXX",
+               "building": "XXXXX XXXXX",
+               "area": "XXXXX",
+               "block": "XXXXX XXXXX",
+               "street": "XXXXX Road",
+               "city": "XXXXX",
+               "state": "MADHYA PRADESH",
+               "district": "XXXXX",
+               "pincode": "XXXXX"
+            }
+         }
+      ],
+      "nic_data": {
+         "nic_2_digit": "XXXXX XXXXX",
+         "nic_4_digit": "Name of Premises/ Building",
+         "nic_5_digit": "XXXXX XXXXX"
+      }
+   },
+   "timestamp": 1685629583942,
+   "path": "/udyam/submit-otp"
+}

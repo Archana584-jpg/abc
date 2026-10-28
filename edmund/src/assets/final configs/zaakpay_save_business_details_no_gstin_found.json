@@ -1,0 +1,130 @@
+{
+   "id": "zaakpay_save_business_details_no_gstin_found",
+   "name": "No GST FOUND",
+   "header": {
+      "title": { "text": "Verify GSTIN Details", "className": "text-md font-semibold text-title" },
+      "image": {
+         "src": "https://onboarding-resources-dev.s3.ap-south-1.amazonaws.com/assets/gst.svg"
+      },
+      "icon": { "src": "", "className": "text-xl cursor-pointer mr-2", "iconName": "ArrowLeftOutlined" },
+      "action": {
+         "onClick": {
+            "api": {
+               "type": "EXECUTE_ACTION",
+               "executeActionType": "IMMEDIATE_BACK_NODE_MOVEMENT_ACTION",
+               "requestType": "EXECUTE_ACTION"
+            }
+         }
+      }
+   },
+   "layout": [
+      {
+         "type": "ALERT",
+         "props": {
+            "type": "warning",
+            "className": "px-3 py-8 flex items-start"
+         },
+         "dataSource": {
+            "onValidCondition": "data.generic_data"
+         },
+         "wrapper": {
+            "style": {
+               "col": {
+                  "xs": 24,
+                  "md": 12
+               }
+            }
+         },
+         "content": {
+            "title": {
+               "text": "No GSTIN was found for the provided PAN <b>{individual_pan_number}</b>",
+               "isHTML": true,
+               "className": "text-[#AD8B00]"
+            }
+         }
+      },
+      {
+         "type": "FORM",
+         "formId": "zaakpay_save_business_details_no_gstin_found_form",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "mt-4"
+         },
+         "dataSource": {
+            "onValidCondition": "additional_data.gstin_detail"
+         },
+         "props": {
+            "layout": "vertical",
+            "requiredMark": true
+         },
+         "content": {
+            "fields": [
+               {
+                  "type": "RADIO_GROUP",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 20 } }
+                  },
+                  "props": {
+                     "name": "gstin_reason",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        }
+                     },
+                     "size": 16,
+                     "value": "gstin_reason"
+                  },
+                  "content": {
+                     "label": {
+                        "text": "Select the reason below that best explains why your business does not have a GST registration.",
+                        "className": "font-medium text-title"
+                     },
+                     "options": [
+                        {
+                           "label": {
+                              "text": "My annual turnover is less than GST prescribed limit",
+                              "className": "text-subtitle"
+                           },
+                           "value": "My annual turnover is less than GST prescribed limit"
+                        },
+                        {
+                           "label": {
+                              "text": "My business category is exempted from GST",
+                              "className": "text-subtitle"
+                           },
+                           "value": "My business category is exempted from GST"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "type": "BUTTON",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } },
+                     "className": "flex justify-center"
+                  },
+                  "content": {
+                     "label": { "text": "Save and Proceed", "className": "text-white" }
+                  },
+                  "props": {
+                     "className": "px-6 py-0",
+                     "type": "primary"
+                  },
+                  "action": {
+                     "onClick": {
+                        "api": {
+                           "type": "EXECUTE_ACTION",
+                           "executeActionType": "SAVE_DATA_ACTION",
+                           "requestType": "EXECUTE_ACTION",
+                           "formId": "zaakpay_save_business_details_no_gstin_found_form"
+                        }
+                     }
+                  }
+               }
+            ]
+         }
+      }
+   ]
+}

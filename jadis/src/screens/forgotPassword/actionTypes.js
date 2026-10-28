@@ -1,0 +1,5 @@
+// when user forgot password (still not finalized)
+export const FORGOT_PASSWORD = "FORGOT_PASSWORD";
+export const FORGOT_PASSWORD_LOADING = "FORGOT_PASSWORD_LOADING";
+export const FORGOT_PASSWORD_SUCCESS = "FORGOT_PASSWORD_SUCCESS";
+export const FORGOT_PASSWORD_ERROR = "FORGOT_PASSWORD_ERROR";

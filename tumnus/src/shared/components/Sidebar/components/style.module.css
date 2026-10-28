@@ -1,0 +1,20 @@
+.container {
+   background-color: #e6f2f2;
+   z-index: 5;
+}
+
+.selectedNavItem {
+   background-color: #ebf7f7;
+   border-color: #ebf7f7;
+}
+
+.menuItem {
+   font-size: 0.875rem !important;
+   color: #428686 !important;
+   line-height: 1.313rem !important;
+   padding-left: 1.938rem !important;
+   width: 100% !important;
+   margin-left: 0 !important;
+   margin-bottom: 0.5rem !important;
+   border-radius: 0 !important;
+}

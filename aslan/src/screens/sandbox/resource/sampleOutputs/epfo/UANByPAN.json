@@ -1,0 +1,12 @@
+{
+   "request_id": "d89085ef-c0c0-4946-82fb-94d497e97536",
+   "transaction_id": "835cc6d4-1763-497e-95ef-0d37b0eb9a88",
+   "status": 200,
+   "data": {
+      "code": "1029",
+      "message": "UAN fetched from pan.",
+      "uan_list": ["10XXXXXXXX42", "10XXXXXXXX13"]
+   },
+   "timestamp": 1697529608279,
+   "path": "/uan/fetch-by-pan"
+}

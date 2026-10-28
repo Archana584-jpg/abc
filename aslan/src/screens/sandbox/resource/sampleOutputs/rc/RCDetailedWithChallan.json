@@ -1,0 +1,92 @@
+{
+   "request_id": "96fb4301-11d8-4869-8728-fb9c2283b446",
+   "status": 200,
+   "data": {
+      "code": "1003",
+      "message": "Extracted details with challan.",
+      "rc_data": {
+         "document_type": "RC",
+         "owner_data": {
+            "serial": "1",
+            "name": "CHIRAG XXXX",
+            "father_name": "KAMLESH XXXX",
+            "present_address": "SENTHI CHITTAURGARH,, Chittaurgarh -312XXX",
+            "permanent_address": "SENTHI CHITTAURGARH,, Chittaurgarh -312XXX"
+         },
+         "issue_date": "2021-08-10",
+         "expiry_date": "2036-08-09",
+         "registered_at": "CHITTORGARH RTO, Rajasthan",
+         "status": "ACTIVE",
+         "norms_type": "BHARAT STAGE VI",
+         "non_use_status": "N",
+         "insurance_data": {
+            "policy_number": "3XX0/00XXXXX11/000/00",
+            "company": "CHOLAMANDALAM GENERAL INSURANCE CO. LTD.",
+            "expiry_date": "2026-07-05"
+         },
+         "vehicle_data": {
+            "manufactured_date": "2021-03",
+            "category": "2WN",
+            "category_description": "M-Cycle/Scooter(2WN)",
+            "chassis_number": "MEXXXXXXXXXXXXXX645",
+            "engine_number": "J3XXXXXXXXXXXX922",
+            "maker_description": "ROYAL-ENFIELD (UNIT OF EICHER LTD)",
+            "maker_model": "METEOR 350",
+            "body_type": "MOTORCYCLE",
+            "fuel_type": "PETROL",
+            "color": "STELLAR BLACK",
+            "cubic_capacity": "349.34",
+            "gross_weight": "375",
+            "number_of_cylinders": "1",
+            "seating_capacity": "2",
+            "sleeper_capacity": "0",
+            "standing_capacity": "0",
+            "wheelbase": "1400",
+            "unladen_weight": "191"
+         }
+      },
+      "challan_data": [
+         {
+            "document_type": "CHALLAN",
+            "document_id": "HR46XXXXXXXXXXXX1252",
+            "status": "Pending",
+            "area_name": "Gurugram PCB",
+            "area_coordinates": "28.4174,77.0911",
+            "date_issued": "2022-07-10 07:52:06",
+            "accused_name": "CHIRAG XXXXXX",
+            "owner_name": "CHIRAG XXXXXX",
+            "offence_data": [
+               {
+                  "offence_id": "5562",
+                  "offence_description": "35. Violation of road marking"
+               }
+            ],
+            "amount": 500,
+            "rto_name": "Gurgaon - Gurugram PCB",
+            "state": "Haryana"
+         },
+         {
+            "document_type": "CHALLAN",
+            "document_id": "HR56XXXXXXXXXXXX540",
+            "status": "Cash",
+            "area_name": "East Zone",
+            "area_coordinates": "28.465718626295,77.064317626488",
+            "date_issued": "2022-03-05 14:15:40",
+            "accused_name": "CHINMAY XXXXX",
+            "owner_name": "CHIRAG XXXXX",
+            "offence_data": [
+               {
+                  "offence_id": "5581",
+                  "offence_description": "54. Pillion Rider w/o Helmet"
+               }
+            ],
+            "amount": 1000,
+            "rto_name": "Gurgaon - East Zone",
+            "state": "Haryana",
+            "receipt_url": "https://echallan.parivahan.gov.in/api/print-challan-receipt?data=Pbphq3gU11eQ"
+         }
+      ]
+   },
+   "timestamp": 1659702971363,
+   "path": "/fetch-detailed-challan"
+}

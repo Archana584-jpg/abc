@@ -1,0 +1,21 @@
+{
+   "request_id": "1ec8e119-caae-4644-933b-bacbd39cb9fb",
+   "transaction_id": "aed73106-da43-40e7-aa29-42523f856eaa",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "Bank Account details verified successfully.",
+      "bank_account_data": {
+         "name": "VXXXXL",
+         "bank_name": "BXXX MXXXA",
+         "branch": "LXXXX LXXXXXH",
+         "utr": "XXXXXXXXXX",
+         "account_number": "1XXXXXXXXXX7",
+         "ifsc": "BXXXXXXXXI",
+         "account_status": "ACTIVE",
+         "npci_response_code": "0"
+      }
+   },
+   "timestamp": 1738848296771,
+   "path": "/bank-api/verify/hybrid"
+}

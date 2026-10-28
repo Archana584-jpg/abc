@@ -1,0 +1,15 @@
+{
+   "request_id": "8402cd76-9cc2-4fc7-ac1e-8fe594f565f5",
+   "transaction_id": "3cd8f5ca-a7af-415f-84a5-dad69e5ab052",
+   "status": 200,
+   "data": {
+      "code": "1001",
+      "message": "Delivery address confirmed.",
+      "delivery_data": {
+         "visited_before": true,
+         "last_visited_date": "2024-01-12"
+      }
+   },
+   "timestamp": 1714023081224,
+   "path": "/address-api/delivery-confirmation"
+}

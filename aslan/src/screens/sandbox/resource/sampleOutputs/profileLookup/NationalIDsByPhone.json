@@ -1,0 +1,25 @@
+{
+   "request_id": "ec24063a-238f-4ca3-bdb3-9b66e5ef8fb9",
+   "transaction_id": "10b51f9f-cbc2-4486-ad01-31607c438609",
+   "status": 200,
+   "data": {
+      "code": "1001",
+      "message": "Fetched national documents.",
+      "national_document_data": {
+         "passport": [
+            {
+               "serial_number": "1",
+               "value": "ABCD1234"
+            }
+         ],
+         "pan": [
+            {
+               "serial_number": "1",
+               "value": "ABCD1234"
+            }
+         ]
+      }
+   },
+   "timestamp": 1717397247984,
+   "path": "/profile-api/individual/fetch-national-ids"
+}

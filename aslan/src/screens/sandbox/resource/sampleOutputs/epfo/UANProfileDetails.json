@@ -1,0 +1,23 @@
+{
+   "request_id": "6318370d-a3fb-4e24-9bd3-31be6f1b210c",
+   "transaction_id": "550bd0f8-e2da-4055-a1c4-be3cff1e0997",
+   "status": 200,
+   "data": {
+      "code": "1035",
+      "message": "profile details fetched.",
+      "uan_profile_data": {
+         "uan": "10XXXXXXXXXX",
+         "pan_number": "RXXXXXXXXX",
+         "masked_aadhaar_number": "9XXXXXXXXXXX",
+         "dob": "1995-10-16",
+         "gender": "M",
+         "guardian_name": "PABAN SAHU",
+         "guardian_relation": "F",
+         "bank_account_number": "34XXXXXXXXXXX",
+         "ifsc": "UXXXXXXXXXX",
+         "mobile_number": "93XXXXXXXX"
+      }
+   },
+   "timestamp": 1758621537881,
+   "path": "/epfo-api/profile-details"
+}

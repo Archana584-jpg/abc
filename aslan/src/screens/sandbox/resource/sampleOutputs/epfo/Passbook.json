@@ -1,0 +1,46 @@
+{
+   "request_id": "75f2f311-42f2-4686-b499-725689d4dea7",
+   "status": 200,
+   "data": {
+      "code": "1022",
+      "message": "Passbook fetched",
+      "transaction_id": "a054b7b4-dcf3-4300-8c5d-1b0c4cc9a728",
+      "employment_data": {
+         "name": "ASHOK KUMAR",
+         "father_name": "RAKESH KUMAR",
+         "date_of_birth": "1993-XX-XX",
+         "establishment_name": "HANDY ONLINE SOLUTIONS PRIVATE LIMITED",
+         "member_id": "GNGGN17XXXXXXXXXXXXXX",
+         "office_name": "(RO)GURGAON",
+         "office_id": "203",
+         "total_employer_share": 9900,
+         "total_employee_share": 9900,
+         "total_pension_share": 9900,
+         "date_of_joining": "2021-06-01",
+         "passbook_entries": [
+            {
+               "status": "credited",
+               "description": "OB Int. Updated upto 31/03/2021",
+               "employee_share": "0",
+               "employer_share": "0",
+               "pension_share": "0",
+               "month": "04",
+               "year": "2021",
+               "date_of_approval": "2021-04-01"
+            },
+            {
+               "status": "credited",
+               "description": "OB Int. Updated upto 31/02/2021",
+               "employee_share": "0",
+               "employer_share": "0",
+               "pension_share": "0",
+               "month": "03",
+               "year": "2021",
+               "date_of_approval": "2021-03-01"
+            }
+         ]
+      }
+   },
+   "timestamp": 1658213953665,
+   "path": "/epfo-api/passbook/fetch"
+}

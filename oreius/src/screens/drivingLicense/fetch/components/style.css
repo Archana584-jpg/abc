@@ -1,0 +1,11 @@
+.mutipleObjStyle {
+  border: 1px solid #ccc;
+  padding: 5px;
+  text-align: center;
+}
+
+.dlResultCard {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 92vh;
+}

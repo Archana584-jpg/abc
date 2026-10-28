@@ -1,0 +1,28 @@
+{
+   "request_id": "0a00bf65-b173-4509-9a6a-3e4ff49136a0",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "Valid PAN.",
+      "pan_data": {
+         "document_type": "PAN",
+         "document_id": "DXXPXXXX6F",
+         "first_name": "ASHOK",
+         "last_name": "KUMAR",
+         "category": "P",
+         "date_of_birth": "1994-XX-XX",
+         "masked_aadhaar_number": "XXXXXXXX0617",
+         "address_data": {
+            "line_1": "21 LEHNA SINGH MARKET",
+            "line_2": "NAYANAGAR GANJ",
+            "city": "HYDERABAD",
+            "pincode": "500001"
+         },
+         "email": "ASHOKKUMAR229@GMAIL.COM",
+         "gender": "MALE",
+         "aadhaar_linked": true
+      }
+   },
+   "timestamp": 1648015223272,
+   "path": "/fetch-detailed"
+}

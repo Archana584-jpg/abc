@@ -1,0 +1,43 @@
+{
+   "request_id": "635dd9fd-53a1-46de-bd81-233d1d4da901",
+   "transaction_id": "16bd0d58-daf3-46b5-9ffe-9d64e003dff5",
+   "status": 200,
+   "data": {
+      "code": "1002",
+      "message": "Fetched address data.",
+      "address_data": [
+         {
+            "first_name": "John",
+            "last_name": "Doe",
+            "email": "john.doe@gmail.com",
+            "isd_code": "+91",
+            "line1": "1st floor, Plot 34",
+            "line2": "Sector 44",
+            "city": "Gurgaon",
+            "state": "Haryana",
+            "state_code": "HR",
+            "country": "India",
+            "country_code": "IN",
+            "pincode": "122003",
+            "last_delivery_date": "09-03-2022 12:55:00"
+         },
+         {
+            "first_name": "John2",
+            "last_name": "Doe",
+            "email": "john2.doe@gmail.com",
+            "isd_code": "+91",
+            "line1": "2nd floor, Plot 34",
+            "line2": "Sector 44",
+            "city": "Gurgaon",
+            "state": "Haryana",
+            "state_code": "HR",
+            "country": "India",
+            "country_code": "IN",
+            "pincode": "122003",
+            "last_delivery_date": "17-12-2024 10:01:00"
+         }
+      ]
+   },
+   "timestamp": 1731325229084,
+   "path": "/profile-api/mobile/address-lookup"
+}

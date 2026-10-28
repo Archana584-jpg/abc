@@ -1,0 +1,16 @@
+.sandbox-tag {
+   border-radius: 1.5rem !important;
+   background: linear-gradient(89deg, #809ce8 28.19%, #5fbbc3 73.11%) !important;
+}
+
+.deepsight-text {
+   background: linear-gradient(290deg, #3beded 45.92%, #459bf7 80.22%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.try-it-now-button {
+   border-radius: 6px !important;
+   background: linear-gradient(287deg, #3beded 19.92%, #459bf7 76.59%) !important;
+   border: none !important;
+}

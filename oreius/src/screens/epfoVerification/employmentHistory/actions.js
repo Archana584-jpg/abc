@@ -1,0 +1,15 @@
+export const GET_EMPLOYMENT_HISTORY = "GET_EMPLOYMENT_HISTORY";
+export const GET_EMPLOYMENT_HISTORY_LOADING = "GET_EMPLOYMENT_HISTORY_LOADING";
+export const GET_EMPLOYMENT_HISTORY_SUCCESS = "GET_EMPLOYMENT_HISTORY_SUCCESS";
+export const GET_EMPLOYMENT_HISTORY_ERROR = "GET_EMPLOYMENT_HISTORY_ERROR";
+export const CLEAR_EMPLOYMENT_HISTORY = "CLEAR_EMPLOYMENT_HISTORY";
+
+export const getEmploymentHistoryData = (body) => ({
+  type: GET_EMPLOYMENT_HISTORY,
+  body,
+});
+
+export const clearEmploymentHistoryData = () => ({
+  type: CLEAR_EMPLOYMENT_HISTORY,
+  data: {},
+});

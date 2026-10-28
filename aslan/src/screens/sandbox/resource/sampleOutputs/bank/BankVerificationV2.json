@@ -1,0 +1,15 @@
+{
+   "request_id": "fcd6fd41-d6d0-4d71-b47b-fe070b8bfd68",
+   "transaction_id": "ecb49ea6-92f8-4823-9fff-baba7da33450",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "Bank Account details verified successfully.",
+      "bank_account_verification_data": {
+         "name": "John Doe",
+         "utr": "4xxxxxxxxxx3"
+      }
+   },
+   "timestamp": 1725864561162,
+   "path": "/bank-api/v2/verify"
+}

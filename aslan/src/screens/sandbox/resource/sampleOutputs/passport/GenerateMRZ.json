@@ -1,0 +1,14 @@
+{
+   "request_id": "15a06b7e-4a64-4b90-b55a-5d56c9235ee4",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "MRZ generated.",
+      "mrz_data": {
+         "first_line": "P<INDDOE<<JOHN<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<",
+         "second_line": "Z4XXXXXX<3IND77XXXX3M26XXXX<<<<<<<<<<<<<<<4"
+      }
+   },
+   "timestamp": 1624439661319,
+   "path": "/generate-mrz"
+}

@@ -1,0 +1,557 @@
+{
+   "id": "zaakpay_provide_business_proof",
+   "name": "Provide Business Proof",
+   "header": {
+      "title": { "text": "Provide Business Proof", "className": "text-md font-semibold text-title" },
+      "subtitle": {
+         "text": "Upload valid document(s) from the provided list.",
+         "className": "text-xs font-normal text-subtitle"
+      },
+      "image": {
+         "src": "https://onboarding-resources-dev.s3.ap-south-1.amazonaws.com/assets/business_proof.svg"
+      },
+      "icon": { "src": "", "className": "text-xl cursor-pointer mr-2", "iconName": "ArrowLeftOutlined" },
+      "action": {
+         "onClick": {
+            "api": {
+               "type": "EXECUTE_ACTION",
+               "executeActionType": "IMMEDIATE_BACK_NODE_MOVEMENT_ACTION",
+               "requestType": "EXECUTE_ACTION"
+            }
+         }
+      }
+   },
+   "layout": [
+      {
+         "type": "FORM",
+         "formId": "provide_business_proof_form",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } }
+         },
+         "props": {
+            "layout": "vertical",
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "requiredMark": true
+         },
+         "dataSource": {
+            "onValidCondition": "data"
+         },
+         "content": {
+            "fields": [
+               {
+                  "type": "SELECT",
+                  "props": {
+                     "name": "generic_data.business_proof_1st_document_type",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "Please select an option to proceed."
+                        }
+                     },
+                     "value": "generic_data.business_proof_1st_document_type"
+                  },
+                  "impactedFields": {
+                     "business_proof_1st_document_file": ""
+                  },
+                  "content": {
+                     "label": {
+                        "text": {
+                           "conditions": [
+                              {
+                                 "dependOn": "additional_data.gstin_detail.gstin_fetch_status",
+                                 "operator": "EQUALS",
+                                 "value": "NO_GSTIN_FOUND"
+                              },
+                              {
+                                 "operator": "OR"
+                              },
+                              {
+                                 "dependOn": "additional_data.gstin_detail.gstin_fetch_status",
+                                 "operator": "EQUALS",
+                                 "value": "NO_ACTIVE_GSTIN_FOUND"
+                              },
+                              {
+                                 "operator": "OR"
+                              },
+                              {
+                                 "dependOn": "additional_data.gstin_detail.gstin_document_present",
+                                 "operator": "EQUALS",
+                                 "value": false
+                              }
+                           ],
+                           "onValidCondition": "Select Document 1",
+                           "onInvalidCondition": "Select Document"
+                        },
+                        "className": "text-subtitle"
+                     },
+                     "placeHolder": { "text": "Select Any One Document", "className": "" },
+                     "options": [
+                        {
+                           "label": "Certificate/Registration Document",
+                           "value": "Certificate/Registration Document",
+                           "visibilityCondition": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "generic_data.business_proof_2nd_document_type",
+                                    "operator": "NOT_EQUALS",
+                                    "value": "Certificate/Registration Document"
+                                 }
+                              ]
+                           }
+                        },
+                        {
+                           "label": "Complete Income Tax Return",
+                           "value": "Complete Income Tax Return",
+                           "visibilityCondition": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "generic_data.business_proof_2nd_document_type",
+                                    "operator": "NOT_EQUALS",
+                                    "value": "Complete Income Tax Return"
+                                 }
+                              ]
+                           }
+                        },
+                        {
+                           "label": "CST/VAT/GST Certificate",
+                           "value": "CST/VAT/GST Certificate",
+                           "visibilityCondition": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "generic_data.business_proof_2nd_document_type",
+                                    "operator": "NOT_EQUALS",
+                                    "value": "CST/VAT/GST Certificate"
+                                 }
+                              ]
+                           }
+                        },
+                        {
+                           "label": "Importer Exporter Code (IEC)",
+                           "value": "Importer Exporter Code (IEC)",
+                           "visibilityCondition": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "generic_data.business_proof_2nd_document_type",
+                                    "operator": "NOT_EQUALS",
+                                    "value": "Importer Exporter Code (IEC)"
+                                 }
+                              ]
+                           }
+                        },
+                        {
+                           "label": "Sales and Income Tax Returns",
+                           "value": "Sales and Income Tax Returns",
+                           "visibilityCondition": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "generic_data.business_proof_2nd_document_type",
+                                    "operator": "NOT_EQUALS",
+                                    "value": "Sales and Income Tax Returns"
+                                 }
+                              ]
+                           }
+                        },
+                        {
+                           "label": "Shop and Establishment Certificate",
+                           "value": "Shop and Establishment Certificate",
+                           "visibilityCondition": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "generic_data.business_proof_2nd_document_type",
+                                    "operator": "NOT_EQUALS",
+                                    "value": "Shop and Establishment Certificate"
+                                 }
+                              ]
+                           }
+                        },
+                        {
+                           "label": "Registration Certificate",
+                           "value": "Registration Certificate",
+                           "visibilityCondition": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "generic_data.business_proof_2nd_document_type",
+                                    "operator": "NOT_EQUALS",
+                                    "value": "Registration Certificate"
+                                 }
+                              ]
+                           }
+                        },
+                        {
+                           "label": "Utility Bills",
+                           "value": "Utility Bills",
+                           "visibilityCondition": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "generic_data.business_proof_2nd_document_type",
+                                    "operator": "NOT_EQUALS",
+                                    "value": "Utility Bills"
+                                 }
+                              ]
+                           }
+                        }
+                     ]
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 10 } }
+                  }
+               },
+               {
+                  "type": "UPLOAD",
+                  "props": {
+                     "name": "business_proof_1st_document_file",
+                     "fileKey": "business_proof_1st_document_file",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "Please select an option to proceed."
+                        },
+                        "maxAllowedSize": {
+                           "size": 5,
+                           "message": "Please check the file size"
+                        },
+                        "allowedTypes": {
+                           "types": ["image/jpeg", "image/jpg", "image/png", "application/pdf"],
+                           "message": "Please check the file type"
+                        }
+                     },
+                     "mode": "DRAG_AND_DROP",
+                     "value": "generic_data.business_proof_1st_document_file_urls"
+                  },
+                  "content": {
+                     "label": {
+                        "text": {
+                           "conditions": [
+                              {
+                                 "dependOn": "additional_data.gstin_detail.gstin_fetch_status",
+                                 "operator": "EQUALS",
+                                 "value": "NO_GSTIN_FOUND"
+                              },
+                              {
+                                 "operator": "OR"
+                              },
+                              {
+                                 "dependOn": "additional_data.gstin_detail.gstin_fetch_status",
+                                 "operator": "EQUALS",
+                                 "value": "NO_ACTIVE_GSTIN_FOUND"
+                              },
+                              {
+                                 "operator": "OR"
+                              },
+                              {
+                                 "dependOn": "generic_data.gstin_document_present",
+                                 "operator": "EQUALS",
+                                 "value": "false"
+                              }
+                           ],
+                           "onValidCondition": "Upload Document 1",
+                           "onInvalidCondition": "Upload Document"
+                        },
+                        "className": "text-subtitle"
+                     },
+                     "title": {
+                        "text": "Drag and drop or click 'Choose File' to upload",
+                        "className": "text-subtitle text-[12px]"
+                     },
+                     "subtitle": {
+                        "text": "Supported format: jpeg, jpg, png, pdf • Max size: 5MB",
+                        "className": "text-subtitle text-[10px]"
+                     }
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 16 } }
+                  },
+                  "action": {
+                     "onUpload": {
+                        "payloadKey": "NULL",
+                        "api": {
+                           "type": "UPLOAD_DOCUMENT",
+                           "executeActionType": "DOCUMENT_UPLOAD_ACTION",
+                           "requestType": "DOCUMENT_UPLOAD",
+                           "fileKey": "business_proof_1st_document_file",
+                           "formId": "provide_business_proof_form"
+                        }
+                     }
+                  }
+               },
+               {
+                  "type": "DIVIDER",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } }
+                  },
+                  "visibilityCondition": {
+                     "logicalOperator": "OR",
+                     "conditions": [
+                        {
+                           "dependOn": "additional_data.gstin_detail.gstin_fetch_status",
+                           "operator": "EQUALS",
+                           "value": "NO_GSTIN_FOUND"
+                        },
+                        {
+                           "dependOn": "additional_data.gstin_detail.gstin_fetch_status",
+                           "operator": "EQUALS",
+                           "value": "NO_ACTIVE_GSTIN_FOUND"
+                        },
+                        {
+                           "dependOn": "additional_data.gstin_detail.gstin_document_present",
+                           "operator": "EQUALS",
+                           "value": false
+                        }
+                     ]
+                  },
+                  "props": {
+                     "className": "mt-2 mb-4"
+                  }
+               },
+               {
+                  "type": "SELECT",
+                  "visibilityCondition": {
+                     "logicalOperator": "OR",
+                     "conditions": [
+                        {
+                           "dependOn": "additional_data.gstin_detail.gstin_fetch_status",
+                           "operator": "EQUALS",
+                           "value": "NO_GSTIN_FOUND"
+                        },
+                        {
+                           "dependOn": "additional_data.gstin_detail.gstin_fetch_status",
+                           "operator": "EQUALS",
+                           "value": "NO_ACTIVE_GSTIN_FOUND"
+                        },
+                        {
+                           "dependOn": "additional_data.gstin_detail.gstin_document_present",
+                           "operator": "EQUALS",
+                           "value": false
+                        }
+                     ]
+                  },
+                  "props": {
+                     "name": "generic_data.business_proof_2nd_document_type",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "Please select an option to proceed."
+                        }
+                     },
+                     "value": "generic_data.business_proof_2nd_document_type"
+                  },
+                  "impactedFields": {
+                     "business_proof_2nd_document_file": ""
+                  },
+                  "content": {
+                     "label": { "text": "Select Document 2", "className": "text-subtitle" },
+                     "placeHolder": { "text": "Select Any One Document", "className": "" },
+                     "options": [
+                        {
+                           "label": "Certificate/Registration Document",
+                           "value": "Certificate/Registration Document",
+                           "visibilityCondition": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "generic_data.business_proof_1st_document_type",
+                                    "operator": "NOT_EQUALS",
+                                    "value": "Certificate/Registration Document"
+                                 }
+                              ]
+                           }
+                        },
+                        {
+                           "label": "Complete Income Tax Return",
+                           "value": "Complete Income Tax Return",
+                           "visibilityCondition": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "generic_data.business_proof_1st_document_type",
+                                    "operator": "NOT_EQUALS",
+                                    "value": "Complete Income Tax Return"
+                                 }
+                              ]
+                           }
+                        },
+                        {
+                           "label": "CST/VAT/GST Certificate",
+                           "value": "CST/VAT/GST Certificate",
+                           "visibilityCondition": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "generic_data.business_proof_1st_document_type",
+                                    "operator": "NOT_EQUALS",
+                                    "value": "CST/VAT/GST Certificate"
+                                 }
+                              ]
+                           }
+                        },
+                        {
+                           "label": "Importer Exporter Code (IEC)",
+                           "value": "Importer Exporter Code (IEC)",
+                           "visibilityCondition": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "generic_data.business_proof_1st_document_type",
+                                    "operator": "NOT_EQUALS",
+                                    "value": "Importer Exporter Code (IEC)"
+                                 }
+                              ]
+                           }
+                        },
+                        {
+                           "label": "Sales and Income Tax Returns",
+                           "value": "Sales and Income Tax Returns",
+                           "visibilityCondition": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "generic_data.business_proof_1st_document_type",
+                                    "operator": "NOT_EQUALS",
+                                    "value": "Sales and Income Tax Returns"
+                                 }
+                              ]
+                           }
+                        },
+                        {
+                           "label": "Shop and Establishment Certificate",
+                           "value": "Shop and Establishment Certificate",
+                           "visibilityCondition": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "generic_data.business_proof_1st_document_type",
+                                    "operator": "NOT_EQUALS",
+                                    "value": "Shop and Establishment Certificate"
+                                 }
+                              ]
+                           }
+                        },
+                        {
+                           "label": "Registration Certificate",
+                           "value": "Registration Certificate",
+                           "visibilityCondition": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "generic_data.business_proof_1st_document_type",
+                                    "operator": "NOT_EQUALS",
+                                    "value": "Registration Certificate"
+                                 }
+                              ]
+                           }
+                        },
+                        {
+                           "label": "Utility Bills",
+                           "value": "Utility Bills",
+                           "visibilityCondition": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "generic_data.business_proof_1st_document_type",
+                                    "operator": "NOT_EQUALS",
+                                    "value": "Utility Bills"
+                                 }
+                              ]
+                           }
+                        }
+                     ]
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 10 } }
+                  }
+               },
+               {
+                  "type": "UPLOAD",
+                  "visibilityCondition": {
+                     "logicalOperator": "OR",
+                     "conditions": [
+                        {
+                           "dependOn": "additional_data.gstin_detail.gstin_fetch_status",
+                           "operator": "EQUALS",
+                           "value": "NO_GSTIN_FOUND"
+                        },
+                        {
+                           "dependOn": "additional_data.gstin_detail.gstin_fetch_status",
+                           "operator": "EQUALS",
+                           "value": "NO_ACTIVE_GSTIN_FOUND"
+                        },
+                        {
+                           "dependOn": "additional_data.gstin_detail.gstin_document_present",
+                           "operator": "EQUALS",
+                           "value": false
+                        }
+                     ]
+                  },
+                  "props": {
+                     "name": "business_proof_2nd_document_file",
+                     "fileKey": "business_proof_2nd_document_file",
+                     "isEditable": true,
+                     "value": "generic_data.business_proof_2nd_document_file_urls",
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "Please select an option to proceed."
+                        },
+                        "maxAllowedSize": {
+                           "size": 5,
+                           "message": "Please check the file size"
+                        },
+                        "allowedTypes": {
+                           "types": ["image/jpeg", "image/jpg", "image/png", "application/pdf"],
+                           "message": "Please check the file type"
+                        }
+                     },
+                     "mode": "DRAG_AND_DROP"
+                  },
+                  "content": {
+                     "label": { "text": "Upload Document 2", "className": "text-subtitle" },
+                     "title": {
+                        "text": "Drag and drop or click 'Choose File' to upload",
+                        "className": "text-subtitle text-[12px]"
+                     },
+                     "subtitle": {
+                        "text": "Supported format: jpeg, jpg, png, pdf • Max size: 5MB",
+                        "className": "text-subtitle text-[10px]"
+                     }
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 16 } }
+                  },
+                  "action": {
+                     "onUpload": {
+                        "payloadKey": "NULL",
+                        "api": {
+                           "type": "UPLOAD_DOCUMENT",
+                           "executeActionType": "DOCUMENT_UPLOAD_ACTION",
+                           "requestType": "DOCUMENT_UPLOAD",
+                           "fileKey": "business_proof_2nd_document_file",
+                           "formId": "provide_business_proof_form"
+                        }
+                     }
+                  }
+               },
+               {
+                  "type": "BUTTON",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } },
+                     "className": "flex justify-center"
+                  },
+                  "content": {
+                     "label": { "text": "Save and Proceed", "className": "text-white" }
+                  },
+                  "props": {
+                     "className": "px-6 py-0 mt-6",
+                     "type": "primary"
+                  },
+                  "action": {
+                     "onClick": {
+                        "payloadKey": "NULL",
+                        "api": {
+                           "type": "EXECUTE_ACTION",
+                           "executeActionType": "MOVE_TO_NEXT_NODE_ACTION",
+                           "requestType": "EXECUTE_ACTION",
+                           "formId": "provide_business_proof_form"
+                        }
+                     }
+                  }
+               }
+            ]
+         }
+      }
+   ]
+}

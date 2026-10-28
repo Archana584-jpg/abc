@@ -1,0 +1,61 @@
+{
+   "request_id": "77fd1c9e-1e47-4161-bc3b-699f94418f3d",
+   "transaction_id": "32730e68-aec2-4ba2-8b1a-aca7027ce1e5",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "Fetched personal data.",
+      "personal_data": {
+         "personal_information": {
+            "full_name": "JOHN SMITH ",
+            "gender": "Male",
+            "age": "31",
+            "date_of_birth": "1999-05-27"
+         },
+         "alternate_phone": [
+            {
+               "serial_number": "1",
+               "value": "99887766"
+            }
+         ],
+         "email": [
+            {
+               "serial_number": "1",
+               "value": "john@gmail.com"
+            }
+         ],
+         "address": [
+            {
+               "detailed_address": "KPMG 8TH FLOOR  BULIDNG NO-10 B DLF CYBER CITY  PHASE-2GURGAON",
+               "state": "XXXXX",
+               "pincode": "1XXX02",
+               "type": "Office",
+               "date_of_reporting": "20XX-07-31"
+            },
+            {
+               "detailed_address": "A3-139 PASCHIM VIHAR DELHI",
+               "state": "DELHI",
+               "pincode": "1XXX63",
+               "type": "Primary",
+               "date_of_reporting": "20XX-07-31"
+            }
+         ],
+         "document_data": {
+            "passport": [
+               {
+                  "serial_number": "1",
+                  "value": "XXXX4574"
+               }
+            ],
+            "pan": [
+               {
+                  "serial_number": "1",
+                  "value": "XXXXX5406G"
+               }
+            ]
+         }
+      }
+   },
+   "timestamp": 1717393231856,
+   "path": "/profile-api/individual/fetch-personal-profile"
+}

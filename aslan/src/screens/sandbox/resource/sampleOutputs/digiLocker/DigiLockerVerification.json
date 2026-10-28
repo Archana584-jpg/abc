@@ -1,0 +1,170 @@
+{
+   "request_id": "9bd5ffac-11bb-4843-b955-2444b5833936",
+   "status": 200,
+   "data": {
+      "code": "1008",
+      "message": "Fetched issued file.",
+      "transaction_id": "XXXX",
+      "document": {
+         "language": "99",
+         "name": "Class X Marksheet",
+         "type": "SSCER",
+         "number": "XXXX",
+         "issuedAt": "",
+         "issueDate": "",
+         "validFromDate": "",
+         "status": "A",
+         "IssuedBy": {
+            "Organization": {
+               "name": "Central Board of Secondary Education",
+               "code": "",
+               "tin": "",
+               "uid": "",
+               "type": "CG",
+               "Address": {
+                  "type": "",
+                  "line1": "",
+                  "line2": "",
+                  "house": "",
+                  "landmark": "",
+                  "locality": "",
+                  "vtc": "",
+                  "district": "",
+                  "pin": "",
+                  "state": "",
+                  "country": "IN"
+               }
+            }
+         },
+         "IssuedTo": {
+            "Person": {
+               "uid": "",
+               "title": "",
+               "name": "XXXX",
+               "dob": "01-01-2023",
+               "swd": "XXXX",
+               "swdIndicator": "",
+               "motherName": "XXXX",
+               "gender": "Male",
+               "maritalStatus": "",
+               "religion": "",
+               "phone": "",
+               "email": "",
+               "Address": {
+                  "type": "permanent",
+                  "line1": "",
+                  "line2": "",
+                  "house": "",
+                  "landmark": "",
+                  "locality": "",
+                  "vtc": "",
+                  "district": "",
+                  "pin": "",
+                  "state": "",
+                  "country": "IN"
+               },
+               "Photo": {
+                  "format": "JPEG",
+                  "": "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FB68fjSHnqePSheYDgRuwaCcdO9NwM9aceRRdEtiA5brwKD96k2r6n/wCvTs0N3EAOc+vvSjKjdnIpuefmGKX19KaAfjJ6jmkIz0/OkAwCfzpc5PtRYaTFDcFetMc9MUpYDOOtIMNyT+FFgdxw5Uk0BSOv6UHIHBpp6DnmhtisPIwaAOcUwNxyPen9855oTQhm4liM4pwULnAoIBGcfnShuCB1qgEyMnFBbjOKaBg+/wDOnHOKQhA3PPSlJzzSDjHHNBI9eaAFDcHjmj3pCaByBQAoHJOaUmk6MM9KT+LGeKVwHE9BmmHFO9KCuGOeaLoBCe9B6UE89KN2Dx+VMAJG3k96QAdRQeWJOKUZx3xSYriEd84oJJA6f/Xo3Ascmg8dPxzTuFxNueSRSA7R04pQcHnpRnHvnpQ9RjTyuRjNO3cD6d6b3OaXjGBx7UkgEJJ59KM8+9OLYGAfamDJxmiwC9+aQkr1o6EilHI5oATqBSZxwc49qXIDUe/alqAgbJpSME5o4JPagnnGadhhk8jPXmkxySDSggDmm87u+KGAEnueaaOpODTyMnIP4U0hvwouA3JPOOM0A/nS5IyDR/Ohp7jWoncenvSnBIJ6U0tk+lLkAf40rsdhD1OOaOCeQKU5xmkJGPeldisNJAGPWkAT0FVtPtbiKwljnCwXEjEtNFN5rMxAG8lkUbvbbgAADjgF7Z3Dx2UkDrNPaS+YBO2wSny2Q5ZVOD85PC9sYGeABs2vWEEccjtcFJMAMlrK4BLbdpIU4bdxtPIPGKs3d/b2WwTGQs+dqRRPK5A6naoJwMjJxjkeoqjbaVOotEneMwpNNdSopJzKzl1XkfMql2OSAdyoeOlO1GDUXDJYQWqJLLmd/tDRPIu0DgqhwxxjPUKowQSCoBONYsDOkSz79+3EiIzR5YAqDIBtBOVwCcncuOoy681O2sZYopvOMkqsyJDA8pIXGThAcD5h19apG11F7y1RrOxXT4Fj2wpcMArDGTt8vDBf4RkDjJ5xtnv9KF/qdrcSPIsMMMqHyp3icszRkcoRkYQ559PwALMWoWc90LaK5jeYwrcKqtndGxIDA9xkdvb1FOs7y3v7YXFpKs0LMyq69CVJU49RkHnvWNqHh+ea+aexmjtMWyW0RjypRcSqwGOgHmIwA6mMDjgjS0mw/s2w+yhY1UTTOixjCqrSMygDtgEDFAF6iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//2Q=="
+               }
+            }
+         },
+         "CertificateData": {
+            "School": {
+               "name": "XXXX",
+               "code": "XXXX",
+               "regionName": "",
+               "regionCode": "XXXX"
+            },
+            "Examination": {
+               "name": "",
+               "centerCode": "",
+               "admitCardId": "",
+               "month": "MARCH",
+               "year": "2023"
+            },
+            "Performance": {
+               "result": "QUAL",
+               "marksTotal": "",
+               "marksMax": "",
+               "percentage": "",
+               "cgpa": "10",
+               "cgpaMax": "",
+               "resultDate": "",
+               "updateDate": "01-01-1970",
+               "Subjects": {
+                  "Subject": [
+                     {
+                        "name": "ENGLISH COMM.",
+                        "code": "101",
+                        "marksTheory": "",
+                        "marksMaxTheory": "",
+                        "marksPractical": "",
+                        "marksMaxPractical": "",
+                        "marksTotal": "",
+                        "marksMax": "",
+                        "gp": "10",
+                        "gpMax": "",
+                        "grade": "A1"
+                     },
+                     {
+                        "name": "HINDI COURSE-B",
+                        "code": "085",
+                        "marksTheory": "",
+                        "marksMaxTheory": "",
+                        "marksPractical": "",
+                        "marksMaxPractical": "",
+                        "marksTotal": "",
+                        "marksMax": "",
+                        "gp": "10",
+                        "gpMax": "",
+                        "grade": "A1"
+                     },
+                     {
+                        "name": "MATHEMATICS",
+                        "code": "041",
+                        "marksTheory": "",
+                        "marksMaxTheory": "",
+                        "marksPractical": "",
+                        "marksMaxPractical": "",
+                        "marksTotal": "",
+                        "marksMax": "",
+                        "gp": "10",
+                        "gpMax": "",
+                        "grade": "A1"
+                     },
+                     {
+                        "name": "SCIENCE",
+                        "code": "086",
+                        "marksTheory": "",
+                        "marksMaxTheory": "",
+                        "marksPractical": "",
+                        "marksMaxPractical": "",
+                        "marksTotal": "",
+                        "marksMax": "",
+                        "gp": "10",
+                        "gpMax": "",
+                        "grade": "A1"
+                     },
+                     {
+                        "name": "SOCIAL SCIENCE",
+                        "code": "087",
+                        "marksTheory": "",
+                        "marksMaxTheory": "",
+                        "marksPractical": "",
+                        "marksMaxPractical": "",
+                        "marksTotal": "",
+                        "marksMax": "",
+                        "gp": "10",
+                        "gpMax": "",
+                        "grade": "A1"
+                     }
+                  ]
+               }
+            }
+         }
+      }
+   },
+   "timestamp": 1681216007949,
+   "path": "/issued-files"
+}

@@ -1,0 +1,1026 @@
+{
+   "id": "zaakpay_init_business_owner_id_proof_verification",
+   "name": "Init Business Owner ID Proof Verification",
+   "header": {
+      "title": { "text": "Verify Business Owner ID Proof", "className": "text-md font-semibold text-title" },
+      "subtitle": {
+         "text": "Provide a valid Identity proof of the Business Owner.",
+         "className": "text-xs font-normal text-subtitle"
+      },
+      "image": {
+         "src": "https://onboarding-resources-dev.s3.ap-south-1.amazonaws.com/assets/business_owner_id_proof.svg"
+      },
+      "icon": { "src": "", "className": "text-xl cursor-pointer mr-2", "iconName": "ArrowLeftOutlined" },
+      "action": {
+         "onClick": {
+            "api": {
+               "type": "EXECUTE_ACTION",
+               "executeActionType": "IMMEDIATE_BACK_NODE_MOVEMENT_ACTION",
+               "requestType": "EXECUTE_ACTION"
+            }
+         }
+      }
+   },
+   "layout": [
+      {
+         "type": "STEPPER",
+         "wrapper": {
+            "className": "mx-auto",
+            "style": {
+               "className": "block",
+               "col": {
+                  "xs": 24,
+                  "md": 16
+               }
+            }
+         },
+         "content": {
+            "steps": [
+               {
+                  "label": "A",
+                  "id": "zaakpay_init_business_owner_id_proof_verification",
+                  "name": "Init Business Owner ID Proof Verification",
+                  "title": {
+                     "text": "Upload ID Proof",
+                     "className": "text-base font-normal text-title"
+                  }
+               },
+               {
+                  "label": "B",
+                  "id": "zaakpay_business_owner_aadhaar_review_and_verify",
+                  "name": "Business Owner ID Proof Review and Verification",
+                  "title": {
+                     "text": "Review and Proceed",
+                     "className": "text-base font-normal text-title"
+                  }
+               }
+            ]
+         }
+      },
+      {
+         "type": "FORM",
+         "formId": "init_business_owner_id_proof_verification_form",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } }
+         },
+         "dataSource": {
+            "onValidCondition": "data.generic_data"
+         },
+         "props": {
+            "layout": "vertical",
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "requiredMark": true
+         },
+         "content": {
+            "fields": [
+               {
+                  "type": "SELECT",
+                  "props": {
+                     "name": "business_owner_id_verification_document_type",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        }
+                     },
+                     "value": "business_owner_id_verification_document_type"
+                  },
+                  "impactedFields": {
+                     "aadhaar_document_file_1": "",
+                     "aadhaar_document_file_2": "",
+                     "dl_document_file_1": "",
+                     "dl_document_file_2": "",
+                     "voter_document_file_1": "",
+                     "voter_document_file_2": "",
+                     "passport_document_file_1": "",
+                     "passport_document_file_2": ""
+                  },
+                  "content": {
+                     "label": { "text": "Select ID Proof", "className": "text-subtitle" },
+                     "placeHolder": { "text": "Select any one document", "className": "" },
+                     "options": [
+                        {
+                           "label": "Aadhaar",
+                           "value": "AADHAAR"
+                        },
+                        {
+                           "label": "Driving License",
+                           "value": "DL"
+                        },
+                        {
+                           "label": "Voter ID",
+                           "value": "VOTER"
+                        },
+                        {
+                           "label": "Passport",
+                           "value": "PASSPORT"
+                        }
+                     ]
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 10 } }
+                  }
+               },
+               {
+                  "type": "UPLOAD",
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "business_owner_id_verification_document_type",
+                           "operator": "EQUALS",
+                           "value": "AADHAAR"
+                        }
+                     ]
+                  },
+                  "props": {
+                     "name": "aadhaar_document_file_1",
+                     "fileKey": "aadhaar_document_file",
+                     "fileIndex": 0,
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "maxAllowedSize": {
+                           "size": 5,
+                           "message": "Please check the file size"
+                        },
+                        "allowedTypes": {
+                           "types": ["image/jpeg", "image/jpg", "image/png", "application/pdf"],
+                           "message": "Please check the file type"
+                        }
+                     },
+                     "value": "aadhaar_document_file_urls",
+                     "mode": "DRAG_AND_DROP"
+                  },
+                  "content": {
+                     "label": { "text": "Upload the Front Side of Aadhaar", "className": "text-subtitle" },
+                     "title": {
+                        "text": "Drag and drop or click 'Choose File' to upload",
+                        "className": "text-subtitle text-[12px]"
+                     },
+                     "subtitle": {
+                        "text": "Supported format: jpeg, jpg, png, pdf • Max size: 5MB",
+                        "className": "text-subtitle text-[10px]"
+                     }
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 16 } }
+                  }
+               },
+               {
+                  "type": "UPLOAD",
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "business_owner_id_verification_document_type",
+                           "operator": "EQUALS",
+                           "value": "AADHAAR"
+                        }
+                     ]
+                  },
+                  "props": {
+                     "name": "aadhaar_document_file_2",
+                     "fileKey": "aadhaar_document_file",
+                     "fileIndex": 1,
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "maxAllowedSize": {
+                           "size": 5,
+                           "message": "Please check the file size"
+                        },
+                        "allowedTypes": {
+                           "types": ["image/jpeg", "image/jpg", "image/png", "application/pdf"],
+                           "message": "Please check the file type"
+                        }
+                     },
+                     "value": "aadhaar_document_file_urls",
+                     "mode": "DRAG_AND_DROP"
+                  },
+                  "content": {
+                     "label": { "text": "Upload the Back Side of Aadhaar", "className": "text-subtitle" },
+                     "title": {
+                        "text": "Drag and drop or click 'Choose File' to upload",
+                        "className": "text-subtitle text-[12px]"
+                     },
+                     "subtitle": {
+                        "text": "Supported format: jpeg, jpg, png, pdf • Max size: 5MB",
+                        "className": "text-subtitle text-[10px]"
+                     }
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 16 } }
+                  }
+               },
+               {
+                  "type": "UPLOAD",
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "business_owner_id_verification_document_type",
+                           "operator": "EQUALS",
+                           "value": "DL"
+                        }
+                     ]
+                  },
+                  "props": {
+                     "name": "dl_document_file_1",
+                     "fileKey": "dl_document_file",
+                     "fileIndex": 0,
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "maxAllowedSize": {
+                           "size": 5,
+                           "message": "Please check the file size"
+                        },
+                        "allowedTypes": {
+                           "types": ["image/jpeg", "image/jpg", "image/png", "application/pdf"],
+                           "message": "Please check the file type"
+                        }
+                     },
+                     "value": "dl_document_file_urls",
+                     "mode": "DRAG_AND_DROP"
+                  },
+                  "content": {
+                     "label": { "text": "Upload the Front Side of Driving License", "className": "text-subtitle" },
+                     "title": {
+                        "text": "Drag and drop or click 'Choose File' to upload",
+                        "className": "text-subtitle text-[12px]"
+                     },
+                     "subtitle": {
+                        "text": "Supported format: jpeg, jpg, png, pdf • Max size: 5MB",
+                        "className": "text-subtitle text-[10px]"
+                     }
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 16 } }
+                  }
+               },
+               {
+                  "type": "UPLOAD",
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "business_owner_id_verification_document_type",
+                           "operator": "EQUALS",
+                           "value": "DL"
+                        }
+                     ]
+                  },
+                  "props": {
+                     "name": "dl_document_file_2",
+                     "fileKey": "dl_document_file",
+                     "fileIndex": 1,
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "maxAllowedSize": {
+                           "size": 5,
+                           "message": "Please check the file size"
+                        },
+                        "allowedTypes": {
+                           "types": ["image/jpeg", "image/jpg", "image/png", "application/pdf"],
+                           "message": "Please check the file type"
+                        }
+                     },
+                     "value": "dl_document_file_urls",
+                     "mode": "DRAG_AND_DROP"
+                  },
+                  "content": {
+                     "label": { "text": "Upload the Back Side of Driving License", "className": "text-subtitle" },
+                     "title": {
+                        "text": "Drag and drop or click 'Choose File' to upload",
+                        "className": "text-subtitle text-[12px]"
+                     },
+                     "subtitle": {
+                        "text": "Supported format: jpeg, jpg, png, pdf • Max size: 5MB",
+                        "className": "text-subtitle text-[10px]"
+                     }
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 16 } }
+                  }
+               },
+               {
+                  "type": "UPLOAD",
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "business_owner_id_verification_document_type",
+                           "operator": "EQUALS",
+                           "value": "VOTER"
+                        }
+                     ]
+                  },
+                  "props": {
+                     "name": "voter_document_file_1",
+                     "fileKey": "voter_document_file",
+                     "fileIndex": 0,
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "maxAllowedSize": {
+                           "size": 5,
+                           "message": "Please check the file size"
+                        },
+                        "allowedTypes": {
+                           "types": ["image/jpeg", "image/jpg", "image/png", "application/pdf"],
+                           "message": "Please check the file type"
+                        }
+                     },
+                     "value": "voter_document_file_urls",
+                     "mode": "DRAG_AND_DROP"
+                  },
+                  "content": {
+                     "label": { "text": "Upload the Front Side of Voter ID", "className": "text-subtitle" },
+                     "title": {
+                        "text": "Drag and drop or click 'Choose File' to upload",
+                        "className": "text-subtitle text-[12px]"
+                     },
+                     "subtitle": {
+                        "text": "Supported format: jpeg, jpg, png, pdf • Max size: 5MB",
+                        "className": "text-subtitle text-[10px]"
+                     }
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 16 } }
+                  }
+               },
+               {
+                  "type": "UPLOAD",
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "business_owner_id_verification_document_type",
+                           "operator": "EQUALS",
+                           "value": "VOTER"
+                        }
+                     ]
+                  },
+                  "props": {
+                     "name": "voter_document_file_2",
+                     "fileKey": "voter_document_file",
+                     "fileIndex": 1,
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "maxAllowedSize": {
+                           "size": 5,
+                           "message": "Please check the file size"
+                        },
+                        "allowedTypes": {
+                           "types": ["image/jpeg", "image/jpg", "image/png", "application/pdf"],
+                           "message": "Please check the file type"
+                        }
+                     },
+                     "value": "voter_document_file_urls",
+                     "mode": "DRAG_AND_DROP"
+                  },
+                  "content": {
+                     "label": { "text": "Upload the Back Side of Voter ID", "className": "text-subtitle" },
+                     "title": {
+                        "text": "Drag and drop or click 'Choose File' to upload",
+                        "className": "text-subtitle text-[12px]"
+                     },
+                     "subtitle": {
+                        "text": "Supported format: jpeg, jpg, png, pdf • Max size: 5MB",
+                        "className": "text-subtitle text-[10px]"
+                     }
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 16 } }
+                  }
+               },
+               {
+                  "type": "UPLOAD",
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "business_owner_id_verification_document_type",
+                           "operator": "EQUALS",
+                           "value": "PASSPORT"
+                        }
+                     ]
+                  },
+                  "props": {
+                     "name": "passport_document_file_1",
+                     "fileKey": "passport_document_file",
+                     "fileIndex": 0,
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "maxAllowedSize": {
+                           "size": 5,
+                           "message": "Please check the file size"
+                        },
+                        "allowedTypes": {
+                           "types": ["image/jpeg", "image/jpg", "image/png", "application/pdf"],
+                           "message": "Please check the file type"
+                        }
+                     },
+                     "value": "passport_document_file_urls",
+                     "mode": "DRAG_AND_DROP"
+                  },
+                  "content": {
+                     "label": { "text": "Upload the Front Side of Passport", "className": "text-subtitle" },
+                     "title": {
+                        "text": "Drag and drop or click 'Choose File' to upload",
+                        "className": "text-subtitle text-[12px]"
+                     },
+                     "subtitle": {
+                        "text": "Supported format: jpeg, jpg, png, pdf • Max size: 5MB",
+                        "className": "text-subtitle text-[10px]"
+                     }
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 16 } }
+                  }
+               },
+               {
+                  "type": "UPLOAD",
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "business_owner_id_verification_document_type",
+                           "operator": "EQUALS",
+                           "value": "PASSPORT"
+                        }
+                     ]
+                  },
+                  "props": {
+                     "name": "passport_document_file_2",
+                     "fileKey": "passport_document_file",
+                     "fileIndex": 1,
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "maxAllowedSize": {
+                           "size": 5,
+                           "message": "Please check the file size"
+                        },
+                        "allowedTypes": {
+                           "types": ["image/jpeg", "image/jpg", "image/png", "application/pdf"],
+                           "message": "Please check the file type"
+                        }
+                     },
+                     "value": "passport_document_file_urls",
+                     "mode": "DRAG_AND_DROP"
+                  },
+                  "content": {
+                     "label": { "text": "Upload the Back Side of Passport", "className": "text-subtitle" },
+                     "title": {
+                        "text": "Drag and drop or click 'Choose File' to upload",
+                        "className": "text-subtitle text-[12px]"
+                     },
+                     "subtitle": {
+                        "text": "Supported format: jpeg, jpg, png, pdf • Max size: 5MB",
+                        "className": "text-subtitle text-[10px]"
+                     }
+                  },
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 16 } }
+                  }
+               },
+               {
+                  "type": "ALERT",
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "business_owner_id_verification_document_type",
+                           "operator": "EQUALS",
+                           "value": "Aadhaar"
+                        }
+                     ]
+                  },
+                  "props": {
+                     "type": "warning",
+                     "className": "px-3 py-2 flex items-center"
+                  },
+                  "wrapper": {
+                     "style": {
+                        "col": {
+                           "xs": 24,
+                           "md": 24
+                        }
+                     }
+                  },
+                  "content": {
+                     "title": {
+                        "text": "To verify Aadhaar details, you’ll need to enter an OTP, which will be sent to the mobile number linked to the Aadhaar.",
+                        "className": "text-[#AD8B00]"
+                     }
+                  }
+               },
+               {
+                  "type": "BUTTON",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } },
+                     "className": "flex justify-center mt-4"
+                  },
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "business_owner_id_verification_document_type",
+                           "operator": "EQUALS",
+                           "value": "AADHAAR"
+                        }
+                     ]
+                  },
+                  "content": {
+                     "label": { "text": "Save and Proceed", "className": "text-white" }
+                  },
+                  "props": {
+                     "className": "px-6 py-0",
+                     "type": "primary"
+                  },
+                  "dataSource": {
+                     "onValidCondition": "business_owner_id_verification_document_type"
+                  },
+                  "action": {
+                     "onClick": {
+                        "setState": [
+                           {
+                              "key": "loader_modal",
+                              "value": true,
+                              "stateChangeType": "MODAL_VISIBILITY"
+                           }
+                        ],
+                        "api": {
+                           "type": "EXECUTE_ACTION",
+                           "executeActionType": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "aadhaar_document_file_1",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 },
+                                 {
+                                    "operator": "OR"
+                                 },
+                                 {
+                                    "dependOn": "aadhaar_document_file_2",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 }
+                              ],
+                              "onValidCondition": "AADHAAR_OCR_ACTION",
+                              "onInvalidCondition": "MOVE_TO_NEXT_NODE_ACTION"
+                           },
+                           "requestType": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "aadhaar_document_file_1",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 },
+                                 {
+                                    "operator": "OR"
+                                 },
+                                 {
+                                    "dependOn": "aadhaar_document_file_2",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 }
+                              ],
+                              "onValidCondition": "DOCUMENT_UPLOAD_AND_EXECUTE_ACTION",
+                              "onInvalidCondition": "EXECUTE_ACTION"
+                           },
+                           "fileKey": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "aadhaar_document_file_1",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 },
+                                 {
+                                    "operator": "OR"
+                                 },
+                                 {
+                                    "dependOn": "aadhaar_document_file_2",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 }
+                              ],
+                              "onValidCondition": "aadhaar_document_file",
+                              "onInvalidCondition": ""
+                           },
+                           "formId": "init_business_owner_id_proof_verification_form",
+                           "onSuccess": {
+                              "setState": [
+                                 {
+                                    "key": "loader_modal",
+                                    "value": false,
+                                    "stateChangeType": "MODAL_VISIBILITY"
+                                 }
+                              ]
+                           },
+                           "onError": {
+                              "setState": [
+                                 {
+                                    "key": "loader_modal",
+                                    "value": false,
+                                    "stateChangeType": "MODAL_VISIBILITY"
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               },
+               {
+                  "type": "BUTTON",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } },
+                     "className": "flex justify-center mt-4"
+                  },
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "business_owner_id_verification_document_type",
+                           "operator": "EQUALS",
+                           "value": "DL"
+                        }
+                     ]
+                  },
+                  "content": {
+                     "label": { "text": "Save and Proceed", "className": "text-white" }
+                  },
+                  "props": {
+                     "className": "px-6 py-0",
+                     "type": "primary"
+                  },
+                  "dataSource": {
+                     "onValidCondition": "business_owner_id_verification_document_type"
+                  },
+                  "action": {
+                     "onClick": {
+                        "setState": [
+                           {
+                              "key": "loader_modal",
+                              "value": true,
+                              "stateChangeType": "MODAL_VISIBILITY"
+                           }
+                        ],
+                        "api": {
+                           "type": "EXECUTE_ACTION",
+                           "executeActionType": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "dl_document_file_1",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 },
+                                 {
+                                    "operator": "OR"
+                                 },
+                                 {
+                                    "dependOn": "dl_document_file_2",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 }
+                              ],
+                              "onValidCondition": "DL_OCR_ACTION",
+                              "onInvalidCondition": "MOVE_TO_NEXT_NODE_ACTION"
+                           },
+                           "requestType": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "dl_document_file_1",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 },
+                                 {
+                                    "operator": "OR"
+                                 },
+                                 {
+                                    "dependOn": "dl_document_file_2",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 }
+                              ],
+                              "onValidCondition": "DOCUMENT_UPLOAD_AND_EXECUTE_ACTION",
+                              "onInvalidCondition": "EXECUTE_ACTION"
+                           },
+                           "fileKey": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "dl_document_file_1",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 },
+                                 {
+                                    "operator": "OR"
+                                 },
+                                 {
+                                    "dependOn": "dl_document_file_2",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 }
+                              ],
+                              "onValidCondition": "dl_document_file",
+                              "onInvalidCondition": ""
+                           },
+                           "formId": "init_business_owner_id_proof_verification_form",
+                           "onSuccess": {
+                              "setState": [
+                                 {
+                                    "key": "loader_modal",
+                                    "value": false,
+                                    "stateChangeType": "MODAL_VISIBILITY"
+                                 }
+                              ]
+                           },
+                           "onError": {
+                              "setState": [
+                                 {
+                                    "key": "loader_modal",
+                                    "value": false,
+                                    "stateChangeType": "MODAL_VISIBILITY"
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               },
+               {
+                  "type": "BUTTON",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } },
+                     "className": "flex justify-center mt-4"
+                  },
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "business_owner_id_verification_document_type",
+                           "operator": "EQUALS",
+                           "value": "VOTER"
+                        }
+                     ]
+                  },
+                  "content": {
+                     "label": { "text": "Save and Proceed", "className": "text-white" }
+                  },
+                  "props": {
+                     "className": "px-6 py-0",
+                     "type": "primary"
+                  },
+                  "dataSource": {
+                     "onValidCondition": "business_owner_id_verification_document_type"
+                  },
+                  "action": {
+                     "onClick": {
+                        "setState": [
+                           {
+                              "key": "loader_modal",
+                              "value": true,
+                              "stateChangeType": "MODAL_VISIBILITY"
+                           }
+                        ],
+                        "api": {
+                           "type": "EXECUTE_ACTION",
+                           "executeActionType": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "voter_document_file_1",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 },
+                                 {
+                                    "operator": "OR"
+                                 },
+                                 {
+                                    "dependOn": "voter_document_file_2",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 }
+                              ],
+                              "onValidCondition": "VOTER_OCR_ACTION",
+                              "onInvalidCondition": "MOVE_TO_NEXT_NODE_ACTION"
+                           },
+                           "requestType": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "voter_document_file_1",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 },
+                                 {
+                                    "operator": "OR"
+                                 },
+                                 {
+                                    "dependOn": "voter_document_file_2",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 }
+                              ],
+                              "onValidCondition": "DOCUMENT_UPLOAD_AND_EXECUTE_ACTION",
+                              "onInvalidCondition": "EXECUTE_ACTION"
+                           },
+                           "fileKey": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "voter_document_file_1",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 },
+                                 {
+                                    "operator": "OR"
+                                 },
+                                 {
+                                    "dependOn": "voter_document_file_2",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 }
+                              ],
+                              "onValidCondition": "voter_document_file",
+                              "onInvalidCondition": ""
+                           },
+                           "formId": "init_business_owner_id_proof_verification_form",
+                           "onSuccess": {
+                              "setState": [
+                                 {
+                                    "key": "loader_modal",
+                                    "value": false,
+                                    "stateChangeType": "MODAL_VISIBILITY"
+                                 }
+                              ]
+                           },
+                           "onError": {
+                              "setState": [
+                                 {
+                                    "key": "loader_modal",
+                                    "value": false,
+                                    "stateChangeType": "MODAL_VISIBILITY"
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               },
+               {
+                  "type": "BUTTON",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } },
+                     "className": "flex justify-center mt-4"
+                  },
+                  "visibilityCondition": {
+                     "conditions": [
+                        {
+                           "dependOn": "business_owner_id_verification_document_type",
+                           "operator": "EQUALS",
+                           "value": "PASSPORT"
+                        }
+                     ]
+                  },
+                  "content": {
+                     "label": { "text": "Save and Proceed", "className": "text-white" }
+                  },
+                  "props": {
+                     "className": "px-6 py-0",
+                     "type": "primary"
+                  },
+                  "dataSource": {
+                     "onValidCondition": "business_owner_id_verification_document_type"
+                  },
+                  "action": {
+                     "onClick": {
+                        "setState": [
+                           {
+                              "key": "loader_modal",
+                              "value": true,
+                              "stateChangeType": "MODAL_VISIBILITY"
+                           }
+                        ],
+                        "api": {
+                           "type": "EXECUTE_ACTION",
+                           "executeActionType": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "passport_document_file_1",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 },
+                                 {
+                                    "operator": "OR"
+                                 },
+                                 {
+                                    "dependOn": "passport_document_file_2",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 }
+                              ],
+                              "onValidCondition": "PASSPORT_OCR_ACTION",
+                              "onInvalidCondition": "MOVE_TO_NEXT_NODE_ACTION"
+                           },
+                           "requestType": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "passport_document_file_1",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 },
+                                 {
+                                    "operator": "OR"
+                                 },
+                                 {
+                                    "dependOn": "passport_document_file_2",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 }
+                              ],
+                              "onValidCondition": "DOCUMENT_UPLOAD_AND_EXECUTE_ACTION",
+                              "onInvalidCondition": "EXECUTE_ACTION"
+                           },
+                           "fileKey": {
+                              "conditions": [
+                                 {
+                                    "dependOn": "passport_document_file_1",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 },
+                                 {
+                                    "operator": "OR"
+                                 },
+                                 {
+                                    "dependOn": "passport_document_file_2",
+                                    "operator": "HAS_FILE_CHANGED"
+                                 }
+                              ],
+                              "onValidCondition": "passport_document_file",
+                              "onInvalidCondition": ""
+                           },
+                           "formId": "init_business_owner_id_proof_verification_form",
+                           "onSuccess": {
+                              "setState": [
+                                 {
+                                    "key": "loader_modal",
+                                    "value": false,
+                                    "stateChangeType": "MODAL_VISIBILITY"
+                                 }
+                              ]
+                           },
+                           "onError": {
+                              "setState": [
+                                 {
+                                    "key": "loader_modal",
+                                    "value": false,
+                                    "stateChangeType": "MODAL_VISIBILITY"
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               }
+            ]
+         }
+      },
+      {
+         "type": "MODAL",
+         "props": {
+            "closable": false,
+            "maskClosable": false,
+            "visibilityDependsOn": "loader_modal"
+         },
+         "content": {
+            "body": [
+               {
+                  "type": "IMAGE",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } },
+                     "className": "flex justify-center items-center"
+                  },
+                  "props": {
+                     "src": "https://onboarding-resources-dev.s3.ap-south-1.amazonaws.com/assets/loader.gif"
+                  }
+               },
+               {
+                  "type": "TEXT",
+                  "wrapper": {
+                     "style": {
+                        "col": {
+                           "xs": 24,
+                           "md": 24
+                        }
+                     },
+                     "className": "flex justify-center items-center"
+                  },
+                  "props": {
+                     "className": "text-center"
+                  },
+                  "content": {
+                     "label": {
+                        "text": "We are fetching your ID Proof details",
+                        "className": "text-base font-semibold text-title"
+                     }
+                  }
+               }
+            ]
+         }
+      }
+   ]
+}

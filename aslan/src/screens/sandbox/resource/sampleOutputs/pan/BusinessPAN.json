@@ -1,0 +1,29 @@
+{
+   "request_id": "0748369c-138f-4b85-820e-c229c6860c8e",
+   "transaction_id": "adbb31a1-8720-43ff-9916-1fc4a42cdf6f",
+   "status": 200,
+   "data": {
+      "code": "1013",
+      "message": "Business details fetched.",
+      "business_data": {
+         "company_id": "XXXXXXXXXX",
+         "business_name": "XXX XXXXX LLP",
+         "date_of_incorporation": "20XX-09-XX",
+         "email": "XX.XXXXXX@gmail.com",
+         "phone": "80XX5XX8XX",
+         "address": {
+            "line_1": "X-XXX,XND FLOOR",
+            "line_2": "XXXXX NAGAR-I,NEW DELHI",
+            "street": "XXXXXX NAGAR",
+            "city": "DELHI",
+            "state": "DELHI",
+            "pincode": "110024"
+         },
+         "contact_name": "NIXXXX KUMAR PANXXX",
+         "contact_pan": "ADXXP4XXXR",
+         "contact_designation": "MPR"
+      }
+   },
+   "timestamp": 1705586618410,
+   "path": "/pan-api/business-verify"
+}

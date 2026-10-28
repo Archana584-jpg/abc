@@ -1,0 +1,87 @@
+.backgroundGradient {
+   background: linear-gradient(180deg, #eaf7f7 0%, #f2f4f7 100%);
+}
+
+.title.title {
+   font-size: 1.875rem;
+   line-height: 3.75rem;
+   color: #2f2f2f;
+   font-weight: bold;
+   padding-top: 2.138rem;
+   margin: 0;
+}
+
+.text.text {
+   font-size: 0.875rem;
+   line-height: 1.25rem;
+   color: #595959;
+   font-weight: normal;
+}
+
+.verificationText.verificationText {
+   color: #2f2f2f;
+   font-size: 1.25rem;
+   line-height: 1.875rem;
+   font-weight: 500;
+}
+
+.logoPadding.logoPadding {
+   padding-top: 1.451rem;
+}
+
+.demoLogo.demoLogo {
+   padding: 2.625rem 0rem 3.775rem;
+}
+
+.scrollToBottom.scrollToBottom {
+   display: block;
+   margin: 5rem auto 0rem auto;
+}
+
+.whyGridlinesCards.whyGridlinesCards {
+   box-shadow: none !important;
+   padding: 0 !important;
+   height: 100% !important;
+}
+
+.title.title {
+   font-size: 2.188rem;
+   line-height: 3.125rem;
+   font-weight: bold;
+}
+
+.subTitle.subTitle {
+   color: #2f2f2f;
+   font-size: 1.25rem;
+}
+
+.whyGridlinesCardsDesc {
+   font-size: 0.875rem !important;
+}
+
+@media screen and (max-width: 720px) {
+   .scrollToBottom.scrollToBottom {
+      display: none !important;
+   }
+
+   .whyGridlinesCards {
+      height: auto !important;
+      padding: 0.7rem !important;
+      margin-top: 0rem !important;
+   }
+
+   .title {
+      font-size: 1.25rem !important;
+      line-height: 1.625rem !important;
+   }
+
+   .subTitle {
+      font-size: 0.825rem !important;
+      line-height: 1.25rem !important;
+   }
+
+   .whyGridlinesCardsDesc {
+      font-size: 0.625rem !important;
+      line-height: 1.1rem !important;
+   }
+}

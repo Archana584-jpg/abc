@@ -1,0 +1,10 @@
+{
+   "request_id": "009c2305-a1fd-4951-ac26-bd8ee01134d0",
+   "status": 200,
+   "data": {
+      "code": "1005",
+      "message": "Aadhaar is linked"
+   },
+   "timestamp": 1624346313922,
+   "path": "/check-aadhaar-link"
+}

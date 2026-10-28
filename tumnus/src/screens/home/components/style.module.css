@@ -1,0 +1,201 @@
+.sectionOne {
+   background: #edf5f6;
+   padding: 4.375rem 5.063rem 7.063rem 5rem;
+}
+
+.sectionTwo {
+   background: transparent linear-gradient(180deg, #edf5f6 0%, #e8f2fc 100%) 0% 0% no-repeat padding-box;
+   padding: 1.75rem 2.063rem 7.063rem 2rem;
+}
+
+.sectionThree {
+   background: #ffffff;
+   padding: 4.375rem 5.063rem 7.063rem 5rem;
+}
+.sectionFour {
+   background: #f1f4f7;
+   padding: 4.375rem 5.063rem 7.063rem 5rem;
+}
+.sectionFive {
+   background: #ffffff;
+   padding: 4.375rem 5.063rem 7.063rem 5rem;
+}
+.salesButton.salesButton {
+   color: #33cccc;
+   border-color: #33cccc;
+   background-color: #f2f4f7;
+   font-weight: 500;
+}
+
+.salesButton:hover {
+   color: white;
+   background-color: #7cbfbf;
+   border-color: #7cbfbf;
+}
+.scrollToBottom {
+   display: block;
+   margin: 5rem auto 0rem auto;
+}
+
+.title.title {
+   font-size: 2.188rem;
+   line-height: 3.125rem;
+   font-weight: bold;
+}
+
+.subTitle.subTitle {
+   color: #2f2f2f;
+   font-size: 1.25rem;
+}
+
+.text.text {
+   font-size: 1.125rem;
+   line-height: 1.625rem;
+   color: #6a6a6a;
+   margin-top: 1.875rem;
+}
+
+.hoverableRightIcon {
+   font-size: 1rem;
+   margin-left: 0.5rem;
+}
+
+.viewProductButtonIcon {
+   margin-left: 0.1rem;
+   font-size: 0.875rem;
+}
+
+.otherProductsCard.otherProductsCard {
+   padding: 0px;
+   background: #f1f4f7;
+   height: 100%;
+}
+
+.otherProductsCardArrow.otherProductsCardArrow {
+   display: none;
+   float: right;
+   font-size: 1.25rem;
+   color: #33cccc;
+   cursor: pointer;
+}
+.otherProductsCard:hover .otherProductsCardArrow {
+   display: block;
+}
+.clientsLogo {
+   margin-top: 1.688rem;
+}
+.viewAPIDocsButton.viewAPIDocsButton {
+   color: #3d90cc;
+   font-size: 1.125rem;
+   margin-top: 0.35rem;
+   font-weight: 500;
+   margin-left: 0.875rem;
+}
+.viewAPIDocsButton:hover {
+   color: #3d90cc !important;
+}
+
+.whyGridlinesCards.whyGridlinesCards {
+   box-shadow: none !important;
+   padding: 0 !important;
+   height: 100% !important;
+   /* margin-top: 2.75rem; */
+}
+.whyGridlinesCardsDesc {
+   font-size: 0.875rem !important;
+}
+.sectionThreeCol {
+   margin-top: 13rem;
+}
+.sectionThreeImgCol {
+   margin-top: 8.75rem;
+}
+.categoriesCard {
+   height: 23.75rem;
+   width: 20.625rem;
+}
+.categoriesCardTitle.categoriesCardTitle {
+   font-size: 1.875rem;
+   margin-top: 0.625rem;
+   line-height: 1.23rem;
+   font-weight: 600;
+}
+.otherProductsRow {
+   margin-top: 3.563rem;
+}
+.otherProductsCardTitle {
+   margin-top: 0.813rem;
+}
+.otherProductsCardDesc.otherProductsCardDesc {
+   font-size: 1rem;
+}
+@media screen and (max-width: 720px) {
+   .otherProductsCardArrow {
+      display: block !important;
+   }
+   .scrollToBottom {
+      display: none !important;
+   }
+   .getAPIKeysButton {
+      font-size: 0.813rem !important;
+   }
+   .title {
+      font-size: 1.25rem !important;
+      line-height: 1.625rem !important;
+   }
+   .sectionOne {
+      padding: 1.375rem 1rem 2rem 1rem !important;
+   }
+   .sectionTwo {
+      padding: 1.75rem 1rem 4rem 1rem !important;
+   }
+   .sectionThree {
+      padding: 0 1rem 5.063rem 1rem !important;
+   }
+   .sectionFour {
+      padding: 2.375rem 4rem 7.063rem 1rem !important;
+   }
+   .sectionFive {
+      justify-content: left !important;
+      padding: 2.375rem 1rem 2rem 1rem !important;
+   }
+   .salesButton {
+      font-size: 0.813rem !important;
+   }
+   .subTitle {
+      font-size: 0.825rem !important;
+      line-height: 1.25rem !important;
+   }
+   .clientsLogo {
+      margin-top: 0.813rem !important;
+   }
+   .viewAPIDocsButton {
+      font-size: 0.813rem !important;
+      margin-left: 0 !important;
+   }
+   .whyGridlinesCards {
+      height: auto !important;
+      padding: 0.7rem !important;
+      margin-top: 0rem !important;
+   }
+   .whyGridlinesCardsDesc {
+      font-size: 0.625rem !important;
+      line-height: 1.1rem !important;
+   }
+   .sectionThreeCol {
+      margin-top: 3rem !important;
+   }
+   .text {
+      font-size: 0.813rem !important;
+   }
+   .sectionThreeImgCol {
+      margin-top: 4rem !important;
+   }
+   .categoriesCard {
+      height: 23rem !important;
+      width: 100% !important;
+   }
+   .otherProductsRow {
+      margin-top: 1rem;
+   }
+}

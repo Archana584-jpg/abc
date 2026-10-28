@@ -1,0 +1,41 @@
+/* Highlight the current step */
+
+/* Set text color for all steps */
+.custom-steps .ant-steps-item-title {
+   color: black !important;
+   font-size: 13px !important;
+   line-height: 20px !important;
+   font-weight: 500 !important;
+   /* Apply for both completed and pending steps */
+}
+
+/* Adjust font size for the description text */
+.custom-steps .ant-steps-item-description {
+   font-size: 13px !important;
+}
+
+/* Icon size adjustments */
+.custom-steps .ant-steps-item-icon {
+   width: 20px !important;
+   height: 20px !important;
+   font-size: 12px !important;
+}
+
+.custom-steps .ant-steps-icon {
+   top: -6.5px !important;
+}
+
+.custom-steps .ant-steps-item-tail {
+   inset-inline-start: 10px !important;
+   height: 150% !important;
+   top: -10px !important;
+}
+
+.custom-steps .ant-steps-item-tail::after {
+   width: 2px !important;
+}
+
+.custom-steps .ant-steps-item {
+   margin-bottom: 8%;
+   /* Increase the vertical space between step items */
+}

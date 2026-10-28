@@ -1,0 +1,236 @@
+{
+   "id": "zaakpay_business_owner_passport_review_and_verify",
+   "name": "Verify Business Owner ID Proof",
+   "header": {
+      "title": { "text": "Verify Business Owner ID Proof", "className": "text-md font-semibold text-title" },
+      "subtitle": {
+         "text": "Provide a valid Identity proof of the Business Owner",
+         "className": "text-xs font-normal text-subtitle"
+      },
+      "image": {
+         "src": "https://onboarding-resources-dev.s3.ap-south-1.amazonaws.com/assets/business_owner_id_proof.svg"
+      },
+      "icon": { "src": "", "className": "text-xl cursor-pointer mr-2", "iconName": "ArrowLeftOutlined" },
+      "action": {
+         "onClick": {
+            "api": {
+               "type": "EXECUTE_ACTION",
+               "executeActionType": "IMMEDIATE_BACK_NODE_MOVEMENT_ACTION",
+               "requestType": "EXECUTE_ACTION"
+            }
+         }
+      }
+   },
+   "layout": [
+      {
+         "type": "STEPPER",
+         "wrapper": {
+            "className": "mx-auto",
+            "style": {
+               "className": "block",
+               "col": {
+                  "xs": 24,
+                  "md": 16
+               }
+            }
+         },
+         "content": {
+            "steps": [
+               {
+                  "label": "A",
+                  "id": "zaakpay_init_business_owner_id_proof_verification",
+                  "name": "Init Business Owner ID Proof Verification",
+                  "title": {
+                     "text": "Upload ID Proof",
+                     "className": "text-base font-normal text-title"
+                  }
+               },
+               {
+                  "label": "B",
+                  "id": "zaakpay_business_owner_passport_review_and_verify",
+                  "name": "Business Owner ID Proof Review and Verification",
+                  "title": {
+                     "text": "Review and Proceed",
+                     "className": "text-base font-normal text-title"
+                  }
+               }
+            ]
+         }
+      },
+      {
+         "type": "TEXT",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } }
+         },
+         "props": {},
+         "content": {
+            "label": {
+               "text": "Document uploaded : <span class='font-medium'>Passport</span>",
+               "isHTML": true
+            }
+         }
+      },
+      {
+         "type": "IMAGE_VIEWER",
+         "props": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "fileKey": "passport_document_file"
+         },
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 10 } },
+            "className": "mt-4"
+         },
+         "dataSource": {
+            "onValidCondition": "passport_document_file_urls"
+         },
+         "action": {
+            "onReupload": {
+               "api": {
+                  "type": "EXECUTE_ACTION",
+                  "executeActionType": "IMMEDIATE_BACK_NODE_MOVEMENT_ACTION",
+                  "requestType": "EXECUTE_ACTION"
+               }
+            }
+         }
+      },
+      {
+         "type": "FORM",
+         "formId": "passport_review_and_verify_form",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 14 } },
+            "className": "mt-4"
+         },
+         "props": {
+            "layout": "vertical",
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "requiredMark": true
+         },
+         "dataSource": {
+            "onValidCondition": "data.generic_data"
+         },
+         "content": {
+            "fields": [
+               {
+                  "type": "INPUT",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 24 } }
+                  },
+                  "props": {
+                     "name": "passport_file_number",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "pattern": {
+                           "key": "FILE_NUMBER_PASSPORT"
+                        }
+                     },
+                     "direction": "horizontal",
+                     "value": "passport_file_number"
+                  },
+                  "content": {
+                     "label": { "text": "File Number", "className": "text-subtitle" },
+                     "placeHolder": { "text": "Enter File Number", "className": "" }
+                  }
+               },
+               {
+                  "type": "INPUT",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 12 } }
+                  },
+                  "props": {
+                     "name": "passport_first_name",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        },
+                        "pattern": {
+                           "key": "NAME"
+                        }
+                     },
+                     "direction": "horizontal",
+                     "value": "passport_first_name"
+                  },
+                  "content": {
+                     "label": { "text": "First Name", "className": "text-subtitle" },
+                     "placeHolder": { "text": "Enter First Name", "className": "" }
+                  }
+               },
+               {
+                  "type": "INPUT",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 12 } }
+                  },
+                  "props": {
+                     "name": "passport_last_name",
+                     "isEditable": true,
+                     "validation": {
+                        "pattern": {
+                           "key": "NAME"
+                        }
+                     },
+                     "direction": "horizontal",
+                     "value": "passport_last_name"
+                  },
+                  "content": {
+                     "label": { "text": "Last Name", "className": "text-subtitle" },
+                     "placeHolder": { "text": "Enter Last Name", "className": "" }
+                  }
+               },
+               {
+                  "type": "DATE",
+                  "wrapper": {
+                     "style": { "col": { "xs": 24, "md": 12 } }
+                  },
+                  "props": {
+                     "name": "passport_date_of_birth",
+                     "isEditable": true,
+                     "validation": {
+                        "required": {
+                           "isRequired": true,
+                           "message": "This field is required"
+                        }
+                     },
+                     "direction": "horizontal",
+                     "style": { "width": "100%" },
+                     "mode": "date",
+                     "value": "passport_date_of_birth"
+                  },
+                  "content": {
+                     "label": { "text": "Date of Birth (yyyy-mm-dd)", "className": "text-subtitle" },
+                     "placeHolder": { "text": "Enter DOB" }
+                  }
+               }
+            ]
+         }
+      },
+      {
+         "type": "BUTTON",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "flex justify-center mt-4"
+         },
+         "content": {
+            "label": { "text": "Save and Proceed", "className": "text-white" }
+         },
+         "props": {
+            "className": "px-6 py-0",
+            "type": "primary"
+         },
+         "action": {
+            "onClick": {
+               "api": {
+                  "type": "EXECUTE_ACTION",
+                  "requestType": "EXECUTE_ACTION",
+                  "executeActionType": "PASSPORT_VERIFY_V2_ACTION",
+                  "formId": "passport_review_and_verify_form"
+               }
+            }
+         }
+      }
+   ]
+}

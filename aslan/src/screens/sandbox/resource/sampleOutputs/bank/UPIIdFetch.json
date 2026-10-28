@@ -1,0 +1,18 @@
+{
+   "request_id": "8c20eae3-bd91-46ac-8043-d7ecc43c1dd9",
+   "transaction_id": "b34d806c-68f3-4311-8a9a-bceedba052d0",
+   "status": 200,
+   "data": {
+      "code": "1017",
+      "message": "UPI Ids found",
+      "upi_account_info": [
+         {
+            "upi_id": "999999999@ybl",
+            "name": "Jane Doe",
+            "status": "VALID"
+         }
+      ]
+   },
+   "timestamp": 1706169518373,
+   "path": "/bank-api/fetch-upi-id"
+}

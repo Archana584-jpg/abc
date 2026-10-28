@@ -1,0 +1,149 @@
+.offeringCardLeftArrow {
+   width: 1rem;
+   height: 2rem;
+   margin: 0.65rem 0rem 0rem 0.2rem;
+   border-top: 1.25rem solid transparent;
+   border-bottom: 1.25rem solid transparent;
+   border-right: 1.875rem solid white;
+   background-color: #f9fbfd;
+}
+
+.selectedOfferingButtton {
+   width: 100%;
+   height: 2.938rem;
+   margin: 0.5rem 0.5rem 0.5rem 0rem;
+   text-align: left;
+   font-weight: 500;
+   border: none;
+   font-size: 0.875rem;
+   border-radius: 0.313rem;
+   padding: 0rem 0.313rem;
+   background: #7cbfbf;
+   color: white;
+   border-color: #7cbfbf;
+   box-shadow: 0rem 0.188rem 0.375rem #00000029;
+}
+
+.selectedOfferingButtton:focus {
+   background: #7cbfbf;
+   color: white;
+   border-color: #7cbfbf;
+   box-shadow: 0rem 0.188rem 0.375rem #00000029;
+}
+
+.selectedOfferingButtton:hover {
+   background: #7cbfbf;
+   color: white;
+   border-color: #7cbfbf;
+   box-shadow: 0rem 0.188rem 0.375rem #00000029;
+}
+
+.offeringsButton {
+   width: 100%;
+   height: 2.938rem;
+   margin: 0.5rem 0.5rem 0.5rem 0rem;
+   text-align: left;
+   font-weight: 500;
+   border: none;
+   font-size: 0.875rem;
+   border-radius: 0.313rem;
+   padding: 0rem 0.313rem;
+}
+
+.offeringsButton:hover {
+   background-color: #7cbfbf;
+   color: white;
+   border-color: white;
+}
+
+.offeringButtonIcon {
+   float: right;
+   margin-top: 0.1rem;
+   font-size: 1.1rem;
+}
+
+.productDescription > div > p {
+   font-size: 0.875rem;
+   line-height: 1.25rem;
+   color: #2f2f2f;
+}
+
+.filterInput::placeholder {
+   color: #717988;
+   opacity: 1;
+   font-size: 0.688rem;
+}
+
+.table-container .ant-table-thead > tr > th {
+   background-color: #f4f4f4 !important;
+}
+
+.filterDatePicker > div > input::placeholder {
+   color: #717988;
+   opacity: 1;
+   font-size: 0.688rem;
+}
+
+.filterDropdown > div > span {
+   color: #717988;
+   opacity: 1;
+   font-size: 0.688rem;
+}
+
+.customMessage .ant-message-notice-content {
+   background: #e6f2f2;
+   color: #2f2f2f;
+   font-weight: 500;
+}
+
+.approval-button:hover {
+   background: #7cbfbf !important;
+}
+
+.deprecated-col {
+   background: #ffbc60 !important;
+}
+
+.product-tag {
+   background: #f3ffff;
+   border-color: #33cccc;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.product-logo {
+   height: 1.6rem;
+   width: 1.6rem;
+   object-fit: contain;
+}
+
+.product-logo-background {
+   background: #ebf7ff;
+   padding: 0.4rem;
+   height: 100%;
+}
+
+.product-title {
+   font-size: 0.875rem !important;
+   line-height: 0.2rem !important;
+   color: #2f2f2f !important;
+   font-weight: 400 !important;
+}
+
+.product-description {
+   font-family: "Poppins";
+   font-size: 0.688rem;
+   color: #717988;
+   display: block;
+   line-height: 1.1rem;
+}
+
+.product-description-col {
+   margin-top: 0.5rem;
+   padding-top: 0.2rem;
+   padding-left: 0.5rem;
+}
+
+.try-it-out-button {
+   background: linear-gradient(89deg, #809ce8 28.19%, #5fbbc3 73.11%) !important;
+}

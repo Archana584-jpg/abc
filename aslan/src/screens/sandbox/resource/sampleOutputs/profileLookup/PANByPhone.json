@@ -1,0 +1,17 @@
+{
+   "request_id": "b779471b-80fc-4072-9413-5b581279c76f",
+   "transaction_id": "246675fd-87d1-4ab1-8c54-5d17a985e656",
+   "status": 200,
+   "data": {
+      "code": "1003",
+      "message": "Fetched PAN data.",
+      "pan_data": [
+         {
+            "serial_number": "1",
+            "value": "ABCDE1100F"
+         }
+      ]
+   },
+   "timestamp": 1717399068643,
+   "path": "/profile-api/individual/fetch-pan"
+}

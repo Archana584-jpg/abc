@@ -1,0 +1,30 @@
+{
+   "request_id": "bb5f2b58-30b0-4da1-86b9-08c18e5d55a2",
+   "transaction_id": "08b94574-c8a7-43d7-8b5a-357d38100a7a",
+   "status": 200,
+   "data": {
+      "code": "1007",
+      "message": "Data extracted.",
+      "ocr_data": {
+         "document_id": "GXXXXXX8",
+         "country_code": "IND",
+         "first_name": "MXXXH KXXXR",
+         "last_name": "SXXXH",
+         "full_name": "MXXXH KXXXR SXXXH",
+         "file_number": "DXXXXXXXXX6",
+         "gender": "MALE",
+         "date_of_birth": "1967-03-10",
+         "issue_date": "2005-10-13",
+         "valid_till": "2015-10-12",
+         "address": "RZ-12 KXXXV SXXXL IND. SXXX NXXXI PXXXM VXXX DELHI-110087",
+         "nationality": "INDIAN",
+         "country": "INDIA",
+         "guardian_name": "UXXH SXXH",
+         "mother_name": "LXXI KXXR",
+         "place_of_birth": "GXXXXA BXXXR",
+         "place_of_issue": "DELHI"
+      }
+   },
+   "timestamp": 1728033827958,
+   "path": "/passport-api/ocr"
+}

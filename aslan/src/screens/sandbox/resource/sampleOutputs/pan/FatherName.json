@@ -1,0 +1,16 @@
+{
+   "request_id": "fcc0021e-d7dc-407b-b003-d064d83502dc",
+   "transaction_id": "fcc0021e-d7dc-407b-b003-d064d83502dc",
+   "status": 200,
+   "data": {
+      "code": "1014",
+      "message": "Father's name fetched.",
+      "pan_data": {
+         "document_type": "PAN",
+         "document_id": "ABCPA1111A",
+         "father_name": "ABCD"
+      }
+   },
+   "timestamp": 1712319591273,
+   "path": "/pan-api/fetch-father-name"
+}

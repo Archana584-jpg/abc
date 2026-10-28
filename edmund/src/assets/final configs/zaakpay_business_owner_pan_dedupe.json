@@ -1,0 +1,315 @@
+{
+   "id": "zaakpay_business_owner_pan_dedupe",
+   "name": "Business Owner PAN Dedupe",
+   "header": {
+      "title": { "text": "Verify Business Owner PAN", "className": "text-md font-semibold text-title" },
+      "subtitle": {
+         "text": "Upload a business owner's PAN card to verify their details.",
+         "className": "text-xs font-normal text-subtitle"
+      },
+      "image": {
+         "src": "https://onboarding-resources-dev.s3.ap-south-1.amazonaws.com/assets/pan.svg"
+      },
+      "icon": { "src": "", "className": "text-xl cursor-pointer mr-2", "iconName": "ArrowLeftOutlined" },
+      "action": {
+         "onClick": {
+            "api": {
+               "type": "EXECUTE_ACTION",
+               "executeActionType": "IMMEDIATE_BACK_NODE_MOVEMENT_ACTION",
+               "requestType": "EXECUTE_ACTION"
+            }
+         }
+      }
+   },
+   "layout": [
+      {
+         "type": "TEXT",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } }
+         },
+         "dataSource": {
+            "onValidCondition": "data.generic_data"
+         },
+         "content": {
+            "label": {
+               "text": "We found other applications linked to the PAN <b>{individual_pan_number}</b>",
+               "isHTML": true
+            }
+         }
+      },
+      {
+         "type": "ALERT",
+         "props": {
+            "type": "warning",
+            "className": "px-3 py-8 flex items-start"
+         },
+         "wrapper": {
+            "style": {
+               "col": {
+                  "xs": 24,
+                  "md": 24
+               }
+            },
+            "className": "my-4"
+         },
+         "content": {
+            "title": {
+               "text": "This PAN is already linked to the following pending applications. To continue with one of these, please log in with the associated email address.",
+               "className": "text-[#AD8B00]"
+            }
+         }
+      },
+      {
+         "type": "TABLE",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } }
+         },
+         "dataSource": {
+            "onValidCondition": "dedupe_data"
+         },
+         "props": {
+            "bordered": true,
+            "pagination": false,
+            "columns": [
+               {
+                  "title": "S.No.",
+                  "dataIndex": "name",
+                  "key": "name",
+                  "width": "5%",
+                  "render": {
+                     "type": "SR_NUMBER",
+                     "className": "text-center w-full"
+                  }
+               },
+               {
+                  "title": "Initiation Date",
+                  "dataIndex": "initiation_date",
+                  "key": "initiation_date",
+                  "width": "15%",
+                  "render": {
+                     "type": "DATE",
+                     "format": "DD MMM YYYY"
+                  }
+               },
+               {
+                  "title": "Application ID",
+                  "dataIndex": "application_id",
+                  "key": "application_id",
+                  "width": "20%"
+               },
+               {
+                  "title": "User Email",
+                  "dataIndex": "email_id",
+                  "key": "email_id",
+                  "width": "35%"
+               },
+               {
+                  "title": "Application Status",
+                  "dataIndex": "application_status",
+                  "key": "application_status",
+                  "width": "30%",
+                  "render": {
+                     "type": "STATUS"
+                  }
+               }
+            ]
+         }
+      },
+      {
+         "type": "TEXT",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "mt-4"
+         },
+         "dataSource": {
+            "onValidCondition": "data.generic_data"
+         },
+         "content": {
+            "label": {
+               "text": "You're currently logged in as; {email}",
+               "className": "text-sm font-medium text-title"
+            }
+         }
+      },
+      {
+         "type": "TEXT",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } },
+            "className": "mt-8"
+         },
+         "content": {
+            "label": {
+               "text": "• Continue with the current application using the current email.",
+               "className": "text-sm font-normal text-title"
+            }
+         }
+      },
+      {
+         "type": "TEXT",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 24 } }
+         },
+         "content": {
+            "label": {
+               "text": "• Discard this application and log in with the email associated with an existing application listed above.",
+               "className": "text-sm font-normal text-title"
+            }
+         }
+      },
+      {
+         "type": "BUTTON",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 12 } },
+            "className": "flex justify-end mt-8 pr-4"
+         },
+         "content": {
+            "label": { "text": "Discard & Log In with Other Email" }
+         },
+         "props": {
+            "className": "px-8 py-0",
+            "color": "primary",
+            "variant": "outlined"
+         },
+         "action": {
+            "onClick": {
+               "setState": [
+                  {
+                     "key": "confirmation_modal",
+                     "value": true,
+                     "stateChangeType": "MODAL_VISIBILITY"
+                  }
+               ]
+            }
+         }
+      },
+      {
+         "type": "BUTTON",
+         "wrapper": {
+            "style": { "col": { "xs": 24, "md": 12 } },
+            "className": "flex justify-start mt-8 pl-4"
+         },
+         "content": {
+            "label": { "text": "Continue with Current Application", "className": "text-white" }
+         },
+         "props": {
+            "className": "px-8 py-0",
+            "type": "primary"
+         },
+         "action": {
+            "onClick": {
+               "api": {
+                  "type": "EXECUTE_ACTION",
+                  "executeActionType": "MOVE_TO_NEXT_NODE_ACTION",
+                  "requestType": "EXECUTE_ACTION"
+               }
+            }
+         }
+      },
+      {
+         "type": "MODAL",
+         "props": {
+            "closable": false,
+            "maskClosable": false,
+            "className": "modal-class",
+            "visibilityDependsOn": "confirmation_modal"
+         },
+         "content": {
+            "body": [
+               {
+                  "type": "TEXT",
+                  "wrapper": {
+                     "style": {
+                        "col": {
+                           "xs": 24,
+                           "md": 24
+                        }
+                     },
+                     "className": "mx-2"
+                  },
+                  "props": {
+                     "align": "start"
+                  },
+                  "content": {
+                     "label": {
+                        "icon": {
+                           "iconName": "ExclamationCircleOutlined",
+                           "className": "text-[#717988] mt-1 font-base"
+                        },
+                        "text": "Are you sure you want to discard this application? This action cannot be undone.",
+                        "className": "text-sm font-medium text-title"
+                     }
+                  }
+               }
+            ],
+            "footer": [
+               {
+                  "type": "BUTTON",
+                  "wrapper": {
+                     "style": { "col": { "xs": 12, "md": 12 } },
+                     "className": "flex justify-end mt-6 pr-4"
+                  },
+                  "content": {
+                     "label": { "text": "Cancel" }
+                  },
+                  "props": {
+                     "className": "px-6 py-0",
+                     "color": "primary",
+                     "variant": "outlined"
+                  },
+                  "action": {
+                     "onClick": {
+                        "setState": [
+                           {
+                              "key": "confirmation_modal",
+                              "value": false,
+                              "stateChangeType": "MODAL_VISIBILITY"
+                           }
+                        ]
+                     }
+                  }
+               },
+               {
+                  "type": "BUTTON",
+                  "wrapper": {
+                     "style": { "col": { "xs": 12, "md": 12 } },
+                     "className": "mt-6 pl-4"
+                  },
+                  "content": {
+                     "label": { "text": "Discard This Application", "className": "text-white" }
+                  },
+                  "props": {
+                     "className": "px-6 py-0",
+                     "color": "primary",
+                     "variant": "solid"
+                  },
+                  "action": {
+                     "onClick": {
+                        "setState": [
+                           {
+                              "key": "confirmation_modal",
+                              "value": false,
+                              "stateChangeType": "MODAL_VISIBILITY"
+                           }
+                        ],
+                        "api": {
+                           "type": "EXECUTE_ACTION",
+                           "requestType": "EXECUTE_ACTION",
+                           "executeActionType": "DISCARD_ACTION",
+                           "onSuccess": {
+                              "api": [
+                                 {
+                                    "type": "EXECUTE_ACTION",
+                                    "requestType": "EXECUTE_ACTION",
+                                    "executeActionType": "MOVE_TO_NEXT_NODE_ACTION"
+                                 }
+                              ]
+                           }
+                        }
+                     }
+                  }
+               }
+            ]
+         }
+      }
+   ]
+}

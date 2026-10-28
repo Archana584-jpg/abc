@@ -1,0 +1,47 @@
+.tabTitle .ant-tabs-nav .ant-tabs-tab {
+   font-weight: bold;
+   font-size: 1.125rem;
+}
+
+.dropdownTitle {
+   color: #717988;
+   font-size: 0.75rem;
+}
+
+.hour-selection-button {
+   border-color: #d3d3d3;
+   color: #717988;
+   background: white;
+   font-size: 0.688rem;
+   padding: 0.4rem;
+   margin: 2px;
+   width: 38px;
+}
+
+.filter-by-button {
+   border-color: #d3d3d3;
+   color: #717988;
+   background: white;
+   font-size: 0.688rem;
+   padding: 0.4rem;
+   margin: 2px 0 2px 10px;
+}
+
+.reset-filter-button {
+   color: #3d90cc;
+   font-size: 0.875rem;
+   font-weight: 500;
+   padding: 0;
+   margin-top: 0.5rem;
+}
+
+.filter-drawer-title {
+   font-size: 1.125rem !important;
+   color: #2f2f30 !important;
+   font-weight: 500 !important;
+}
+
+.filter-by-icon {
+   font-size: 1.2rem;
+   font-weight: 900;
+}

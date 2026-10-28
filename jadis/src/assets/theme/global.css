@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind components;
+@tailwind utilities;
+
+body {
+   margin: 0px;
+}
+
+.header-container {
+   position: sticky;
+   top: 0;
+   z-index: 1;
+   width: 100%;
+   height: 48px;
+   background-color: #33cccc;
+}
+
+.header-container .header-row {
+   height: inherit;
+}
+
+.layout-container {
+   height: calc(100vh - 48px);
+}
+
+.content-container {
+   background-color: #f0f2f5;
+   height: calc(100vh - 48px);
+   overflow-y: auto;
+}
+
+/* Sidebar styling starts */
+.sidebar-container {
+   background-color: #ebfafa;
+}
+
+.ant-layout-sider-collapsed .sidebar-menu .ant-menu-title-content {
+   display: none;
+}
+
+.sidebar-handler {
+   align-items: center;
+   justify-content: center;
+   margin: 8px 0 auto !important;
+}
+
+.sidebar-handler:hover {
+   background-color: #c5ebeb !important;
+}
+
+.sidebar-logout-handler {
+   justify-content: start;
+   align-items: center;
+   background: transparent;
+   padding-left: 8px;
+   margin: 8px auto !important;
+   position: absolute;
+   bottom: 0;
+   color: #000;
+}
+
+.ant-layout-sider-collapsed .sidebar-logout-handler {
+   justify-content: center;
+}
+
+.sidebar-logout-handler:hover {
+   background-color: #c5ebeb !important;
+}
+
+.sidebar-container .ant-menu-light {
+   background: transparent;
+}
+
+.sidebar-menu-item {
+   column-gap: 12px;
+   border-radius: 4px !important;
+   font-size: 12px;
+   font-weight: 500;
+   line-height: 20px;
+   padding-left: 8px !important;
+   margin: 8px auto !important;
+}
+
+.sidebar-menu-item-title {
+   font-size: 12px;
+   font-weight: 500;
+   line-height: 20px;
+   border-radius: 4px !important;
+   padding-left: 8px !important;
+   margin: 8px auto !important;
+}
+
+.sidebar-menu-item-title:hover,
+.sidebar-menu-item:hover {
+   background-color: #c5ebeb !important;
+}
+
+.sidebar-menu-item-title.ant-menu-item-selected,
+.sidebar-menu-item.ant-menu-item-selected {
+   background-color: #c5ebeb;
+}
+
+/* Sidebar styling ends */
+
+.applications-header-container {
+   height: 56px;
+   background-color: #fff;
+   display: flex;
+   align-items: center;
+   padding: 12px 24px;
+}
+
+.applications-header-container .input-search {
+   height: 32px;
+   width: 100vw;
+   border-radius: 4px;
+   margin-right: 20px;
+}
+
+.applications-header-container .search-button {
+   height: 32px;
+   border-radius: 4px;
+}
+
+.applications-card-container {
+   border-radius: 4px;
+   border: 1px solid #d3d3d3;
+   background: #fff;
+   margin-bottom: 8px;
+}
+
+.applications-content-container {
+   height: calc(100vh - 105px);
+}
+
+.applications-content-container .filter-container {
+   height: calc(100vh - 120px);
+   border-radius: 4px 0px 0px 4px;
+   border: 1px solid #bfbfbf;
+   background: #fff;
+   box-shadow: 0px 3px 6px -4px rgba(0, 0, 0, 0.12), 0px 6px 16px 0px rgba(0, 0, 0, 0.08),
+      0px 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+
+.applications-content-container .filter-container .filter-header-container {
+   display: flex;
+   align-items: center;
+   padding: 4px 4px 4px 16px;
+   justify-content: space-between;
+   border-bottom: 1px solid #d3d3d3;
+}
+
+.applications-content-container .filter-footer-container {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   padding: 16px;
+   border-top: 1px solid #d3d3d3;
+}
+
+.applications-card-container .ant-card-head {
+   padding: 8px 16px;
+}
+
+.ant-card-head .flow-tag-container {
+   border-radius: 4px;
+   border: 1px solid #d3d3d3;
+   background: #f9fbfd;
+}
+
+.applications-card-container .ant-card-body {
+   padding: 8px 16px;
+}
+
+.applications-card-container .view-button {
+   height: 28px;
+   border-radius: 4px;
+}
+
+/* Application By ID*/
+
+.application-header-container {
+   padding-top: 8px;
+   background: #fff;
+}
+
+.application-header-container .ant-card-head {
+   padding: 0px 8px;
+}
+
+.application-header-container .ant-card-body {
+   padding: 0px 16px;
+}
+
+.application-header-container .ant-card-body .ant-tabs-nav {
+   margin: 0px;
+}
+
+.application-header-container .ant-card-body .ant-tabs-nav::before {
+   border: 0px;
+}
+
+.application-content-container .sider-container {
+   padding: 16px;
+   border-radius: 4px;
+   background: #fff;
+}
+
+.application-content-container .sider-container .selected {
+   display: flex;
+   border-radius: 4px;
+   align-items: center;
+   background-color: #ebfafa;
+}
+
+.application-content-container .sider-container .selected span {
+   color: #29a3a3;
+}
+
+.application-content-container .content-container {
+   background-color: #f0f2f5;
+}
+
+.application-card-container {
+   border-radius: 4px;
+   background: #fff;
+   margin: 0px 16px 16px 16px;
+   border: 1px solid #d3d3d3;
+}
+
+.application-card-container .ant-table-wrapper .ant-table-thead > tr > th {
+   background: #f5f5f5;
+   border-bottom: 0px;
+   font-size: 14px;
+   font-weight: 500;
+}
+
+.application-card-container .ant-table-wrapper .ant-table-container .ant-table-thead > tr > th:first-child {
+   border-radius: 0px;
+}
+
+.application-card-container .ant-table-wrapper .ant-table-container .ant-table-thead > tr:first-child > *:last-child {
+   border-radius: 0px;
+}
+
+.application-card-container .ant-table-wrapper .ant-table-tbody > tr > td {
+   font-size: 14px;
+   font-weight: 400;
+}
+
+.application-card-container .verification-container {
+   padding: 16px 24px;
+   border-radius: 8px;
+   background: #fff;
+   border: 1px solid #bfbfbf;
+}
+
+.application-card-container .dedup-container {
+   padding: 16px 24px;
+   border-radius: 8px;
+   background: #fff;
+   border: 1px solid #bfbfbf;
+}
+
+.application-card-container .validation-container {
+   padding: 16px 24px;
+   border-radius: 8px;
+   background: #fff;
+   border: 1px solid #bfbfbf;
+}
+
+.application-card-container .document-image {
+   width: 100%;
+   height: 180px;
+}
+
+.change-status-button {
+   height: 32px;
+}
+
+.change-status-container .remark-container {
+   padding: 12px;
+   border-radius: 4px 4px 0px 4px;
+   box-shadow: 0px -2px 6px -4px rgba(0, 0, 0, 0.12), 0px -4px 16px 0px rgba(0, 0, 0, 0.08),
+      0px -4px 28px 8px rgba(0, 0, 0, 0.05);
+}
+
+.change-status-container .status-option {
+   display: flex;
+   border-radius: 4px;
+   padding: 12px 16px;
+   margin-bottom: 16px;
+   border: 1px solid #d3d3d3;
+   justify-content: space-between;
+}
+
+/* Modal */
+
+.ant-modal-header {
+   padding: 16px !important;
+   border-bottom: 1px solid #d3d3d3 !important;
+}
+
+.view-activity-popup .ant-modal-header {
+   border-bottom: none !important;
+   padding-bottom: 0 !important;
+}
+
+.view-activity-popup .ant-modal-body {
+   padding-top: 0 !important;
+}
+
+.ant-modal-content {
+   padding: 0px !important;
+}
+
+.ant-modal-body {
+   padding: 16px 12px !important;
+}
+
+.ant-table-thead tr th {
+   font-weight: 500 !important;
+}
+
+.ant-modal-footer {
+   padding: 16px !important;
+   border-top: 1px solid #d3d3d3 !important;
+}
+
+/* below stylings are for the message that we show after user actions */
+.custom-message-success .ant-message-notice-content {
+   background: #f6ffed !important;
+   border: 1px solid #b7eb8f !important;
+}
+
+.custom-message-error .ant-message-notice-content {
+   background: #fff1f0 !important;
+   border: 1px solid #ffccc7 !important;
+}
+
+.custom-message-warning .ant-message-notice-content {
+   background: #fffbe6 !important;
+   border: 1px solid #ffe58f !important;
+}
+
+/*  end of message stylings */
+
+.text-ellipsis {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+/* document-viewer */
+
+.document-preview-container .ant-modal-header {
+   margin-bottom: 0px;
+}
+
+.document-preview-container .ant-modal-body {
+   padding: 0px !important;
+   height: 587px;
+}
+
+.document-preview-container .ant-table-wrapper .ant-table-thead > tr > th {
+   background: #f5f5f5;
+   border-bottom: 0px;
+   font-size: 14px;
+   font-weight: 500;
+}
+
+.document-preview-container .header-container {
+   height: 54px;
+   padding: 16px 16px;
+   background: #f5f5f5;
+   border-left: 1px solid #d3d3d3;
+}
+
+.document-preview-container .content-container {
+   border-left: 1px solid #d3d3d3;
+   background: #d9d9d9;
+   height: 533px;
+   overflow-y: scroll;
+}
+
+.ant-carousel .slick-prev {
+   font-size: 24px !important;
+   width: 24px !important;
+   height: 24px !important;
+   color: #080808 !important;
+}
+
+.ant-carousel .slick-prev::after {
+   display: none;
+}
+
+.ant-carousel .slick-next {
+   font-size: 24px !important;
+   width: 24px !important;
+   height: 24px !important;
+   color: #080808 !important;
+}
+
+.ant-carousel .slick-next::after {
+   display: none;
+}
+
+.init-application-header-container > .ant-card-body {
+   background-color: #f0f2f5;
+}
+
+.copy-application-link-popover .ant-popover-arrow::before {
+   background: #f6ffed !important; /* Match your popover background */
+   border-color: #b7eb8f !important; /* Match your popover border */
+}
+/* document preview popup carousel */
+.document-preview-popup-carousel .slick-slider {
+   height: 100%;
+}
+
+.document-preview-popup-carousel .slick-list {
+   height: 100%;
+}
+
+.document-preview-popup-carousel .slick-track {
+   height: 100%;
+}
+
+.document-preview-popup-carousel .slick-slide {
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.document-preview-popup-carousel .slick-slide > div {
+   height: 100%;
+}

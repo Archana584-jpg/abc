@@ -1,0 +1,10 @@
+export const PoweredLogo = require("./powered_logo.svg").default;
+export const Logo = require("./logo.svg").default;
+export const PlaceholderLogo = require("./client_logo_placeholder.svg").default;
+export const File = require("./File.svg").default;
+export const ExceptionFile = require("./ExceptionFile.svg").default;
+export const FileDone = require("./FileDone.svg").default;
+export const FileExclamation = require("./FileExclamation.svg").default;
+export const FileSync = require("./FileSync.svg").default;
+export const ProfilePlaceholder = require("./ProfilePlaceholder.svg").default;
+export const ExpiredFile = require("./ExpiredFile.svg").default;

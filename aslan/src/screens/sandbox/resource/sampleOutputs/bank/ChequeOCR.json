@@ -1,0 +1,19 @@
+{
+   "request_id": "9c5328ef-b7cc-4d63-a2a3-49bf4ade4dc8",
+   "transaction_id": "cb9abd42-d6e7-45b9-9e4f-5f8d72529697",
+   "status": 200,
+   "data": {
+      "code": "1030",
+      "message": "Data extracted.",
+      "ocr_data": {
+         "name": "AXXXXXXX CXXXXXX",
+         "bank_name": "KOTAK MAHINDRA BANK",
+         "branch": "VASANT VIHAR",
+         "micr": "1XXXXXXXXX",
+         "account_number": "0XXXXXXXXXX1",
+         "ifsc": "KKBKXXXX182"
+      }
+   },
+   "timestamp": 1726567812431,
+   "path": "/bank-api/cheque/ocr"
+}

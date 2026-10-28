@@ -1,0 +1,125 @@
+.talkToSales.talkToSales {
+   color: #33cccc;
+   border-color: #33cccc;
+   background-color: #f2f4f7;
+}
+
+.talkToSales:hover {
+   color: white;
+   background-color: #7cbfbf;
+   border-color: #7cbfbf;
+}
+
+.sectionOneBackground.sectionOneBackground {
+   background: linear-gradient(180deg, #eaf7f7, #f2f4f7);
+}
+
+.sectionOneContent.sectionOneContent {
+   padding: 10.188rem 0 0 1.27rem;
+}
+
+.sectionOneTitle.sectionOneTitle {
+   font-size: 2.188rem;
+   font-weight: 700;
+   line-height: 3.75rem;
+}
+
+.sectionOneDescription.sectionOneDescription {
+   font-weight: 400;
+   line-height: 1.5rem;
+   color: #717988;
+}
+
+.sectionOneButton.sectionOneButton {
+   margin-top: 1.313rem;
+}
+
+.sectionOneButtonMobile.sectionOneButtonMobile {
+   margin-top: 1.313rem;
+   font-size: 0.813rem;
+}
+
+.sectionOneMobileTitle.sectionOneMobileTitle {
+   font-size: 1.65rem;
+   font-weight: 700;
+   line-height: 2rem;
+}
+
+.sectionOneMobileContent.sectionOneMobileContent {
+   padding: 1.75rem 0 0 1.27rem;
+}
+
+.sectionTwoBackground.sectionTwoBackground {
+   background: #f2f4f7;
+}
+
+.sectionTwoContent.sectionTwoContent {
+   margin-top: 3.125rem;
+   text-align: center;
+}
+
+.sectionTwoMobileContent.sectionTwoMobileContent {
+   text-align: left;
+   padding-left: 1.27rem;
+}
+
+.sectionTwoDescription.sectionTwoDescription {
+   font-size: 1.25rem;
+   line-height: 1.875rem;
+   font-weight: 600;
+   color: #2f2f2f;
+}
+
+.featureCard.featureCard {
+   padding: 3rem 0;
+}
+
+.featureCardContent.featureCardContent {
+   background: #ffffff;
+   min-height: 13.75rem;
+   padding: 1.25rem 1.5rem;
+}
+
+.fetaureCardTitle.fetaureCardTitle {
+   font-size: 1.125rem;
+   line-height: 0.75rem;
+   font-weight: 600;
+}
+
+.featureCardDescription.featureCardDescription {
+   font-size: 0.818rem;
+   line-height: 1.375rem;
+   color: #6a6a6a;
+}
+
+.sectionThreeBackground.sectionThreeBackground {
+   background: #f9fbfd;
+}
+
+.sectionThreeDescriptionBackground.sectionThreeDescriptionBackground {
+   background: linear-gradient(90deg, #3d90cc, #33cccc);
+   margin: 3.125rem 1.3rem;
+   padding: 3.313rem 0rem;
+}
+
+.sectionThreeContent.sectionThreeContent {
+   padding: 0rem 2.063rem;
+}
+
+.sectionThreeTitle.sectionThreeTitle {
+   color: #ffffff;
+   font-size: 2.5rem;
+   font-weight: 600;
+   line-height: 3.25rem;
+   margin-top: 0;
+}
+
+.sectionThreeDescription.sectionThreeDescription {
+   color: #ffffff;
+   font-size: 0.938rem;
+   line-height: 1.375rem;
+}
+
+.sectionThreeDescriptionContent.sectionThreeDescriptionContent {
+   padding-right: 5rem;
+}

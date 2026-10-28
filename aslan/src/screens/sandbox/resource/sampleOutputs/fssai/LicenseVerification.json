@@ -1,0 +1,28 @@
+{
+   "request_id": "6668b581-30c4-460c-a8c9-6ed191fb8d28",
+   "status": 200,
+   "data": {
+      "code": "1000",
+      "message": "Extracted details.",
+      "fssai_data": {
+         "name": "AUNTY'S KITCHEN ",
+         "address": "229, SHIVA KHAND , VISHWAKARMANAGAR , SHAHDARA , DELHI-110095",
+         "village": "BABAR PUR",
+         "taluk": "SHAHDARA",
+         "district": "Shahdara",
+         "state": "Delhi",
+         "pincode": "110095",
+         "fbo_id": "67697070",
+         "type": "Registration",
+         "active": true,
+         "products": [
+            {
+               "product_id": "16",
+               "product_name": "16 - Prepared Foods "
+            }
+         ]
+      }
+   },
+   "timestamp": 1663615630341,
+   "path": "/fetch-license"
+}

@@ -1,0 +1,16 @@
+{
+   "request_id": "1c9ed64e-c3d6-45d6-q4d1-aeea902ba0f8",
+   "transaction_id": "1c9ed64e-c3d6-45d6-q4d1-aeea902ba0f8",
+   "status": 200,
+   "data": {
+      "code": "1013",
+      "message": "GSTIN contact details fetched.",
+      "gstin_data": {
+         "document_type": "GSTIN",
+         "email": "abcd@gmail.com",
+         "mobile": "9999999999"
+      }
+   },
+   "timestamp": 1239834156791,
+   "path": "/gstin-api/fetch-contact-details"
+}

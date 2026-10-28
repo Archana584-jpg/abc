@@ -1,0 +1,34 @@
+{
+   "request_id": "7ebf6610-38d0-4573-a953-80e64424f777",
+   "transaction_id": "ac8698fa-661c-4268-8923-8a222ba7aee0",
+   "status": 200,
+   "data": {
+      "code": "1009",
+      "message": "Fetched Entity Linkage data.",
+      "entity_linkage_data": {
+         "input": {
+            "mobile": "9971XXXXXX",
+            "pan": "AEXXXXXXXX"
+         },
+         "profile_indicators": {
+            "uan_linked": true,
+            "gst_linked": false,
+            "udyam_linked": false
+         },
+         "profile_indicators_source": {
+            "uan_linked": {
+               "status": true,
+               "source": ["MOBILE", "PAN"]
+            },
+            "gst_linked": {
+               "status": false
+            },
+            "udyam_linked": {
+               "status": false
+            }
+         }
+      }
+   },
+   "timestamp": 1750752665186,
+   "path": "/profile-api/check-entity-linkage"
+}

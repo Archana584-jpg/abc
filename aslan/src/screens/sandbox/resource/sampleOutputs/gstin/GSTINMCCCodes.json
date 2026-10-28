@@ -1,0 +1,69 @@
+{
+   "request_id": "fab2d984-d2af-497c-9d28-216125935ad0",
+   "transaction_id": "e3ab0f8a-f4ae-43d8-a2ba-9034e1fbc97d",
+   "status": 200,
+   "data": {
+      "code": "1015",
+      "message": "GSTIN MCC codes found.",
+      "gstin_data": {
+         "document_type": "GSTIN",
+         "document_id": "36XXXXXXXXXXXZH",
+         "mcc_code_data": [
+            {
+               "mcc_code": "5933",
+               "mcc_description": "PAWN SHOPS"
+            },
+            {
+               "mcc_code": "8651",
+               "mcc_description": "POLITICAL ORGANIZATIONS"
+            },
+            {
+               "mcc_code": "8351",
+               "mcc_description": "DAY OR CHILD CARE SERVICES"
+            },
+            {
+               "mcc_code": "7991",
+               "mcc_description": "TOURIST ATTRACTIONS AND EXHIBITS"
+            },
+            {
+               "mcc_code": "7941",
+               "mcc_description": "COMMERCIAL/PROFESSIONAL SPORTS, PROMOTERS, ATHLETIC FIELDS"
+            },
+            {
+               "mcc_code": "7911",
+               "mcc_description": "DANCE HALLS, STUDIOS AND SCHOOLS"
+            },
+            {
+               "mcc_code": "7297",
+               "mcc_description": "MASSAGE PARLORS"
+            },
+            {
+               "mcc_code": "6381",
+               "mcc_description": "INSURANCE PREMIUMS"
+            },
+            {
+               "mcc_code": "7996",
+               "mcc_description": "AMUSEMENT PARKS, CARNIVALS, CIRCUSES OR FORTUNE TELLERS"
+            },
+            {
+               "mcc_code": "5971",
+               "mcc_description": "ART DEALERS OR GALLERIES"
+            },
+            {
+               "mcc_code": "5960",
+               "mcc_description": "DIRECT MARKETING INSURANCE SERVICES"
+            },
+            {
+               "mcc_code": "6555",
+               "mcc_description": "MASTERCARD INITIATED REBATE/REWARDS"
+            },
+            {
+               "mcc_code": "6399",
+               "mcc_description": "INSURANCE (NEC)"
+            }
+         ]
+      }
+   },
+   "timestamp": 1727243670115,
+   "path": "/gstin-api/fetch-mcc-codes"
+}

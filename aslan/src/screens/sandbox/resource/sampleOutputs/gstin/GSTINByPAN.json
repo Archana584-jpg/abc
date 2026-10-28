@@ -1,0 +1,40 @@
+{
+   "request_id": "b27c9087-f061-4d38-b7aa-96498f8e667e",
+   "status": 200,
+   "data": {
+      "code": "1002",
+      "message": "Found 4 records",
+      "results": [
+         {
+            "document_type": "GSTIN",
+            "document_id": "20AXXXXXXXXXXX",
+            "status": "Active",
+            "state": "Jharkhand",
+            "state_code": "20"
+         },
+         {
+            "document_type": "GSTIN",
+            "document_id": "27AXXXXXXXXXXX",
+            "status": "Active",
+            "state": "Maharashtra",
+            "state_code": "27"
+         },
+         {
+            "document_type": "GSTIN",
+            "document_id": "29AXXXXXXXXXXX",
+            "status": "Active",
+            "state": "Karnataka",
+            "state_code": "29"
+         },
+         {
+            "document_type": "GSTIN",
+            "document_id": "23AXXXXXXXXXXX",
+            "status": "Inactive",
+            "state": "Madhya Pradesh",
+            "state_code": "23"
+         }
+      ]
+   },
+   "timestamp": 1626238355343,
+   "path": "/fetch-by-pan"
+}

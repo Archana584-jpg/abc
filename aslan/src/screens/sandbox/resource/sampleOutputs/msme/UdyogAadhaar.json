@@ -1,0 +1,43 @@
+{
+   "request_id": "f8ef2d9c-f46c-4c17-9d52-cb980576f17b",
+   "status": 200,
+   "data": {
+      "code": "1002",
+      "message": "Enterprise exists",
+      "enterprise_data": {
+         "document_id": "HR0XXXXXXXXX2",
+         "major_activity": "Services",
+         "enterprise_type": "Micro",
+         "uam_category": "D",
+         "name": "HANDY XXXXXXXXXXXXX LIMITED",
+         "mobile": "99*****007",
+         "email": "vi**********l5@gmail.com",
+         "date_of_commencement": "2015-05-01",
+         "applied_date": "2020-04-23",
+         "dic": "GURGAON",
+         "state": "HARYANA",
+         "social_category": "General"
+      },
+      "nic_data": {
+         "nic_2_digit": "82-Office administrative, office support and other business support activities",
+         "nic_4_digit": "8299-Other business support service activities n.e.c.",
+         "nic_5_digit": "82990-Other business support service activities n.e.c."
+      },
+      "enterprise_units": [
+         {
+            "address": {
+               "door_no": "Plot no.18",
+               "building": "Basement Ground First and second floor Front part",
+               "area": "Gurgaon",
+               "street": "SECTOR-32",
+               "city": "Gurgaon",
+               "state": "HARYANA",
+               "district": "GURUGRAM",
+               "pincode": "122018"
+            }
+         }
+      ]
+   },
+   "timestamp": 1660024047346,
+   "path": "/udyog-aadhaar"
+}

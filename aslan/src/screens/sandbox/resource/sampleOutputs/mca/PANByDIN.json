@@ -1,0 +1,16 @@
+{
+   "request_id": "f6aa6712-d166-49e0-b3b1-860e0afdedb2",
+   "transaction_id": "41e32f87-98b7-463c-bcf2-fb1ae161f221",
+   "status": 200,
+   "data": {
+      "code": "1009",
+      "message": "Fetched din details.",
+      "pan_details": {
+         "pan": "A****2***E",
+         "name": "JOHN SMITH",
+         "din": "0***2**6"
+      }
+   },
+   "timestamp": 1721199639125,
+   "path": "/mca-api/fetch-pan-by-din"
+}
