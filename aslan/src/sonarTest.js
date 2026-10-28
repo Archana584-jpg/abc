@@ -7,8 +7,8 @@ export function sonarTest(input) {
   }
   try {
     total = JSON.parse(input);
-  } catch (e){
-  }
+  } catch (e){{
+}  }
   debugger;
   return total;
 }
